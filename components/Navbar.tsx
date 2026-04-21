@@ -3,10 +3,32 @@
 import { useTranslations } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-const FLAGS: Record<string, string> = { es: '🇪🇸', en: '🇬🇧' };
 const LABELS: Record<string, string> = { es: 'ES', en: 'EN' };
+
+function FlagES() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
+      <rect width="20" height="14" fill="#c60b1e"/>
+      <rect y="3.5" width="20" height="7" fill="#f1bf00"/>
+    </svg>
+  );
+}
+
+function FlagEN() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
+      <rect width="20" height="14" fill="#012169"/>
+      <path d="M0,0 L20,14 M20,0 L0,14" stroke="#fff" strokeWidth="2.8"/>
+      <path d="M0,0 L20,14 M20,0 L0,14" stroke="#C8102E" strokeWidth="1.6"/>
+      <path d="M10,0 V14 M0,7 H20" stroke="#fff" strokeWidth="4.5"/>
+      <path d="M10,0 V14 M0,7 H20" stroke="#C8102E" strokeWidth="2.8"/>
+    </svg>
+  );
+}
+
+const FLAG_COMPONENTS: Record<string, () => React.ReactElement> = { es: FlagES, en: FlagEN };
 
 export default function Navbar({ locale }: { locale: string }) {
   const t = useTranslations('nav');
@@ -36,7 +58,7 @@ export default function Navbar({ locale }: { locale: string }) {
               onClick={() => router.replace(pathname, { locale: otherLocale })}
               className="hidden sm:flex h-8 items-center gap-1.5 rounded-md border border-slate-200 px-2.5 text-xs font-semibold text-slate-500 hover:bg-slate-50 transition"
             >
-              <span className="text-base leading-none">{FLAGS[otherLocale]}</span>
+              {FLAG_COMPONENTS[otherLocale]?.()}
               <span className="uppercase">{LABELS[otherLocale]}</span>
             </button>
             <Link
