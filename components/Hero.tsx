@@ -14,7 +14,7 @@ const MOCK_LEADS = [
 const ESTADO_COLORS: Record<string, string> = {
   'Nuevo': 'bg-slate-100 text-slate-600',
   'Contactado': 'bg-blue-50 text-blue-700',
-  'Respondió': 'bg-emerald-50 text-emerald-700',
+  'Respondió': 'bg-violet-50 text-violet-700',
 };
 
 export default function Hero({ locale }: { locale: string }) {
@@ -23,11 +23,11 @@ export default function Hero({ locale }: { locale: string }) {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white pt-20 pb-24 sm:pt-28 sm:pb-32">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-50 via-white to-white" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-violet-50 via-white to-white" />
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-4 py-1.5 text-xs font-semibold text-emerald-700 mb-6">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+        <div className="inline-flex items-center gap-2 rounded-full bg-violet-50 border border-violet-200 px-4 py-1.5 text-xs font-semibold text-violet-700 mb-6">
+          <span className="h-1.5 w-1.5 rounded-full bg-violet-500 animate-pulse" />
           {t('badge')}
         </div>
 
@@ -42,7 +42,7 @@ export default function Hero({ locale }: { locale: string }) {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
             href={`${appUrl}/register`}
-            className="inline-flex h-12 items-center rounded-xl bg-emerald-500 px-8 text-base font-semibold text-white shadow-md hover:bg-emerald-600 transition-colors"
+            className="inline-flex h-12 items-center rounded-xl bg-violet-500 px-8 text-base font-semibold text-white shadow-md hover:bg-violet-600 transition-colors"
           >
             {t('cta_primary')}
           </Link>
@@ -56,13 +56,13 @@ export default function Hero({ locale }: { locale: string }) {
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-slate-400">
           <span className="flex items-center gap-1.5">
-            <svg className="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <svg className="h-4 w-4 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
             {t('social_proof')}
           </span>
           <span className="flex items-center gap-1.5">
-            <svg className="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <svg className="h-4 w-4 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
             {t('no_card')}
@@ -85,11 +85,11 @@ export default function Hero({ locale }: { locale: string }) {
           <div className="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
             <div>
               <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">Leads encontrados</p>
-              <p className="text-2xl font-extrabold text-slate-900">847 <span className="text-sm font-normal text-emerald-600">+24 hoy</span></p>
+              <p className="text-2xl font-extrabold text-slate-900">847 <span className="text-sm font-normal text-violet-600">+24 hoy</span></p>
             </div>
             <div className="flex gap-2">
               <div className="rounded-lg bg-slate-50 border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-500">Marketing · Madrid</div>
-              <div className="rounded-lg bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white">Nueva búsqueda</div>
+              <div className="rounded-lg bg-violet-500 px-3 py-1.5 text-xs font-semibold text-white">Nueva búsqueda</div>
             </div>
           </div>
 
@@ -127,7 +127,7 @@ export default function Hero({ locale }: { locale: string }) {
             <p className="text-xs text-slate-400">Mostrando 5 de 847 leads</p>
             <div className="flex gap-1">
               {[1,2,3].map(n => (
-                <span key={n} className={`h-1.5 w-1.5 rounded-full ${n === 1 ? 'bg-emerald-500' : 'bg-slate-300'}`} />
+                <span key={n} className={`h-1.5 w-1.5 rounded-full ${n === 1 ? 'bg-violet-500' : 'bg-slate-300'}`} />
               ))}
             </div>
           </div>

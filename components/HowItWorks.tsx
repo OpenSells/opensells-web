@@ -12,12 +12,12 @@ export default function HowItWorks() {
         </div>
 
         <div className="relative">
-          <div className="absolute left-8 top-8 bottom-8 w-px bg-emerald-200 hidden sm:block" />
+          <div className="absolute left-8 top-8 bottom-8 w-px bg-violet-200 hidden sm:block" />
 
           <div className="space-y-8">
             {steps.map((step, i) => (
               <div key={i} className="flex gap-6 items-start">
-                <div className="relative flex-shrink-0 w-16 h-16 rounded-2xl bg-emerald-500 flex items-center justify-center shadow-md">
+                <div className="relative flex-shrink-0 w-16 h-16 rounded-2xl bg-violet-500 flex items-center justify-center shadow-md">
                   <span className="text-white font-extrabold text-lg">{step.number}</span>
                 </div>
                 <div className="pt-3">

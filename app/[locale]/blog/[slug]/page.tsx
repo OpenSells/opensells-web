@@ -97,13 +97,13 @@ export default async function BlogPostPage({ params }: Props) {
               prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3
               prose-p:text-slate-600 prose-p:leading-relaxed
               prose-li:text-slate-600
-              prose-a:text-emerald-600 prose-a:no-underline hover:prose-a:underline
+              prose-a:text-violet-600 prose-a:no-underline hover:prose-a:underline
               prose-strong:text-slate-800"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
           {/* CTA */}
-          <div className="mt-14 rounded-2xl bg-emerald-50 border border-emerald-100 p-8 text-center">
+          <div className="mt-14 rounded-2xl bg-violet-50 border border-violet-100 p-8 text-center">
             <p className="text-lg font-bold text-slate-900 mb-2">
               {locale === 'es' ? '¿Listo para conseguir tus primeros leads?' : 'Ready to get your first leads?'}
             </p>
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
             </p>
             <Link
               href={`${appUrl}/register`}
-              className="inline-flex h-11 items-center rounded-xl bg-emerald-500 px-8 text-sm font-bold text-white hover:bg-emerald-600 transition-colors"
+              className="inline-flex h-11 items-center rounded-xl bg-violet-500 px-8 text-sm font-bold text-white hover:bg-violet-600 transition-colors"
             >
               {locale === 'es' ? 'Empieza gratis' : 'Start free'}
             </Link>

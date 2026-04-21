@@ -48,7 +48,7 @@ export default async function BlogPage({ params }: Props) {
                 <Link
                   key={post.slug}
                   href={`${prefix}/blog/${post.slug}`}
-                  className="group block rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm hover:border-emerald-200 hover:shadow-md transition-all"
+                  className="group block rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm hover:border-violet-200 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center gap-2 text-xs text-slate-400 mb-3">
                     <time dateTime={post.date}>
@@ -57,11 +57,11 @@ export default async function BlogPage({ params }: Props) {
                     <span>·</span>
                     <span>{post.readTime}</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors mb-3">
+                  <h2 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-violet-600 transition-colors mb-3">
                     {post.title}
                   </h2>
                   <p className="text-slate-500 leading-relaxed">{post.description}</p>
-                  <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-emerald-600">
+                  <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-violet-600">
                     {locale === 'es' ? 'Leer artículo' : 'Read article'}
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

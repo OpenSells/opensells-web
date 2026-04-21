@@ -22,7 +22,7 @@ export default function Navbar({ locale }: { locale: string }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           <Link href={locale === 'en' ? '/en' : '/'} className="flex items-center gap-2">
-            <span className="text-xl font-bold text-slate-900">Open<span className="text-emerald-500">Sells</span></span>
+            <span className="text-xl font-bold text-slate-900">Open<span className="text-violet-500">Sells</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
@@ -47,7 +47,7 @@ export default function Navbar({ locale }: { locale: string }) {
             </Link>
             <Link
               href={`${appUrl}/register`}
-              className="inline-flex h-9 items-center rounded-xl bg-emerald-500 px-4 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 transition"
+              className="inline-flex h-9 items-center rounded-xl bg-violet-500 px-4 text-sm font-semibold text-white shadow-sm hover:bg-violet-600 transition"
             >
               {t('cta')}
             </Link>
@@ -76,7 +76,7 @@ export default function Navbar({ locale }: { locale: string }) {
                 key={href}
                 href={href}
                 onClick={() => setMenuOpen(false)}
-                className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 rounded-lg"
+                className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-violet-600 rounded-lg"
               >
                 {label}
               </a>

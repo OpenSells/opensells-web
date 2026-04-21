@@ -10,7 +10,7 @@ export default function Footer({ locale }: { locale: string }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 sm:col-span-1">
-            <span className="text-xl font-extrabold text-white">Open<span className="text-emerald-400">Sells</span></span>
+            <span className="text-xl font-extrabold text-white">Open<span className="text-violet-400">Sells</span></span>
             <p className="mt-3 text-sm leading-relaxed">{t('tagline')}</p>
           </div>
 

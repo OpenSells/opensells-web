@@ -14,7 +14,7 @@ export default function Features() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
-            <div key={i} className="rounded-2xl border border-slate-100 bg-slate-50 p-6 hover:border-emerald-200 hover:bg-emerald-50/30 transition-colors">
+            <div key={i} className="rounded-2xl border border-slate-100 bg-slate-50 p-6 hover:border-violet-200 hover:bg-violet-50/30 transition-colors">
               <div className="text-3xl mb-4">{item.icon}</div>
               <h3 className="text-base font-bold text-slate-900 mb-2">{item.title}</h3>
               <p className="text-sm text-slate-600 leading-relaxed">{item.description}</p>
