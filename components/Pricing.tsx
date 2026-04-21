@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
@@ -8,43 +7,30 @@ type Plan = {
   key: string;
   name: string;
   price_monthly: string;
-  price_yearly: string;
   description: string;
   features: string[];
   cta: string;
 };
 
+const DISCOUNT = 0.5;
+
 export default function Pricing() {
   const t = useTranslations('pricing');
-  const [yearly, setYearly] = useState(false);
   const plans = t.raw('plans') as Plan[];
   const appUrl = 'https://app.opensells.com';
 
   return (
     <section id="pricing" className="py-20 sm:py-28 bg-slate-50">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">{t('title')}</h2>
           <p className="mt-3 text-lg text-slate-500">{t('subtitle')}</p>
         </div>
 
-        <div className="flex items-center justify-center gap-3 mb-12">
-          <span className={`text-sm font-semibold ${!yearly ? 'text-slate-900' : 'text-slate-400'}`}>{t('toggle_monthly')}</span>
-          <button
-            onClick={() => setYearly(!yearly)}
-            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${yearly ? 'bg-emerald-500' : 'bg-slate-300'}`}
-          >
-            <span className={`inline-block h-4 w-4 rounded-full bg-white shadow transition-transform ${yearly ? 'translate-x-6' : 'translate-x-1'}`} />
-          </button>
-          <span className={`text-sm font-semibold ${yearly ? 'text-slate-900' : 'text-slate-400'}`}>
-            {t('toggle_yearly')}
-            <span className="ml-2 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5">{t('save_badge')}</span>
-          </span>
-        </div>
-
         <div className="grid gap-6 sm:grid-cols-3">
           {plans.map((plan) => {
-            const price = yearly ? plan.price_yearly : plan.price_monthly;
+            const originalPrice = parseFloat(plan.price_monthly);
+            const discountedPrice = Math.round(originalPrice * DISCOUNT * 100) / 100;
             const isFree = plan.key === 'free';
             const isPopular = plan.key === 'profesional';
 
@@ -54,7 +40,7 @@ export default function Pricing() {
                 className={`relative rounded-2xl p-6 flex flex-col ${isPopular ? 'bg-emerald-500 text-white shadow-xl ring-2 ring-emerald-500' : 'bg-white border border-slate-200 shadow-sm'}`}
               >
                 {isPopular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-4 py-1 text-xs font-bold text-amber-900">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-4 py-1 text-xs font-bold text-amber-900 whitespace-nowrap">
                     {t('popular')}
                   </div>
                 )}
@@ -62,10 +48,27 @@ export default function Pricing() {
                 <div className="mb-6">
                   <h3 className={`text-lg font-bold mb-1 ${isPopular ? 'text-white' : 'text-slate-900'}`}>{plan.name}</h3>
                   <p className={`text-xs mb-4 ${isPopular ? 'text-emerald-100' : 'text-slate-400'}`}>{plan.description}</p>
-                  <div className="flex items-end gap-1">
-                    <span className={`text-4xl font-extrabold ${isPopular ? 'text-white' : 'text-slate-900'}`}>€{price}</span>
-                    <span className={`text-sm mb-1 ${isPopular ? 'text-emerald-100' : 'text-slate-400'}`}>{t('per_month')}</span>
-                  </div>
+
+                  {isFree ? (
+                    <div className="flex items-end gap-1">
+                      <span className={`text-4xl font-extrabold ${isPopular ? 'text-white' : 'text-slate-900'}`}>€0</span>
+                      <span className={`text-sm mb-1 ${isPopular ? 'text-emerald-100' : 'text-slate-400'}`}>{t('per_month')}</span>
+                    </div>
+                  ) : (
+                    <div>
+                      <div className="flex items-baseline gap-2 mb-1">
+                        <span className={`text-4xl font-extrabold ${isPopular ? 'text-white' : 'text-slate-900'}`}>
+                          €{discountedPrice}
+                        </span>
+                        <span className={`text-sm line-through ${isPopular ? 'text-emerald-200' : 'text-slate-400'}`}>
+                          €{originalPrice}
+                        </span>
+                      </div>
+                      <p className={`text-xs font-semibold ${isPopular ? 'text-emerald-100' : 'text-emerald-600'}`}>
+                        primer mes · luego €{originalPrice}{t('per_month')}
+                      </p>
+                    </div>
+                  )}
                 </div>
 
                 <ul className="space-y-2.5 flex-1 mb-8">
@@ -96,8 +99,7 @@ export default function Pricing() {
           })}
         </div>
 
-        <p className="mt-8 text-center text-sm text-slate-500">{t('discount_note')}</p>
-        <p className="mt-2 text-center text-xs text-slate-400">{t('no_card')}</p>
+        <p className="mt-8 text-center text-xs text-slate-400">{t('no_card')}</p>
       </div>
     </section>
   );
