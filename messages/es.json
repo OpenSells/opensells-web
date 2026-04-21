@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "title": "OpenSells | Generación de Leads B2B y Prospección Automatizada",
+    "description": "Genera leads B2B verificados, envía cold emails personalizados y automatiza tu prospección comercial. Para freelancers y agencias en España.",
+    "ogTitle": "OpenSells — Automatiza tu Prospección B2B",
+    "ogDescription": "Encuentra leads verificados y envía secuencias de email personalizadas con IA. Empieza gratis."
+  },
+  "nav": {
+    "features": "Funcionalidades",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "login": "Entrar",
+    "cta": "Empieza gratis"
+  },
+  "hero": {
+    "badge": "Nuevo: Generación de emails con IA",
+    "headline": "Genera Leads B2B y Automatiza tu Prospección",
+    "subheadline": "Encuentra contactos verificados, envía secuencias de email personalizadas y cierra más deals. Sin trabajo manual.",
+    "cta_primary": "Empieza gratis",
+    "cta_secondary": "Ver cómo funciona",
+    "social_proof": "Usado por +500 empresas y freelancers en España",
+    "no_card": "Sin tarjeta de crédito"
+  },
+  "problem": {
+    "title": "La prospección B2B manual no escala",
+    "items": [
+      {
+        "icon": "⏱️",
+        "text": "15+ horas semanales buscando contactos y escribiendo emails a mano"
+      },
+      {
+        "icon": "📉",
+        "text": "Tasa de respuesta baja por falta de personalización real"
+      },
+      {
+        "icon": "🔄",
+        "text": "Imposible escalar sin un sistema automatizado que funcione"
+      }
+    ]
+  },
+  "features": {
+    "title": "Todo lo que necesitas para prospectar a escala",
+    "subtitle": "Sin cambiar tus herramientas actuales. Sin curvas de aprendizaje.",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "Base de datos B2B verificada",
+        "description": "Encuentra empresas y contactos verificados en segundos. Sin listas desactualizadas ni emails rebotados."
+      },
+      {
+        "icon": "✍️",
+        "title": "Emails generados con IA",
+        "description": "La IA lee el sitio web del lead y redacta un email personalizado en su contexto. No hay dos emails iguales."
+      },
+      {
+        "icon": "📧",
+        "title": "Secuencias automatizadas",
+        "description": "Configura hasta 4 emails de seguimiento automático. El sistema para cuando llega la respuesta."
+      },
+      {
+        "icon": "🔍",
+        "title": "Búsqueda por nicho y ciudad",
+        "description": "Busca leads por sector, ciudad y palabras clave. Resultados específicos para tu mercado objetivo."
+      },
+      {
+        "icon": "📊",
+        "title": "Seguimiento de resultados",
+        "description": "Ve qué emails funcionan, qué leads respondieron y cuántos has contactado. Todo en un panel claro."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Exportación CSV sin límite",
+        "description": "Exporta tus leads a cualquier CRM o herramienta. Tus datos son tuyos, sin restricciones."
+      }
+    ]
+  },
+  "how": {
+    "title": "De cero a leads en 3 pasos",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Define tu nicho y ciudad",
+        "description": "Escribe el sector que te interesa y la ciudad. OpenSells busca empresas reales con emails verificados."
+      },
+      {
+        "number": "02",
+        "title": "Revisa tus leads",
+        "description": "Recibe una lista de empresas con nombre, dominio, email y teléfono. Filtra los que más te interesan."
+      },
+      {
+        "number": "03",
+        "title": "Envía con IA personalizada",
+        "description": "La IA genera un email único para cada lead basándose en su web. Ábrelo en Gmail u Outlook con un clic."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Empresas y freelancers que ya escalan su prospección",
+    "items": [
+      {
+        "quote": "En menos de una semana tenía 80 leads cualificados de marketing digital en Madrid. Nunca había encontrado tantos contactos verificados tan rápido.",
+        "name": "Carlos M.",
+        "role": "Consultor de Marketing Digital",
+        "location": "Madrid"
+      },
+      {
+        "quote": "Los emails que genera la IA se leen como si los hubieras escrito tú. Mi tasa de respuesta ha subido notablemente desde que uso OpenSells.",
+        "name": "Laura P.",
+        "role": "Freelance SEO",
+        "location": "Barcelona"
+      },
+      {
+        "quote": "Para nuestra agencia, OpenSells ha reemplazado 3 herramientas distintas. Busca leads, genera emails y hacemos seguimiento todo desde el mismo sitio.",
+        "name": "David R.",
+        "role": "Director de Agencia",
+        "location": "Valencia"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "subtitle": "Empieza gratis. Escala cuando lo necesites.",
+    "toggle_monthly": "Mensual",
+    "toggle_yearly": "Anual",
+    "save_badge": "Ahorra 20%",
+    "popular": "Más popular",
+    "cta_free": "Empezar gratis",
+    "cta_paid": "Empezar ahora",
+    "per_month": "/mes",
+    "no_card": "Sin tarjeta de crédito",
+    "plans": [
+      {
+        "key": "free",
+        "name": "Gratis",
+        "price_monthly": "0",
+        "price_yearly": "0",
+        "description": "Para descubrir el potencial de OpenSells",
+        "features": [
+          "2 búsquedas al mes",
+          "Leads ilimitados por búsqueda",
+          "5 borradores de email con IA",
+          "3 tareas activas",
+          "Panel de gestión de leads"
+        ],
+        "cta": "Empezar gratis"
+      },
+      {
+        "key": "profesional",
+        "name": "Profesional",
+        "price_monthly": "29",
+        "price_yearly": "23",
+        "description": "Para freelancers y consultores en crecimiento",
+        "features": [
+          "500 leads al mes",
+          "Búsquedas ilimitadas",
+          "100 borradores de email con IA",
+          "40 tareas activas",
+          "Exportación CSV ilimitada",
+          "30 mensajes de IA al día",
+          "Soporte prioritario"
+        ],
+        "cta": "Empezar ahora"
+      },
+      {
+        "key": "agencia",
+        "name": "Agencia",
+        "price_monthly": "69",
+        "price_yearly": "55",
+        "description": "Para agencias y equipos de ventas",
+        "features": [
+          "1.000 leads al mes",
+          "Búsquedas ilimitadas",
+          "300 borradores de email con IA",
+          "100 tareas activas",
+          "Exportación CSV ilimitada",
+          "100 mensajes de IA al día",
+          "Prioridad máxima en cola",
+          "Soporte prioritario"
+        ],
+        "cta": "Empezar ahora"
+      }
+    ],
+    "discount_note": "🎉 Primer mes al 50% de descuento en planes de pago"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Qué diferencia hay entre el plan Gratis y el Profesional?",
+        "a": "El plan Gratis te permite hacer 2 búsquedas al mes y generar 5 emails con IA para probar la plataforma. El plan Profesional incluye 500 leads mensuales, 100 emails con IA, exportación CSV ilimitada y acceso completo a todas las funciones."
+      },
+      {
+        "q": "¿Los leads tienen emails verificados?",
+        "a": "Sí. OpenSells obtiene los emails directamente de las webs de las empresas y los verifica antes de mostrártelos. Además, la IA personaliza cada email basándose en el contenido real del sitio web del lead."
+      },
+      {
+        "q": "¿Es legal hacer cold email en España?",
+        "a": "Sí, el cold email B2B dirigido a empresas es legal en España bajo la LSSI y compatible con el RGPD cuando se realiza con legítimo interés comercial. OpenSells está diseñado para uso B2B profesional."
+      },
+      {
+        "q": "¿Mis emails llegarán al spam?",
+        "a": "OpenSells genera borradores que abres tú en Gmail u Outlook con tu propia cuenta. Esto garantiza que la reputación de tu dominio sea la que determina la entregabilidad, no la nuestra."
+      },
+      {
+        "q": "¿Puedo cambiar de plan en cualquier momento?",
+        "a": "Sí. Puedes subir o bajar de plan cuando quieras desde tu panel de usuario. Los cambios se aplican al siguiente período de facturación."
+      },
+      {
+        "q": "¿Qué pasa con mis datos si cancelo?",
+        "a": "Tus datos son tuyos. Puedes exportar todos tus leads en CSV antes de cancelar. Conservamos tu historial durante 30 días tras la cancelación por si cambias de opinión."
+      },
+      {
+        "q": "¿Cuánto tiempo tarda en verse resultados?",
+        "a": "La mayoría de usuarios obtienen su primera lista de leads en menos de 5 minutos. Las primeras respuestas a emails suelen llegar entre 3 y 7 días después del primer envío."
+      },
+      {
+        "q": "¿Funciona para cualquier sector o ciudad de España?",
+        "a": "Sí. OpenSells busca en toda España por sector y ciudad. Funciona especialmente bien para nichos de servicios profesionales: marketing, diseño, consultoría, tecnología, inmobiliaria y más."
+      }
+    ]
+  },
+  "blog_preview": {
+    "title": "Recursos para prospectar mejor",
+    "subtitle": "Guías y estrategias para generar más leads y cerrar más deals.",
+    "cta": "Ver todos los artículos",
+    "posts": [
+      {
+        "slug": "guia-cold-email-espana-2025",
+        "title": "Guía completa de cold email B2B en España 2025",
+        "excerpt": "Todo lo que necesitas saber para hacer prospección por email de forma efectiva y legal en el mercado español.",
+        "date": "2025-04-15",
+        "readTime": "8 min"
+      },
+      {
+        "slug": "como-generar-leads-b2b-freelance",
+        "title": "Cómo generar leads B2B siendo freelance",
+        "excerpt": "Estrategias prácticas para que los freelancers encuentren clientes B2B sin depender de plataformas o recomendaciones.",
+        "date": "2025-04-08",
+        "readTime": "6 min"
+      },
+      {
+        "slug": "tasa-respuesta-cold-email",
+        "title": "Cómo mejorar tu tasa de respuesta en cold email",
+        "excerpt": "Los 7 factores que más impactan en que tu prospecto responda a tu primer email.",
+        "date": "2025-04-01",
+        "readTime": "5 min"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Prospección B2B automatizada para freelancers y agencias.",
+    "product": "Producto",
+    "company": "Empresa",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "links": {
+      "features": "Funcionalidades",
+      "pricing": "Precios",
+      "blog": "Blog",
+      "about": "Sobre nosotros",
+      "contact": "Contacto",
+      "privacy": "Privacidad",
+      "terms": "Términos de uso",
+      "cookies": "Cookies"
+    },
+    "copyright": "© 2025 OpenSells. Todos los derechos reservados."
+  }
+}

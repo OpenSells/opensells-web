@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "title": "OpenSells | B2B Lead Generation & Automated Prospecting",
+    "description": "Find verified B2B leads, send AI-personalized cold emails and automate your sales prospecting. For freelancers and agencies.",
+    "ogTitle": "OpenSells — Automate Your B2B Prospecting",
+    "ogDescription": "Find verified leads and send AI-personalized email sequences. Start free."
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "login": "Log in",
+    "cta": "Start free"
+  },
+  "hero": {
+    "badge": "New: AI-powered email generation",
+    "headline": "Generate B2B Leads and Automate Your Prospecting",
+    "subheadline": "Find verified contacts, send AI-personalized email sequences and close more deals. No manual work.",
+    "cta_primary": "Start free",
+    "cta_secondary": "See how it works",
+    "social_proof": "Used by 500+ businesses and freelancers",
+    "no_card": "No credit card required"
+  },
+  "problem": {
+    "title": "Manual B2B prospecting doesn't scale",
+    "items": [
+      {
+        "icon": "⏱️",
+        "text": "15+ hours per week finding contacts and writing emails manually"
+      },
+      {
+        "icon": "📉",
+        "text": "Low reply rates due to generic, non-personalized outreach"
+      },
+      {
+        "icon": "🔄",
+        "text": "Impossible to scale without an automated system that actually works"
+      }
+    ]
+  },
+  "features": {
+    "title": "Everything you need to prospect at scale",
+    "subtitle": "No tool switching. No learning curve.",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "Verified B2B database",
+        "description": "Find companies and verified contacts in seconds. No outdated lists or bounced emails."
+      },
+      {
+        "icon": "✍️",
+        "title": "AI-generated emails",
+        "description": "AI reads the lead's website and writes a personalized email in their context. No two emails are the same."
+      },
+      {
+        "icon": "📧",
+        "title": "Automated sequences",
+        "description": "Set up to 4 automatic follow-up emails. The system stops when a reply comes in."
+      },
+      {
+        "icon": "🔍",
+        "title": "Search by niche and city",
+        "description": "Find leads by industry, city and keywords. Specific results for your target market."
+      },
+      {
+        "icon": "📊",
+        "title": "Results tracking",
+        "description": "See which emails work, which leads replied and how many you've contacted. All in a clear dashboard."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Unlimited CSV export",
+        "description": "Export your leads to any CRM or tool. Your data is yours, with no restrictions."
+      }
+    ]
+  },
+  "how": {
+    "title": "From zero to leads in 3 steps",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Define your niche and city",
+        "description": "Enter the industry you're targeting and the city. OpenSells finds real companies with verified emails."
+      },
+      {
+        "number": "02",
+        "title": "Review your leads",
+        "description": "Get a list of companies with name, domain, email and phone. Filter the ones you're most interested in."
+      },
+      {
+        "number": "03",
+        "title": "Send with AI personalization",
+        "description": "AI generates a unique email for each lead based on their website. Open it in Gmail or Outlook with one click."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Businesses and freelancers already scaling their prospecting",
+    "items": [
+      {
+        "quote": "In less than a week I had 80 qualified digital marketing leads in Madrid. I had never found so many verified contacts so quickly.",
+        "name": "Carlos M.",
+        "role": "Digital Marketing Consultant",
+        "location": "Madrid"
+      },
+      {
+        "quote": "The emails the AI generates read like you wrote them yourself. My reply rate has improved significantly since I started using OpenSells.",
+        "name": "Laura P.",
+        "role": "Freelance SEO",
+        "location": "Barcelona"
+      },
+      {
+        "quote": "For our agency, OpenSells replaced 3 different tools. We find leads, generate emails and track everything from one place.",
+        "name": "David R.",
+        "role": "Agency Director",
+        "location": "Valencia"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "Start free. Scale when you need it.",
+    "toggle_monthly": "Monthly",
+    "toggle_yearly": "Yearly",
+    "save_badge": "Save 20%",
+    "popular": "Most popular",
+    "cta_free": "Start free",
+    "cta_paid": "Get started",
+    "per_month": "/mo",
+    "no_card": "No credit card required",
+    "plans": [
+      {
+        "key": "free",
+        "name": "Free",
+        "price_monthly": "0",
+        "price_yearly": "0",
+        "description": "To discover OpenSells' potential",
+        "features": [
+          "2 searches per month",
+          "Unlimited leads per search",
+          "5 AI email drafts",
+          "3 active tasks",
+          "Lead management dashboard"
+        ],
+        "cta": "Start free"
+      },
+      {
+        "key": "profesional",
+        "name": "Professional",
+        "price_monthly": "29",
+        "price_yearly": "23",
+        "description": "For freelancers and growing consultants",
+        "features": [
+          "500 leads per month",
+          "Unlimited searches",
+          "100 AI email drafts",
+          "40 active tasks",
+          "Unlimited CSV export",
+          "30 AI messages per day",
+          "Priority support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "key": "agencia",
+        "name": "Agency",
+        "price_monthly": "69",
+        "price_yearly": "55",
+        "description": "For agencies and sales teams",
+        "features": [
+          "1,000 leads per month",
+          "Unlimited searches",
+          "300 AI email drafts",
+          "100 active tasks",
+          "Unlimited CSV export",
+          "100 AI messages per day",
+          "Top queue priority",
+          "Priority support"
+        ],
+        "cta": "Get started"
+      }
+    ],
+    "discount_note": "🎉 50% off your first month on paid plans"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What's the difference between Free and Professional?",
+        "a": "The Free plan lets you run 2 searches per month and generate 5 AI emails to try the platform. The Professional plan includes 500 monthly leads, 100 AI emails, unlimited CSV export and full access to all features."
+      },
+      {
+        "q": "Are the leads' emails verified?",
+        "a": "Yes. OpenSells fetches emails directly from company websites and verifies them before showing them to you. The AI also personalizes each email based on the real content of the lead's website."
+      },
+      {
+        "q": "Is cold email legal?",
+        "a": "Yes, B2B cold email targeting businesses is legal and compatible with GDPR when done with legitimate commercial interest. OpenSells is designed for professional B2B use."
+      },
+      {
+        "q": "Will my emails land in spam?",
+        "a": "OpenSells generates drafts that you open in your own Gmail or Outlook account. This ensures your domain's reputation determines deliverability, not ours."
+      },
+      {
+        "q": "Can I change plans at any time?",
+        "a": "Yes. You can upgrade or downgrade whenever you want from your user dashboard. Changes take effect from the next billing period."
+      },
+      {
+        "q": "What happens to my data if I cancel?",
+        "a": "Your data is yours. You can export all your leads as CSV before cancelling. We keep your history for 30 days after cancellation in case you change your mind."
+      },
+      {
+        "q": "How quickly can I see results?",
+        "a": "Most users get their first lead list in under 5 minutes. The first email replies typically arrive 3 to 7 days after the first send."
+      },
+      {
+        "q": "Does it work for any industry or city?",
+        "a": "Yes. OpenSells searches across your target market by industry and city. It works especially well for professional services: marketing, design, consulting, tech, real estate and more."
+      }
+    ]
+  },
+  "blog_preview": {
+    "title": "Resources to prospect better",
+    "subtitle": "Guides and strategies to generate more leads and close more deals.",
+    "cta": "View all posts",
+    "posts": [
+      {
+        "slug": "cold-email-b2b-guide-2025",
+        "title": "The complete B2B cold email guide for 2025",
+        "excerpt": "Everything you need to know to do effective email prospecting in today's market.",
+        "date": "2025-04-15",
+        "readTime": "8 min"
+      },
+      {
+        "slug": "how-to-generate-b2b-leads-freelance",
+        "title": "How to generate B2B leads as a freelancer",
+        "excerpt": "Practical strategies for freelancers to find B2B clients without relying on platforms or referrals.",
+        "date": "2025-04-08",
+        "readTime": "6 min"
+      },
+      {
+        "slug": "improve-cold-email-reply-rate",
+        "title": "How to improve your cold email reply rate",
+        "excerpt": "The 7 factors that most impact whether your prospect replies to your first email.",
+        "date": "2025-04-01",
+        "readTime": "5 min"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Automated B2B prospecting for freelancers and agencies.",
+    "product": "Product",
+    "company": "Company",
+    "resources": "Resources",
+    "legal": "Legal",
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "about": "About us",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms of use",
+      "cookies": "Cookies"
+    },
+    "copyright": "© 2025 OpenSells. All rights reserved."
+  }
+}
