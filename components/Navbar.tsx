@@ -108,7 +108,7 @@ export default function Navbar({ locale }: { locale: string }) {
                 onClick={() => router.replace(pathname, { locale: otherLocale })}
                 className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 border border-slate-200 rounded-md px-2 py-1"
               >
-                <span className="text-base leading-none">{FLAGS[otherLocale]}</span>
+                {FLAG_COMPONENTS[otherLocale]?.()}
                 <span className="uppercase">{LABELS[otherLocale]}</span>
               </button>
               <Link href={`${appUrl}/login`} className="text-sm text-slate-600 font-medium">{t('login')}</Link>
