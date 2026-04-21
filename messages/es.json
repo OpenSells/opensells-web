@@ -225,25 +225,25 @@
     "cta": "Ver todos los artículos",
     "posts": [
       {
-        "slug": "guia-cold-email-espana-2025",
-        "title": "Guía completa de cold email B2B en España 2025",
-        "excerpt": "Todo lo que necesitas saber para hacer prospección por email de forma efectiva y legal en el mercado español.",
-        "date": "2025-04-15",
+        "slug": "como-conseguir-clientes-b2b",
+        "title": "Cómo conseguir clientes B2B: guía definitiva 2025",
+        "excerpt": "Los 6 canales más efectivos para conseguir clientes B2B en 2025, con estrategias concretas para cada uno.",
+        "date": "2025-04-22",
+        "readTime": "10 min"
+      },
+      {
+        "slug": "alternativas-hunter-io-apollo",
+        "title": "Mejores alternativas a Hunter.io y Apollo.io en español",
+        "excerpt": "Comparativa honesta para el mercado español y latinoamericano. Cuál elegir según tu caso de uso.",
+        "date": "2025-04-18",
+        "readTime": "7 min"
+      },
+      {
+        "slug": "herramientas-prospeccion-comercial-espana",
+        "title": "Las 7 mejores herramientas de prospección comercial en España",
+        "excerpt": "Comparativa con precios, ventajas y casos de uso reales para el mercado español en 2025.",
+        "date": "2025-04-16",
         "readTime": "8 min"
-      },
-      {
-        "slug": "como-generar-leads-b2b-freelance",
-        "title": "Cómo generar leads B2B siendo freelance",
-        "excerpt": "Estrategias prácticas para que los freelancers encuentren clientes B2B sin depender de plataformas o recomendaciones.",
-        "date": "2025-04-08",
-        "readTime": "6 min"
-      },
-      {
-        "slug": "tasa-respuesta-cold-email",
-        "title": "Cómo mejorar tu tasa de respuesta en cold email",
-        "excerpt": "Los 7 factores que más impactan en que tu prospecto responda a tu primer email.",
-        "date": "2025-04-01",
-        "readTime": "5 min"
       }
     ]
   },
