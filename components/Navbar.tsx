@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from '@/i18n/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -16,9 +16,6 @@ export default function Navbar({ locale }: { locale: string }) {
 
   const appUrl = 'https://app.opensells.com';
   const otherLocale = locale === 'es' ? 'en' : 'es';
-  const switchPath = locale === 'es'
-    ? `/en${pathname}`
-    : pathname.replace(/^\/en/, '') || '/';
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
@@ -36,7 +33,7 @@ export default function Navbar({ locale }: { locale: string }) {
 
           <div className="flex items-center gap-3">
             <button
-              onClick={() => router.push(switchPath)}
+              onClick={() => router.replace(pathname, { locale: otherLocale })}
               className="hidden sm:flex h-8 items-center gap-1.5 rounded-md border border-slate-200 px-2.5 text-xs font-semibold text-slate-500 hover:bg-slate-50 transition"
             >
               <span className="text-base leading-none">{FLAGS[otherLocale]}</span>
@@ -86,7 +83,7 @@ export default function Navbar({ locale }: { locale: string }) {
             ))}
             <div className="pt-2 flex items-center gap-3 px-2">
               <button
-                onClick={() => router.push(switchPath)}
+                onClick={() => router.replace(pathname, { locale: otherLocale })}
                 className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 border border-slate-200 rounded-md px-2 py-1"
               >
                 <span className="text-base leading-none">{FLAGS[otherLocale]}</span>
