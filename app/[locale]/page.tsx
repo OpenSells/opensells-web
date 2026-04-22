@@ -9,6 +9,7 @@ import Testimonials from '@/components/Testimonials';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import BlogPreview from '@/components/BlogPreview';
+import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -45,6 +46,7 @@ export default async function HomePage({ params }: Props) {
         <Testimonials />
         <Pricing />
         <FAQ />
+        <FinalCTA />
         <BlogPreview locale={locale} />
       </main>
       <Footer locale={locale} />

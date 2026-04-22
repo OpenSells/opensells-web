@@ -54,19 +54,15 @@ export default function Hero({ locale }: { locale: string }) {
           </a>
         </div>
 
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-slate-400">
-          <span className="flex items-center gap-1.5">
-            <svg className="h-4 w-4 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-            </svg>
-            {t('social_proof')}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <svg className="h-4 w-4 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-            </svg>
-            {t('no_card')}
-          </span>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
+          {[t('trust_1'), t('trust_2'), t('trust_3')].map((trust, i) => (
+            <span key={i} className="flex items-center gap-1.5">
+              <svg className="h-4 w-4 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              {trust}
+            </span>
+          ))}
         </div>
 
         {/* Dashboard mockup */}

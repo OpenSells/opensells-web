@@ -18,23 +18,30 @@
     "subheadline": "Find verified contacts, send AI-personalized email sequences and close more deals. No manual work.",
     "cta_primary": "Start free",
     "cta_secondary": "See how it works",
-    "social_proof": "Used by 500+ businesses and freelancers",
-    "no_card": "No credit card required"
+    "social_proof": "No credit card required · Cancel anytime",
+    "no_card": "7-day money-back guarantee",
+    "trust_1": "No credit card",
+    "trust_2": "7-day guarantee",
+    "trust_3": "Cancel anytime"
   },
   "problem": {
-    "title": "Manual B2B prospecting doesn't scale",
+    "title": "How many clients are you losing because you don't have time to prospect?",
+    "subtitle": "Most freelancers and agencies waste 15-20 hours a week on tasks a tool can do in minutes.",
     "items": [
       {
         "icon": "⏱️",
-        "text": "15+ hours per week finding contacts and writing emails manually"
+        "title": "15 hours wasted every week",
+        "text": "Searching Google, copying emails manually, writing the same message with small variations. Hour after hour. No guaranteed results."
       },
       {
         "icon": "📉",
-        "text": "Low reply rates due to generic, non-personalized outreach"
+        "title": "Generic emails nobody reads",
+        "text": "\"Hi, I'm X and I offer Y\" doesn't work. Without real personalization, your email goes straight to the trash. The problem isn't you — it's the process."
       },
       {
         "icon": "🔄",
-        "text": "Impossible to scale without an automated system that actually works"
+        "title": "No system, no scale",
+        "text": "If you rely on referrals or LinkedIn to get clients, your business isn't growing — it's surviving. Manual prospecting has a very low ceiling."
       }
     ]
   },
@@ -246,6 +253,21 @@
         "readTime": "8 min"
       }
     ]
+  },
+  "finalcta": {
+    "title": "The easiest decision you'll make this week",
+    "subtitle": "Start free today. No card required. If you don't see the value in 7 days, we'll refund you — no questions asked.",
+    "value_title": "What you get today:",
+    "values": [
+      "Immediate access to thousands of verified leads",
+      "AI-personalized emails ready to send",
+      "Lead management dashboard and tracking",
+      "Unlimited CSV export of your data",
+      "Email support"
+    ],
+    "guarantee": "7-day money-back guarantee",
+    "cta": "Get my first leads free",
+    "sub": "No card · No commitment · Cancel anytime"
   },
   "footer": {
     "tagline": "Automated B2B prospecting for freelancers and agencies.",
