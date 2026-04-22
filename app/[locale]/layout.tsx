@@ -18,8 +18,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const canonical = locale === 'es' ? base : `${base}/en`;
 
   return {
-    title: t('title'),
+    title: { default: 'OpenSells', template: '%s | OpenSells' },
     description: t('description'),
+    icons: {
+      icon: '/favicon.svg',
+      shortcut: '/favicon.svg',
+    },
     alternates: {
       canonical,
       languages: { es: base, en: `${base}/en` },
