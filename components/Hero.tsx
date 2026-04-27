@@ -41,7 +41,7 @@ export default function Hero({ locale }: { locale: string }) {
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
-            href={`${appUrl}/register`}
+            href={`${appUrl}/login?tab=register`}
             className="inline-flex h-12 items-center rounded-xl bg-violet-500 px-8 text-base font-semibold text-white shadow-md hover:bg-violet-600 transition-colors"
           >
             {t('cta_primary')}

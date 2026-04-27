@@ -36,7 +36,7 @@ export default function FinalCTA() {
         </div>
 
         <Link
-          href={`${appUrl}/register`}
+          href={`${appUrl}/login?tab=register`}
           className="inline-flex h-14 items-center rounded-xl bg-violet-500 px-10 text-base font-bold text-white shadow-lg hover:bg-violet-600 transition-colors"
         >
           {t('cta')}

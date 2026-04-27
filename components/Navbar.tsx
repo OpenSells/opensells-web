@@ -68,7 +68,7 @@ export default function Navbar({ locale }: { locale: string }) {
               {t('login')}
             </Link>
             <Link
-              href={`${appUrl}/register`}
+              href={`${appUrl}/login?tab=register`}
               className="inline-flex h-9 items-center rounded-xl bg-violet-500 px-4 text-sm font-semibold text-white shadow-sm hover:bg-violet-600 transition"
             >
               {t('cta')}
