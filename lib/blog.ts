@@ -72,7 +72,7 @@ const posts: Post[] = [
 
 <h2>Conclusión</h2>
 <p>El cold email B2B en España es una de las formas más eficientes de conseguir clientes cuando se hace bien: con buena segmentación, personalización real y seguimiento sistemático. La tecnología actual, especialmente la IA, hace que lo que antes requería horas de trabajo manual pueda hacerse en minutos.</p>
-<p>Si quieres empezar hoy mismo, <a href="https://app.opensells.com/register">prueba OpenSells gratis</a> y consigue tus primeros leads verificados en menos de 5 minutos.</p>
+<p>Si quieres empezar hoy mismo, <a href="https://app.opensells.com/login?tab=register">prueba OpenSells gratis</a> y consigue tus primeros leads verificados en menos de 5 minutos.</p>
     `,
   },
   {
@@ -135,7 +135,7 @@ const posts: Post[] = [
 
 <h2>Conclusión: la prospección sistemática es el mayor diferenciador</h2>
 <p>Los freelancers que generan ingresos predecibles no tienen más talento, tienen mejores sistemas. Si dedicas 1-2 horas al día a prospección activa usando las herramientas adecuadas, puedes pasar de esperar clientes a elegirlos.</p>
-<p><a href="https://app.opensells.com/register">Prueba OpenSells gratis</a> y consigue tu primera lista de leads B2B verificados en menos de 5 minutos. Sin tarjeta de crédito.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Prueba OpenSells gratis</a> y consigue tu primera lista de leads B2B verificados en menos de 5 minutos. Sin tarjeta de crédito.</p>
     `,
   },
   {
@@ -205,7 +205,7 @@ const posts: Post[] = [
 
 <h2>Conclusión: la tasa de respuesta es una ecuación</h2>
 <p>Mejorar tu tasa de respuesta no es magia. Es trabajar cada uno de estos 7 factores de forma sistemática. Empieza por el que más rápido puedes mejorar: normalmente el asunto y la primera línea dan resultados en días.</p>
-<p>Si quieres automatizar la personalización y el seguimiento, <a href="https://app.opensells.com/register">prueba OpenSells gratis</a>. La IA se encarga de personalizar cada email basándose en la web del lead, para que tú solo tengas que revisar y enviar.</p>
+<p>Si quieres automatizar la personalización y el seguimiento, <a href="https://app.opensells.com/login?tab=register">prueba OpenSells gratis</a>. La IA se encarga de personalizar cada email basándose en la web del lead, para que tú solo tengas que revisar y enviar.</p>
     `,
   },
 
@@ -265,7 +265,7 @@ const posts: Post[] = [
 </ul>
 
 <h2>Conclusion</h2>
-<p>B2B cold email is one of the most efficient ways to acquire clients when done right: with good segmentation, real personalization, and systematic follow-up. If you want to start today, <a href="https://app.opensells.com/register">try OpenSells free</a> and get your first verified leads in under 5 minutes.</p>
+<p>B2B cold email is one of the most efficient ways to acquire clients when done right: with good segmentation, real personalization, and systematic follow-up. If you want to start today, <a href="https://app.opensells.com/login?tab=register">try OpenSells free</a> and get your first verified leads in under 5 minutes.</p>
     `,
   },
   {
@@ -309,7 +309,7 @@ const posts: Post[] = [
 
 <h2>Conclusion: systematic prospecting is the biggest differentiator</h2>
 <p>Freelancers who generate predictable revenue don't have more talent — they have better systems. If you dedicate 1-2 hours per day to active prospecting using the right tools, you can go from waiting for clients to choosing them.</p>
-<p><a href="https://app.opensells.com/register">Try OpenSells free</a> and get your first verified B2B lead list in under 5 minutes. No credit card required.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> and get your first verified B2B lead list in under 5 minutes. No credit card required.</p>
     `,
   },
   {
@@ -376,7 +376,7 @@ const posts: Post[] = [
 
 <h2>Conclusion</h2>
 <p>Improving your reply rate isn't magic. It's systematically working on each of these 7 factors. Start with the ones that give the fastest results: subject line and opening line typically show improvements within days.</p>
-<p>To automate personalization and follow-up, <a href="https://app.opensells.com/register">try OpenSells free</a>. The AI personalizes each email based on the lead's website, so you just review and send.</p>
+<p>To automate personalization and follow-up, <a href="https://app.opensells.com/login?tab=register">try OpenSells free</a>. The AI personalizes each email based on the lead's website, so you just review and send.</p>
     `,
   },
   // ─── NUEVOS ESPAÑOL ────────────────────────────────────────────────────────
@@ -462,7 +462,7 @@ const posts: Post[] = [
 
 <h2>Conclusión: la consistencia es la clave</h2>
 <p>Conseguir clientes B2B no es un evento, es un proceso. Los mejores resultados vienen de prospectar de forma constante, incluso cuando tienes trabajo. El pipeline de ventas tarda semanas en madurar, por eso quien para la prospección cuando tiene proyectos luego sufre los meses de sequía.</p>
-<p>Dedica al menos 1 hora al día a prospección activa y verás resultados en pocas semanas. <a href="https://app.opensells.com/register">Empieza gratis con OpenSells</a> y consigue tus primeros leads B2B verificados hoy mismo.</p>
+<p>Dedica al menos 1 hora al día a prospección activa y verás resultados en pocas semanas. <a href="https://app.opensells.com/login?tab=register">Empieza gratis con OpenSells</a> y consigue tus primeros leads B2B verificados hoy mismo.</p>
     `,
   },
   {
@@ -528,7 +528,7 @@ const posts: Post[] = [
 
 <h2>Conclusión</h2>
 <p>El cold email B2B es la forma más eficiente de conseguir clientes cuando no tienes presupuesto para publicidad y necesitas resultados predecibles. Bien hecho, no es spam: es una comunicación profesional relevante dirigida a personas que tienen un problema que tú puedes resolver.</p>
-<p><a href="https://app.opensells.com/register">Prueba OpenSells gratis</a> y envía tus primeros cold emails con IA en menos de 10 minutos.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Prueba OpenSells gratis</a> y envía tus primeros cold emails con IA en menos de 10 minutos.</p>
     `,
   },
   {
@@ -590,7 +590,7 @@ const posts: Post[] = [
 
 <h2>Conclusión</h2>
 <p>Si tu mercado principal es España o Latinoamérica, Hunter y Apollo tienen limitaciones reales de cobertura y no generan el email automáticamente. <strong>OpenSells</strong> está construido específicamente para el mercado hispanohablante, incluyendo la generación de emails personalizados con IA que los competidores no ofrecen.</p>
-<p><a href="https://app.opensells.com/register">Prueba OpenSells gratis</a> y compara por ti mismo con tu nicho y ciudad objetivo.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Prueba OpenSells gratis</a> y compara por ti mismo con tu nicho y ciudad objetivo.</p>
     `,
   },
   {
@@ -660,7 +660,7 @@ const posts: Post[] = [
 
 <h2>Conclusión</h2>
 <p>No existe una herramienta perfecta para todos los casos, pero para el mercado español en 2025, <strong>OpenSells</strong> ofrece la combinación más equilibrada de precio, cobertura local y automatización con IA. Si aún no la has probado, el plan gratuito te permite hacer 2 búsquedas al mes sin tarjeta de crédito.</p>
-<p><a href="https://app.opensells.com/register">Empieza gratis con OpenSells</a> y compara con lo que usas ahora.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Empieza gratis con OpenSells</a> y compara con lo que usas ahora.</p>
     `,
   },
 
@@ -752,7 +752,7 @@ const posts: Post[] = [
 
 <h2>Conclusion</h2>
 <p>Cold email outreach in 2025 is the most cost-effective B2B acquisition channel for freelancers and small agencies. The combination of AI personalization and systematic follow-up makes it possible to generate consistent pipeline without a sales team or advertising budget.</p>
-<p>Ready to start? <a href="https://app.opensells.com/register">Try OpenSells free</a> — find verified B2B leads and send AI-personalized cold emails in under 10 minutes.</p>
+<p>Ready to start? <a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> — find verified B2B leads and send AI-personalized cold emails in under 10 minutes.</p>
     `,
   },
   {
@@ -827,7 +827,7 @@ const posts: Post[] = [
 
 <h2>Conclusion</h2>
 <p>The "best" cold email software depends entirely on your market and use case. For businesses targeting Spanish-speaking markets, <strong>OpenSells</strong> provides the most complete solution at the lowest entry price, with AI personalization that genuinely moves the needle on reply rates.</p>
-<p><a href="https://app.opensells.com/register">Try OpenSells free</a> — no credit card required.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> — no credit card required.</p>
     `,
   },
   {
@@ -896,7 +896,7 @@ const posts: Post[] = [
 
 <h2>Conclusion</h2>
 <p>For teams prospecting outside the US — especially in Spain and Latin America — Hunter.io's database limitations make it a frustrating tool. <strong>OpenSells</strong> offers higher local accuracy plus AI email generation at a lower price point, making it the most practical Hunter alternative for Spanish-speaking markets.</p>
-<p><a href="https://app.opensells.com/register">Try OpenSells free</a> and see the difference in local market coverage.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> and see the difference in local market coverage.</p>
     `,
   },
   {
@@ -969,7 +969,7 @@ const posts: Post[] = [
 
 <h2>Conclusion</h2>
 <p>B2B lead generation doesn't require a big team or budget. It requires clarity on who you're targeting, consistency in execution and the right tools to scale your efforts.</p>
-<p>If you're starting or looking to grow faster without increasing headcount, cold email with AI personalization is your highest-leverage bet in 2025. <a href="https://app.opensells.com/register">Try OpenSells free</a> and build your first qualified lead list in under 5 minutes.</p>
+<p>If you're starting or looking to grow faster without increasing headcount, cold email with AI personalization is your highest-leverage bet in 2025. <a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> and build your first qualified lead list in under 5 minutes.</p>
     `,
   },
 ];
