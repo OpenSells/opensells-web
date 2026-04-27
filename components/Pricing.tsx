@@ -83,7 +83,7 @@ export default function Pricing() {
                 </ul>
 
                 <Link
-                  href={isFree ? `${appUrl}/register` : `${appUrl}/register?plan=${plan.key}`}
+                  href={isFree ? `${appUrl}/login?tab=register` : `${appUrl}/login?tab=register&plan=${plan.key}`}
                   className={`block text-center rounded-xl py-3 text-sm font-bold transition-colors ${
                     isPopular
                       ? 'bg-white text-violet-600 hover:bg-violet-50'

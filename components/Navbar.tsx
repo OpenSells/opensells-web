@@ -63,7 +63,7 @@ export default function Navbar({ locale }: { locale: string }) {
             </button>
             <Link
               href={`${appUrl}/login`}
-              className="hidden sm:inline text-sm font-medium text-slate-600 hover:text-slate-900 transition"
+              className="hidden sm:inline-flex h-9 items-center rounded-xl border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
             >
               {t('login')}
             </Link>
@@ -111,7 +111,7 @@ export default function Navbar({ locale }: { locale: string }) {
                 {FLAG_COMPONENTS[otherLocale]?.()}
                 <span className="uppercase">{LABELS[otherLocale]}</span>
               </button>
-              <Link href={`${appUrl}/login`} className="text-sm text-slate-600 font-medium">{t('login')}</Link>
+              <Link href={`${appUrl}/login`} className="inline-flex h-9 items-center rounded-xl border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition">{t('login')}</Link>
             </div>
           </div>
         )}
