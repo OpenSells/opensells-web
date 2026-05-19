@@ -10,6 +10,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEs = locale === 'es';
   return {
     title: isEs ? 'Política de Cookies | OpenSells' : 'Cookie Policy | OpenSells',
+    description: isEs
+      ? 'Política de cookies de OpenSells. Solo usamos cookies estrictamente necesarias para el funcionamiento de la plataforma.'
+      : 'OpenSells cookie policy. We only use strictly necessary cookies for the platform to function.',
     robots: { index: false },
   };
 }

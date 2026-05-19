@@ -51,19 +51,45 @@ export default async function BlogPostPage({ params }: Props) {
   const prefix = locale === 'en' ? '/en' : '';
   const appUrl = 'https://app.opensells.com';
 
+  const base = 'https://opensells.com';
+  const postUrl = locale === 'es' ? `${base}/blog/${slug}` : `${base}/en/blog/${slug}`;
+  const ogImageUrl = locale === 'es'
+    ? `${base}/blog/${slug}/opengraph-image`
+    : `${base}/en/blog/${slug}/opengraph-image`;
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.description,
+    url: postUrl,
+    image: ogImageUrl,
     datePublished: post.date,
-    author: { '@type': 'Organization', name: 'OpenSells' },
-    publisher: { '@type': 'Organization', name: 'OpenSells', url: 'https://opensells.com' },
+    dateModified: post.date,
+    author: { '@type': 'Organization', name: 'OpenSells', url: base },
+    publisher: {
+      '@type': 'Organization',
+      name: 'OpenSells',
+      url: base,
+      logo: { '@type': 'ImageObject', url: `${base}/favicon.svg` },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: locale === 'es' ? base : `${base}/en` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: locale === 'es' ? `${base}/blog` : `${base}/en/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: postUrl },
+    ],
   };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navbar locale={locale} />
       <main className="min-h-screen bg-white">
         <article className="mx-auto max-w-2xl px-4 sm:px-6 py-16 sm:py-20">

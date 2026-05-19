@@ -50,9 +50,35 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!routing.locales.includes(locale as 'es' | 'en')) notFound();
   setRequestLocale(locale);
 
+  const base = 'https://opensells.com';
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'OpenSells',
+    url: base,
+    description: 'Plataforma SaaS para generación de leads B2B con IA. Genera leads verificados y emails personalizados en segundos.',
+    inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${base}/blog?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'OpenSells',
+      url: base,
+      logo: { '@type': 'ImageObject', url: `${base}/favicon.svg` },
+      sameAs: ['https://app.opensells.com'],
+    },
+  };
+
   return (
     <html lang={locale} className="h-full antialiased scroll-smooth">
       <body className="min-h-full flex flex-col bg-white text-slate-900">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
