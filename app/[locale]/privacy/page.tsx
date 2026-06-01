@@ -24,7 +24,7 @@ export default async function PrivacyPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const isEs = locale === 'es';
-  const updated = '22 de abril de 2026';
+  const updated = '1 de junio de 2026';
 
   return (
     <>
@@ -66,21 +66,31 @@ export default async function PrivacyPage({ params }: Props) {
                 <h2>4. Conservación de los datos</h2>
                 <p>Conservamos tus datos mientras tu cuenta esté activa. Tras la cancelación, los eliminamos en un plazo máximo de 30 días, salvo que la ley exija conservarlos por más tiempo (p. ej., datos de facturación durante 5 años).</p>
 
-                <h2>5. Terceros y subencargados</h2>
+                <h2>5. Uso de la API de Gmail (Google)</h2>
+                <p>OpenSells permite a los usuarios conectar su cuenta de Gmail para enviar emails de prospección directamente desde la plataforma. El uso que hacemos del acceso a Gmail se limita estrictamente a:</p>
+                <ul>
+                  <li>Enviar emails en nombre del usuario únicamente cuando este lo solicita de forma explícita.</li>
+                  <li>Leer la dirección de email del usuario para identificar la cuenta conectada.</li>
+                </ul>
+                <p>OpenSells <strong>no lee, no almacena ni comparte</strong> el contenido de los emails ni ningún otro dato del buzón del usuario. El token de acceso a Gmail se almacena de forma cifrada y se usa exclusivamente para las funciones descritas. Puedes revocar el acceso en cualquier momento desde la <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">configuración de tu cuenta de Google</a>.</p>
+                <p>El uso que OpenSells hace de la información recibida a través de la API de Google cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Datos de Usuario de los Servicios de la API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+
+                <h2>6. Terceros y subencargados</h2>
                 <ul>
                   <li><strong>Stripe</strong> — procesamiento de pagos (EE. UU., con cláusulas contractuales estándar).</li>
                   <li><strong>Brevo (Sendinblue)</strong> — envío de emails transaccionales (UE).</li>
                   <li><strong>Render</strong> — infraestructura de servidores (EE. UU., con cláusulas contractuales estándar).</li>
                   <li><strong>Vercel</strong> — hosting del sitio web (EE. UU., con cláusulas contractuales estándar).</li>
+                  <li><strong>Google (Gmail API)</strong> — envío de emails en nombre del usuario (EE. UU., sujeto a las condiciones de servicio de Google).</li>
                 </ul>
 
-                <h2>6. Tus derechos</h2>
+                <h2>7. Tus derechos</h2>
                 <p>Puedes ejercer en cualquier momento los derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición escribiendo a <strong>opensellscontact@gmail.com</strong>. También tienes derecho a reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
 
-                <h2>7. Cookies</h2>
+                <h2>8. Cookies</h2>
                 <p>Usamos cookies estrictamente necesarias para el funcionamiento de la sesión. No usamos cookies publicitarias ni de seguimiento de terceros. Puedes consultar nuestra <a href="/cookies">Política de Cookies</a> para más información.</p>
 
-                <h2>8. Cambios en esta política</h2>
+                <h2>9. Cambios en esta política</h2>
                 <p>Si realizamos cambios materiales, te lo notificaremos por email o mediante un aviso en la plataforma con al menos 15 días de antelación.</p>
               </>
             ) : (
@@ -109,21 +119,31 @@ export default async function PrivacyPage({ params }: Props) {
                 <h2>4. Data Retention</h2>
                 <p>We retain your data while your account is active. After cancellation, we delete it within 30 days, unless the law requires longer retention (e.g., billing data for 5 years).</p>
 
-                <h2>5. Third Parties and Sub-processors</h2>
+                <h2>5. Gmail API Usage (Google)</h2>
+                <p>OpenSells allows users to connect their Gmail account to send prospecting emails directly from the platform. Our use of Gmail access is strictly limited to:</p>
+                <ul>
+                  <li>Sending emails on behalf of the user only when explicitly requested by them.</li>
+                  <li>Reading the user's email address to identify the connected account.</li>
+                </ul>
+                <p>OpenSells <strong>does not read, store or share</strong> the content of emails or any other mailbox data. The Gmail access token is stored in encrypted form and used solely for the functions described above. You can revoke access at any time from your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google account settings</a>.</p>
+                <p>OpenSells' use of information received from Google APIs complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+                <h2>6. Third Parties and Sub-processors</h2>
                 <ul>
                   <li><strong>Stripe</strong> — payment processing (USA, standard contractual clauses).</li>
                   <li><strong>Brevo (Sendinblue)</strong> — transactional email sending (EU).</li>
                   <li><strong>Render</strong> — server infrastructure (USA, standard contractual clauses).</li>
                   <li><strong>Vercel</strong> — website hosting (USA, standard contractual clauses).</li>
+                  <li><strong>Google (Gmail API)</strong> — sending emails on behalf of the user (USA, subject to Google's Terms of Service).</li>
                 </ul>
 
-                <h2>6. Your Rights</h2>
+                <h2>7. Your Rights</h2>
                 <p>You may exercise your rights of access, rectification, erasure, portability, restriction and objection at any time by writing to <strong>opensellscontact@gmail.com</strong>. You also have the right to lodge a complaint with the Spanish Data Protection Agency (aepd.es).</p>
 
-                <h2>7. Cookies</h2>
+                <h2>8. Cookies</h2>
                 <p>We use strictly necessary cookies for session functionality. We do not use advertising or third-party tracking cookies. See our <a href="/en/cookies">Cookie Policy</a> for details.</p>
 
-                <h2>8. Changes to This Policy</h2>
+                <h2>9. Changes to This Policy</h2>
                 <p>If we make material changes, we will notify you by email or via a platform notice at least 15 days in advance.</p>
               </>
             )}
