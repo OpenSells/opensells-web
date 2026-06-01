@@ -50,35 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       alternates: { languages: { es: `${base}/blog`, en: `${base}/en/blog` } },
     },
-    {
-      url: `${base}/privacy`,
-      lastModified: new Date('2025-04-01'),
-      changeFrequency: 'yearly',
-      priority: 0.2,
-      alternates: { languages: { es: `${base}/privacy`, en: `${base}/en/privacy` } },
-    },
-    {
-      url: `${base}/en/privacy`,
-      lastModified: new Date('2025-04-01'),
-      changeFrequency: 'yearly',
-      priority: 0.2,
-      alternates: { languages: { es: `${base}/privacy`, en: `${base}/en/privacy` } },
-    },
-    {
-      url: `${base}/terms`,
-      lastModified: new Date('2025-04-01'),
-      changeFrequency: 'yearly',
-      priority: 0.2,
-      alternates: { languages: { es: `${base}/terms`, en: `${base}/en/terms` } },
-    },
-    {
-      url: `${base}/en/terms`,
-      lastModified: new Date('2025-04-01'),
-      changeFrequency: 'yearly',
-      priority: 0.2,
-      alternates: { languages: { es: `${base}/terms`, en: `${base}/en/terms` } },
-    },
-    ...esPostEntries,
+...esPostEntries,
     ...enPostEntries,
   ];
 }

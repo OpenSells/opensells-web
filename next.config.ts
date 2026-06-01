@@ -15,6 +15,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/asunto-email-perfecto-cold-email-ejemplos/:path*',
+        destination: '/blog/tasa-respuesta-cold-email',
+        permanent: true,
+      },
+      {
+        source: '/cold-email-subject-lines-get-opened-examples/:path*',
+        destination: '/en/blog/improve-cold-email-reply-rate',
+        permanent: true,
+      },
+      {
         source: '/guia/:path*',
         destination: '/blog/guia-cold-email-espana-2025',
         permanent: true,
