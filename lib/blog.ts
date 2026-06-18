@@ -18,7 +18,7 @@ const posts: Post[] = [
     date: '2026-06-02',
     readTime: '8 min',
     content: `
-<h2>¿Qué es el cold email B2B y por qué sigue funcionando en 2025?</h2>
+<h2>¿Qué es el cold email B2B y por qué sigue funcionando en 2026?</h2>
 <p>El <strong>cold email B2B</strong> es el envío de emails comerciales a empresas o profesionales con los que no has tenido contacto previo. A diferencia de lo que muchos piensan, el email frío no ha muerto: según datos de HubSpot, el email sigue siendo el canal con mayor ROI en marketing B2B, superando a LinkedIn y las llamadas en frío.</p>
 <p>En España, el mercado B2B está fragmentado en miles de pymes que no tienen presencia activa en redes sociales, pero sí consultan el email a diario. Para freelancers y agencias, esta realidad es una oportunidad enorme.</p>
 <p>La clave no está en enviar más emails, sino en enviar mejores emails. En esta guía verás exactamente cómo hacerlo.</p>
@@ -218,7 +218,7 @@ const posts: Post[] = [
     date: '2026-06-02',
     readTime: '8 min',
     content: `
-<h2>What is B2B cold email and why does it still work in 2025?</h2>
+<h2>What is B2B cold email and why does it still work in 2026?</h2>
 <p><strong>B2B cold email</strong> is the practice of sending commercial emails to businesses or professionals you haven't previously engaged with. Despite what many think, cold email isn't dead: according to HubSpot, email remains the channel with the highest ROI in B2B marketing, outperforming LinkedIn and cold calling.</p>
 <p>The key isn't sending more emails — it's sending better ones. In this guide, you'll see exactly how to do that.</p>
 
@@ -392,7 +392,7 @@ const posts: Post[] = [
 <p>En B2B no hay compras impulsivas. El proceso de venta es más largo, intervienen varias personas y la decisión se basa en confianza y resultados demostrados. Esto significa que las estrategias que funcionan en B2C (publicidad en redes, influencers, descuentos) rara vez funcionan en B2B.</p>
 <p>Lo que sí funciona en B2B: prospección directa, contenido de autoridad y relaciones. En esta guía nos centramos en lo que puedes hacer desde hoy sin grandes presupuestos.</p>
 
-<h2>Los 6 mejores canales para conseguir clientes B2B en 2025</h2>
+<h2>Los 6 mejores canales para conseguir clientes B2B en 2026</h2>
 
 <h3>1. Cold email (el más escalable)</h3>
 <p>El <strong>cold email B2B</strong> sigue siendo el canal con mejor coste por cliente adquirido para freelancers y agencias pequeñas. No necesitas presupuesto publicitario y puedes empezar hoy mismo.</p>
@@ -935,7 +935,7 @@ const posts: Post[] = [
 </ul>
 
 <h2>Conclusion</h2>
-<p>Cold email outreach in 2025 is the most cost-effective B2B acquisition channel for freelancers and small agencies. The combination of AI personalization and systematic follow-up makes it possible to generate consistent pipeline without a sales team or advertising budget.</p>
+<p>Cold email outreach in 2026 is the most cost-effective B2B acquisition channel for freelancers and small agencies. The combination of AI personalization and systematic follow-up makes it possible to generate consistent pipeline without a sales team or advertising budget.</p>
 <p>Ready to start? <a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> — find verified B2B leads and send AI-personalized cold emails in under 10 minutes.</p>
     `,
   },
@@ -960,7 +960,7 @@ const posts: Post[] = [
   <li><strong>Market focus:</strong> US-centric database or global coverage?</li>
 </ul>
 
-<h2>The best cold email tools in 2025</h2>
+<h2>The best cold email tools in 2026</h2>
 
 <h3>1. OpenSells — Best for Spanish-speaking markets + AI personalization</h3>
 <p><strong>OpenSells</strong> is the most complete cold email solution for businesses targeting Spain, Latin America or any market where local accuracy matters. It combines lead finding, email verification and AI email generation in one platform.</p>

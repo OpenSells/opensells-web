@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/cold-email-follow-up-timing-templates-sequences/:path*',
-        destination: '/blog/guia-cold-email-espana-2025',
+        destination: '/en/blog/cold-email-outreach-step-by-step',
         permanent: true,
       },
       {

@@ -1,5 +1,5 @@
-import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Problem from '@/components/Problem';
@@ -13,6 +13,26 @@ import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  const base = 'https://opensells.com';
+  const canonical = locale === 'es' ? base : `${base}/en`;
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical,
+      languages: { es: base, en: `${base}/en` },
+    },
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: canonical,
+    },
+  };
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;

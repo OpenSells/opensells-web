@@ -7,16 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const esPosts = getPostsByLocale('es');
   const enPosts = getPostsByLocale('en');
 
+  const now = new Date();
+
   const esPostEntries: MetadataRoute.Sitemap = esPosts.map((post) => ({
     url: `${base}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: now,
     changeFrequency: 'monthly',
     priority: 0.6,
   }));
 
   const enPostEntries: MetadataRoute.Sitemap = enPosts.map((post) => ({
     url: `${base}/en/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: now,
     changeFrequency: 'monthly',
     priority: 0.5,
   }));
