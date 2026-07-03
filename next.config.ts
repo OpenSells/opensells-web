@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/privacidad/:path*',
-        destination: '/es/privacy',
+        destination: '/privacy',
         permanent: true,
       },
     ];
