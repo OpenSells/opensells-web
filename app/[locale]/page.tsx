@@ -39,6 +39,7 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'faq' });
+  const tMeta = await getTranslations({ locale, namespace: 'meta' });
   const faqItems = t.raw('items') as { q: string; a: string }[];
 
   const faqSchema = {
@@ -58,12 +59,10 @@ export default async function HomePage({ params }: Props) {
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     url: 'https://app.opensells.com',
-    description: locale === 'es'
-      ? 'Plataforma SaaS para generación de leads B2B con IA. Encuentra empresas verificadas con email y teléfono y envía cold emails personalizados en segundos.'
-      : 'B2B lead generation SaaS platform powered by AI. Find verified companies with email and phone, and send personalized cold emails in seconds.',
+    description: tMeta('description'),
     offers: {
       '@type': 'Offer',
-      price: '0',
+      price: 0,
       priceCurrency: 'EUR',
       description: locale === 'es' ? 'Plan gratuito disponible' : 'Free plan available',
     },

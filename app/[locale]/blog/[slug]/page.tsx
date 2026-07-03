@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: Props) {
     url: postUrl,
     image: ogImageUrl,
     datePublished: post.date,
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: post.date,
     author: { '@type': 'Organization', name: 'OpenSells', url: base },
     publisher: {
       '@type': 'Organization',
