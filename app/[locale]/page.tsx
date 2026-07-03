@@ -51,11 +51,41 @@ export default async function HomePage({ params }: Props) {
     })),
   };
 
+  const appSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'OpenSells',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    url: 'https://app.opensells.com',
+    description: locale === 'es'
+      ? 'Plataforma SaaS para generación de leads B2B con IA. Encuentra empresas verificadas con email y teléfono y envía cold emails personalizados en segundos.'
+      : 'B2B lead generation SaaS platform powered by AI. Find verified companies with email and phone, and send personalized cold emails in seconds.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'EUR',
+      description: locale === 'es' ? 'Plan gratuito disponible' : 'Free plan available',
+    },
+    featureList: locale === 'es'
+      ? 'Generación de leads B2B, Cold email automatizado, Enriquecimiento de contactos, Integración Gmail, Seguimientos automáticos'
+      : 'B2B lead generation, Automated cold email, Contact enrichment, Gmail integration, Automatic follow-ups',
+    publisher: {
+      '@type': 'Organization',
+      name: 'OpenSells',
+      url: 'https://opensells.com',
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
       />
       <Navbar locale={locale} />
       <main>
