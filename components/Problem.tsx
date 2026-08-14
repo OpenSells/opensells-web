@@ -23,12 +23,12 @@ export default function Problem() {
         </div>
 
         {/* Mid-page CTA */}
-        <div className="mt-14 rounded-2xl bg-violet-600/20 border border-violet-500/30 p-8">
+        <div className="mt-14 rounded-2xl bg-brand-600/20 border border-brand-500/30 p-8">
           <p className="text-white font-bold text-xl mb-2">¿Y si hubiera una forma más rápida?</p>
           <p className="text-slate-400 text-sm mb-6">OpenSells hace en 5 minutos lo que tú tardas 15 horas. Pruébalo gratis hoy.</p>
           <Link
             href={`${appUrl}/login?tab=register`}
-            className="inline-flex h-11 items-center rounded-xl bg-violet-500 px-8 text-sm font-bold text-white hover:bg-violet-400 transition-colors"
+            className="inline-flex h-11 items-center rounded-xl bg-brand-500 px-8 text-sm font-bold text-white hover:bg-brand-400 transition-colors"
           >
             Empieza gratis — sin tarjeta
           </Link>

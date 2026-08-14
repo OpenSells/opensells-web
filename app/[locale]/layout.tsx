@@ -1,9 +1,19 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
+
+/* La web se estaba viendo en Arial: globals.css lo fijaba a mano y no había
+ * ninguna fuente cargada. Inter es la tipografía de referencia del SaaS B2B
+ * y tiene el latín completo, así que los acentos y la ñ salen bien. */
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+});
 
 type Props = { children: React.ReactNode; params: Promise<{ locale: string }> };
 
@@ -56,7 +66,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     '@type': 'WebSite',
     name: 'OpenSells',
     url: base,
-    description: 'Plataforma SaaS para generación de leads B2B con IA. Genera leads verificados y emails personalizados en segundos.',
+    description: 'Plataforma SaaS de prospección B2B. Encuentra empresas por sector y ciudad, con su teléfono y una ficha de llamada preparada por IA.',
     inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
     potentialAction: {
       '@type': 'SearchAction',
@@ -73,7 +83,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   };
 
   return (
-    <html lang={locale} className="h-full antialiased scroll-smooth">
+    <html lang={locale} className={`${inter.variable} ${inter.className} h-full antialiased scroll-smooth`}>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <script
           type="application/ld+json"

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "OpenSells | B2B Lead Generation & Automated Prospecting",
-    "description": "Find verified B2B leads, send AI-personalized cold emails and automate your sales prospecting. For freelancers and agencies.",
-    "ogTitle": "OpenSells — Automate Your B2B Prospecting",
-    "ogDescription": "Find verified leads and send AI-personalized email sequences. Start free."
+    "title": "OpenSells | Companies to call, with the call already prepared",
+    "description": "Type the industry and the city. OpenSells finds the companies, gives you their phone number and the AI prepares what to say on every call. Start free.",
+    "ogTitle": "OpenSells — Find companies and call them knowing what to say",
+    "ogDescription": "B2B leads with phone numbers and an AI-written call brief. Start free, no card required."
   },
   "nav": {
     "features": "Features",
@@ -13,91 +13,91 @@
     "cta": "Start free"
   },
   "hero": {
-    "badge": "New: AI-powered email generation",
-    "headline": "Generate B2B Leads and Automate Your Prospecting",
-    "subheadline": "Find verified contacts, send AI-personalized email sequences and close more deals. No manual work.",
-    "cta_primary": "Start free",
+    "badge": "🔥 Launch offer — 50% off your first month",
+    "headline": "Companies to call, with the conversation already prepared",
+    "subheadline": "Type the industry and the city. OpenSells finds the companies, gives you their phone number and the AI prepares what to say on every call. You just dial.",
+    "cta_primary": "Start free now",
     "cta_secondary": "See how it works",
-    "social_proof": "No credit card required · Cancel anytime",
+    "social_proof": "No credit card · Cancel anytime",
     "no_card": "7-day money-back guarantee",
     "trust_1": "No credit card",
     "trust_2": "7-day guarantee",
     "trust_3": "Cancel anytime"
   },
   "problem": {
-    "title": "How many clients are you losing because you don't have time to prospect?",
-    "subtitle": "Most freelancers and agencies waste 15-20 hours a week on tasks a tool can do in minutes.",
+    "title": "How many clients are you losing because your messages reach no one?",
+    "subtitle": "Cold email is saturated. The phone still works — but only if you know who you are calling and what to say.",
     "items": [
       {
+        "icon": "📭",
+        "title": "Cold emails don't get opened anymore",
+        "text": "You send fifty, you get zero replies. Between spam filters, crowded inboxes and messages that smell like a template, cold email keeps hitting a lower ceiling."
+      },
+      {
+        "icon": "📞",
+        "title": "People do answer the phone — but it's daunting",
+        "text": "They pick up, and you have no idea what they do, where to start or how to handle a \"not interested\". That's how people quit calling after the third try."
+      },
+      {
         "icon": "⏱️",
-        "title": "15 hours wasted every week",
-        "text": "Searching Google, copying emails manually, writing the same message with small variations. Hour after hour. No guaranteed results."
-      },
-      {
-        "icon": "📉",
-        "title": "Generic emails nobody reads",
-        "text": "\"Hi, I'm X and I offer Y\" doesn't work. Without real personalization, your email goes straight to the trash. The problem isn't you — it's the process."
-      },
-      {
-        "icon": "🔄",
-        "title": "No system, no scale",
-        "text": "If you rely on referrals or LinkedIn to get clients, your business isn't growing — it's surviving. Manual prospecting has a very low ceiling."
+        "title": "Finding companies by hand eats your week",
+        "text": "Google, each company's website, copying the phone number into a spreadsheet. Hours of mechanical work before you've spoken to a single person."
       }
     ]
   },
   "features": {
-    "title": "Everything you need to prospect at scale",
-    "subtitle": "No tool switching. No learning curve.",
+    "title": "Everything you need to pick up the phone today",
+    "subtitle": "No tool switching. No learning curve. From your very first search.",
     "items": [
       {
-        "icon": "🎯",
-        "title": "Verified B2B database",
-        "description": "Find companies and verified contacts in seconds. No outdated lists or bounced emails."
+        "icon": "🔎",
+        "title": "Real companies in your industry and city",
+        "description": "Type \"dental clinics in Valencia\" and get the list in minutes: name, website, phone and address. Companies that exist, not purchased lists."
+      },
+      {
+        "icon": "📞",
+        "title": "Direct phone numbers, which is what people use",
+        "description": "Almost every company publishes a phone number, far fewer publish a useful email. That's why the phone is the primary channel: you reach the decision maker without going through the trash folder."
+      },
+      {
+        "icon": "🧠",
+        "title": "The AI prepares the call for you",
+        "description": "Before you dial you get the brief: what they do, why calling them makes sense, the exact opening line, three questions and what to answer if they say no."
+      },
+      {
+        "icon": "✅",
+        "title": "You hang up and the next step is already scheduled",
+        "description": "Log how the call went in one click and the app suggests the follow-up: call back tomorrow, check in three days. Nothing goes cold because you forgot."
       },
       {
         "icon": "✍️",
-        "title": "AI-generated emails",
-        "description": "AI reads the lead's website and writes a personalized email in their context. No two emails are the same."
-      },
-      {
-        "icon": "📧",
-        "title": "Automated sequences",
-        "description": "Set up to 4 automatic follow-up emails. The system stops when a reply comes in."
-      },
-      {
-        "icon": "🔍",
-        "title": "Search by niche and city",
-        "description": "Find leads by industry, city and keywords. Specific results for your target market."
-      },
-      {
-        "icon": "📊",
-        "title": "Results tracking",
-        "description": "See which emails work, which leads replied and how many you've contacted. All in a clear dashboard."
+        "title": "AI emails when you'd rather write",
+        "description": "For leads with an email address, the AI drafts a personalised message after reading their site. It opens in your own Gmail and you send it from your account."
       },
       {
         "icon": "🛡️",
-        "title": "Unlimited CSV export",
-        "description": "Export your leads to any CRM or tool. Your data is yours, with no restrictions."
+        "title": "Your data is always yours",
+        "description": "Export every lead to CSV whenever you want and take it to your CRM. No restrictions, no hostages."
       }
     ]
   },
   "how": {
-    "title": "From zero to leads in 3 steps",
+    "title": "From zero to your first call in under 5 minutes",
     "steps": [
       {
         "number": "01",
-        "title": "Define your niche and city",
-        "description": "Enter the industry you're targeting and the city. OpenSells finds real companies with verified emails."
+        "title": "Type your industry and city",
+        "description": "\"Car repair shops in Valencia\", \"HR consultancies in Madrid\". OpenSells finds the companies with their phone number and website."
       },
       {
         "number": "02",
-        "title": "Review your leads",
-        "description": "Get a list of companies with name, domain, email and phone. Filter the ones you're most interested in."
+        "title": "Open the call brief",
+        "description": "The AI reads their site and lays out what they do, why to call them, how to open the conversation and how to answer the most likely objections."
       },
       {
         "number": "03",
-        "title": "Send with AI personalization",
-        "description": "AI generates a unique email for each lead based on their website. Open it in Gmail or Outlook with one click."
+        "title": "Call and log what happened",
+        "description": "Dial straight from the brief. When you hang up you pick the outcome and the app chains the next step, so no lead is left half-done."
       }
     ]
   },
@@ -145,7 +145,8 @@
         "features": [
           "2 searches per month",
           "Unlimited leads per search",
-          "5 AI email drafts",
+          "10 AI call briefs",
+          "5 AI emails",
           "3 active tasks",
           "Lead management dashboard"
         ],
@@ -160,8 +161,9 @@
         "features": [
           "500 leads per month",
           "Unlimited searches",
-          "100 AI email drafts",
-          "40 active tasks",
+          "500 AI call briefs",
+          "100 AI emails per month",
+          "300 active tasks",
           "Unlimited CSV export",
           "30 AI messages per day",
           "Priority support"
@@ -177,8 +179,9 @@
         "features": [
           "1,000 leads per month",
           "Unlimited searches",
-          "300 AI email drafts",
-          "100 active tasks",
+          "1,500 AI call briefs",
+          "300 AI emails per month",
+          "1,000 active tasks",
           "Unlimited CSV export",
           "100 AI messages per day",
           "Top queue priority",
@@ -187,42 +190,46 @@
         "cta": "Get started"
       }
     ],
-    "discount_note": "🎉 50% off your first month on paid plans"
+    "discount_note": "🎉 Launch offer — 50% off your first month on paid plans."
   },
   "faq": {
     "title": "Frequently asked questions",
     "items": [
       {
-        "q": "What's the difference between Free and Professional?",
-        "a": "The Free plan lets you run 2 searches per month and generate 5 AI emails to try the platform. The Professional plan includes 500 monthly leads, 100 AI emails, unlimited CSV export and full access to all features."
+        "q": "How long until I see results?",
+        "a": "Your first list is ready in under 5 minutes and you can start calling the same day. Unlike email, a call tells you straight away whether there's interest: you don't wait days for a reply that rarely comes."
       },
       {
-        "q": "Are the leads' emails verified?",
-        "a": "Yes. OpenSells fetches emails directly from company websites and verifies them before showing them to you. The AI also personalizes each email based on the real content of the lead's website."
+        "q": "Why phone and not email?",
+        "a": "Two reasons. Coverage: almost every company publishes a phone number and far fewer a usable contact email. And in Spain the law is much clearer about B2B phone calls than about cold email. We still include AI emails, but the phone is the channel we recommend."
       },
       {
-        "q": "Is cold email legal?",
-        "a": "Yes, B2B cold email targeting businesses is legal and compatible with GDPR when done with legitimate commercial interest. OpenSells is designed for professional B2B use."
+        "q": "Are the lead emails verified?",
+        "a": "We don't run technical mailbox verification (SMTP or MX). We extract the emails companies publish on their own websites, so they are real, public addresses, but they may be outdated or generic inboxes. We'd rather be straight with you: if you need delivery guarantees, the phone is the reliable route."
       },
       {
-        "q": "Will my emails land in spam?",
-        "a": "OpenSells generates drafts that you open in your own Gmail or Outlook account. This ensures your domain's reputation determines deliverability, not ours."
+        "q": "Is cold calling businesses legal in Spain?",
+        "a": "Business-to-business calling has a much clearer legal footing than cold email. Spain's LSSI requires prior consent or an existing contractual relationship for commercial email, even B2B — something many tools gloss over. That said, this isn't legal advice: check your specific case, and always respect opt-out lists and any request not to be called again."
       },
       {
-        "q": "Can I change plans at any time?",
-        "a": "Yes. You can upgrade or downgrade whenever you want from your user dashboard. Changes take effect from the next billing period."
+        "q": "What if I don't know what to say on the phone?",
+        "a": "That's what the call brief is for. Before you dial you have what the company does, why calling them makes sense, the exact opening line, three questions to find out whether they're a fit and prepared answers to the usual objections."
+      },
+      {
+        "q": "How is this different from Hunter.io or Apollo?",
+        "a": "Hunter and Apollo are contact databases built for the English-speaking market and for email. OpenSells is built for Spain, in Spanish, and doesn't stop at handing you data: it prepares the conversation. The value isn't the list, it's knowing what to say when they pick up."
+      },
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Yes, no lock-in and no penalties. Cancel from your dashboard in 30 seconds and you won't be charged the following month. And if you cancel within the first 7 days we refund you in full, no questions asked."
+      },
+      {
+        "q": "Does it work for any industry?",
+        "a": "It works especially well when selling to businesses with premises and a visible phone number: repair shops, clinics, consultancies, accountants, hospitality, training, real estate. If your client is a company you can call, OpenSells is for you."
       },
       {
         "q": "What happens to my data if I cancel?",
-        "a": "Your data is yours. You can export all your leads as CSV before cancelling. We keep your history for 30 days after cancellation in case you change your mind."
-      },
-      {
-        "q": "How quickly can I see results?",
-        "a": "Most users get their first lead list in under 5 minutes. The first email replies typically arrive 3 to 7 days after the first send."
-      },
-      {
-        "q": "Does it work for any industry or city?",
-        "a": "Yes. OpenSells searches across your target market by industry and city. It works especially well for professional services: marketing, design, consulting, tech, real estate and more."
+        "a": "Your leads are yours. Export everything to CSV before cancelling. We keep your history for 30 days in case you change your mind."
       }
     ]
   },
@@ -256,21 +263,21 @@
   },
   "finalcta": {
     "title": "The easiest decision you'll make this week",
-    "subtitle": "Start free today. No card required. If you don't see the value in 7 days, we'll refund you — no questions asked.",
+    "subtitle": "Start free now. No card. If you don't see the value in 7 days, we refund you — no questions asked.",
     "value_title": "What you get today:",
     "values": [
-      "Immediate access to thousands of verified leads",
-      "AI-personalized emails ready to send",
-      "Lead management dashboard and tracking",
-      "Unlimited CSV export of your data",
-      "Email support"
+      "Companies in your industry and city, with direct phone numbers",
+      "An AI-written call brief for each one",
+      "Automatic follow-up after every call",
+      "AI-personalised emails when you'd rather write",
+      "Unlimited CSV export of your data"
     ],
-    "guarantee": "7-day money-back guarantee",
-    "cta": "Get my first leads free",
+    "guarantee": "7-day no-questions guarantee",
+    "cta": "Get my first companies free",
     "sub": "No card · No commitment · Cancel anytime"
   },
   "footer": {
-    "tagline": "Automated B2B prospecting for freelancers and agencies.",
+    "tagline": "Find companies and call them with the conversation prepared.",
     "product": "Product",
     "company": "Company",
     "resources": "Resources",
@@ -285,6 +292,6 @@
       "terms": "Terms of use",
       "cookies": "Cookies"
     },
-    "copyright": "© 2025 OpenSells. All rights reserved."
+    "copyright": "© 2026 OpenSells. All rights reserved."
   }
 }

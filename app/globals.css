@@ -1,27 +1,43 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* ─── Identidad de marca ──────────────────────────────────────────────────
+ *
+ * Antes el morado iba escrito a mano en cada componente (68 veces), así que
+ * cambiar la marca obligaba a buscar y reemplazar por todo el proyecto. Ahora
+ * el color vive aquí: se toca este bloque y cambia la web entera.
+ *
+ * Azul de confianza: el registro del B2B serio. La escala está pensada para
+ * sustituir uno a uno los tonos que ya se usaban, de forma que los contrastes
+ * de cada componente se mantienen.
+ */
+@theme {
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* La tipografía la fija next/font en el layout (variable --font-sans). El
+ * Arial de antes era el que se veía de verdad: la web nunca llegó a cargar
+ * ninguna fuente propia. */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
