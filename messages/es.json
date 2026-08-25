@@ -13,7 +13,7 @@
     "cta": "Empieza gratis"
   },
   "hero": {
-    "badge": "🔥 Oferta de lanzamiento — Primer mes al 50%",
+    "badge": "🔥 Primer mes gratis — sin tarjeta",
     "headline": "Empresas a las que llamar, con la conversación ya preparada",
     "subheadline": "Escribe el sector y la ciudad. OpenSells encuentra las empresas, te da su teléfono y la IA te prepara qué decir en cada llamada. Tú solo marcas.",
     "cta_primary": "Empieza gratis ahora",
@@ -126,33 +126,16 @@
   },
   "pricing": {
     "title": "Precios que se pagan solos con un cliente",
-    "subtitle": "Un cliente nuevo cubre el plan anual. El resto son beneficios.",
+    "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan.",
     "toggle_monthly": "Mensual",
     "toggle_yearly": "Anual",
     "save_badge": "Ahorra 20%",
     "popular": "Más popular",
-    "cta_free": "Empezar gratis",
     "cta_paid": "Empezar ahora",
     "per_month": "/mes",
-    "no_card": "Sin tarjeta de crédito · Garantía de devolución 7 días · Cancela cuando quieras",
-    "discount_note": "🎉 Oferta de lanzamiento — Primer mes al 50% en los planes de pago.",
+    "no_card": "Sin tarjeta de crédito · Cancela cuando quieras",
+    "discount_note": "🎉 Primer mes gratis, sin tarjeta. Después, 29 €/mes.",
     "plans": [
-      {
-        "key": "free",
-        "name": "Gratis",
-        "price_monthly": "0",
-        "price_yearly": "0",
-        "description": "Para probar sin comprometerte",
-        "features": [
-          "2 búsquedas al mes",
-          "Leads ilimitados por búsqueda",
-          "10 fichas de llamada con IA",
-          "5 emails con IA",
-          "3 tareas activas",
-          "Panel de gestión de leads"
-        ],
-        "cta": "Empezar gratis"
-      },
       {
         "key": "profesional",
         "name": "Profesional",
@@ -169,7 +152,7 @@
           "30 mensajes de IA al día",
           "Soporte prioritario"
         ],
-        "cta": "Empezar — Primer mes a 14,50€"
+        "cta": "Empezar — Primer mes gratis"
       },
       {
         "key": "agencia",
@@ -188,9 +171,10 @@
           "Prioridad máxima en cola",
           "Soporte prioritario"
         ],
-        "cta": "Empezar — Primer mes a 34,50€"
+        "cta": "Empezar — Primer mes gratis"
       }
-    ]
+    ],
+    "first_month_free": "Primer mes gratis"
   },
   "finalcta": {
     "title": "La decisión más fácil que vas a tomar esta semana",
