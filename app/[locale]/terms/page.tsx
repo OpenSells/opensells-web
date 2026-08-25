@@ -52,11 +52,12 @@ export default async function TermsPage({ params }: Props) {
 
                 <h2>3. Planes y pagos</h2>
                 <ul>
-                  <li><strong>Plan Gratis:</strong> acceso limitado sin cargo.</li>
-                  <li><strong>Plan Profesional:</strong> 29 €/mes (primer mes al 50% de descuento = 14,50 €).</li>
-                  <li><strong>Plan Agencia:</strong> 69 €/mes (primer mes al 50% de descuento = 34,50 €).</li>
+                  <li><strong>Mes de prueba:</strong> al registrarte obtienes un mes gratis del plan Profesional. No se pide tarjeta ni se cobra nada durante ese mes.</li>
+                  <li><strong>Plan Profesional:</strong> 29 €/mes una vez terminado el mes de prueba.</li>
+                  <li><strong>Plan Agencia:</strong> 69 €/mes.</li>
                 </ul>
-                <p>Los pagos se procesan mediante Stripe. Las suscripciones se renuevan automáticamente cada mes. Puedes cancelar en cualquier momento desde tu panel de cuenta — el acceso se mantiene hasta el final del periodo facturado.</p>
+                <p>Si al terminar el mes de prueba no has añadido un método de pago, la suscripción se cancela automáticamente y <strong>tu cuenta pasa a modo solo lectura</strong>: conservas el acceso a tus leads, nichos y tareas y puedes seguir consultándolos, pero no podrás buscar nuevos leads ni generar fichas de llamada o emails hasta que contrates un plan.</p>
+                <p>Los pagos se procesan mediante Stripe. Las suscripciones se renuevan automáticamente cada mes. Si un cobro falla, mantendrás el acceso mientras se reintenta el pago durante los días siguientes. Puedes cancelar en cualquier momento desde tu panel de cuenta — el acceso se mantiene hasta el final del periodo facturado.</p>
 
                 <h2>4. Política de reembolso</h2>
                 <p>Ofrecemos reembolso completo dentro de los primeros 7 días desde el primer pago si el Servicio no cumple lo descrito. Fuera de ese plazo, no se realizan reembolsos parciales por periodos no utilizados.</p>
@@ -98,11 +99,12 @@ export default async function TermsPage({ params }: Props) {
 
                 <h2>3. Plans and Payments</h2>
                 <ul>
-                  <li><strong>Free Plan:</strong> limited access at no charge.</li>
-                  <li><strong>Professional Plan:</strong> €29/month (first month at 50% off = €14.50).</li>
-                  <li><strong>Agency Plan:</strong> €69/month (first month at 50% off = €34.50).</li>
+                  <li><strong>Free trial month:</strong> when you sign up you get one free month of the Professional plan. No card is requested and nothing is charged during that month.</li>
+                  <li><strong>Professional Plan:</strong> €29/month once the trial month ends.</li>
+                  <li><strong>Agency Plan:</strong> €69/month.</li>
                 </ul>
-                <p>Payments are processed via Stripe. Subscriptions renew automatically each month. You may cancel at any time from your account dashboard — access continues until the end of the billed period.</p>
+                <p>If you have not added a payment method by the end of the trial month, the subscription is cancelled automatically and <strong>your account switches to read-only mode</strong>: you keep access to your leads, niches and tasks and can still view them, but you will not be able to search for new leads or generate call briefs or emails until you subscribe to a plan.</p>
+                <p>Payments are processed via Stripe. Subscriptions renew automatically each month. If a payment fails, you keep access while the charge is retried over the following days. You may cancel at any time from your account dashboard — access continues until the end of the billed period.</p>
 
                 <h2>4. Refund Policy</h2>
                 <p>We offer a full refund within the first 7 days of your first payment if the Service does not match its description. Outside this window, no partial refunds are issued for unused periods.</p>

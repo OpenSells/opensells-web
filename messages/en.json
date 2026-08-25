@@ -13,7 +13,7 @@
     "cta": "Start free"
   },
   "hero": {
-    "badge": "🔥 Launch offer — 50% off your first month",
+    "badge": "🔥 First month free — no card required",
     "headline": "Companies to call, with the conversation already prepared",
     "subheadline": "Type the industry and the city. OpenSells finds the companies, gives you their phone number and the AI prepares what to say on every call. You just dial.",
     "cta_primary": "Start free now",
@@ -126,32 +126,15 @@
   },
   "pricing": {
     "title": "Simple, transparent pricing",
-    "subtitle": "Start free. Scale when you need it.",
+    "subtitle": "Try it free for a full month, no card. Scale when you need it.",
     "toggle_monthly": "Monthly",
     "toggle_yearly": "Yearly",
     "save_badge": "Save 20%",
     "popular": "Most popular",
-    "cta_free": "Start free",
     "cta_paid": "Get started",
     "per_month": "/mo",
-    "no_card": "No credit card required",
+    "no_card": "No credit card required · Cancel anytime",
     "plans": [
-      {
-        "key": "free",
-        "name": "Free",
-        "price_monthly": "0",
-        "price_yearly": "0",
-        "description": "To discover OpenSells' potential",
-        "features": [
-          "2 searches per month",
-          "Unlimited leads per search",
-          "10 AI call briefs",
-          "5 AI emails",
-          "3 active tasks",
-          "Lead management dashboard"
-        ],
-        "cta": "Start free"
-      },
       {
         "key": "profesional",
         "name": "Professional",
@@ -168,7 +151,7 @@
           "30 AI messages per day",
           "Priority support"
         ],
-        "cta": "Get started"
+        "cta": "Start — First month free"
       },
       {
         "key": "agencia",
@@ -187,10 +170,11 @@
           "Top queue priority",
           "Priority support"
         ],
-        "cta": "Get started"
+        "cta": "Start — First month free"
       }
     ],
-    "discount_note": "🎉 Launch offer — 50% off your first month on paid plans."
+    "discount_note": "🎉 First month free, no card required. Then €29/mo.",
+    "first_month_free": "First month free"
   },
   "faq": {
     "title": "Frequently asked questions",
