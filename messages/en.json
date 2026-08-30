@@ -131,6 +131,8 @@
     "cta_paid": "Get started",
     "per_month": "/mo",
     "no_card": "No credit card required · Cancel anytime",
+    "packs_title": "Run out mid-month?",
+    "packs_note": "Top up with a one-off pack: 100 leads for €9 or 300 for €25. One-time payment, never expires, and each pack brings its own call briefs and email drafts. It is only used once you have run out of your plan's.",
     "plans": [
       {
         "key": "profesional",

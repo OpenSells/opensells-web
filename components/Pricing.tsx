@@ -86,7 +86,12 @@ export default function Pricing() {
           })}
         </div>
 
-        <p className="mt-8 text-center text-xs text-slate-400">{t('no_card')}</p>
+        <div className="mx-auto mt-8 max-w-3xl rounded-xl border border-slate-200 bg-white px-5 py-4 text-center">
+          <p className="text-sm font-semibold text-slate-900">{t('packs_title')}</p>
+          <p className="mt-1 text-sm text-slate-500">{t('packs_note')}</p>
+        </div>
+
+        <p className="mt-6 text-center text-xs text-slate-400">{t('no_card')}</p>
       </div>
     </section>
   );

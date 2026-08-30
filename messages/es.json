@@ -132,6 +132,8 @@
     "per_month": "/mes",
     "no_card": "Sin tarjeta de crédito · Cancela cuando quieras",
     "discount_note": "🎉 Primer mes gratis, sin tarjeta. Después, 39 €/mes.",
+    "packs_title": "¿Se te queda corto un mes?",
+    "packs_note": "Amplía con una bolsa suelta: 100 leads por 9 € o 300 por 25 €. Pago único, no caducan, y cada bolsa trae sus fichas de llamada y sus borradores. Solo se gasta cuando has agotado los de tu plan.",
     "plans": [
       {
         "key": "profesional",
