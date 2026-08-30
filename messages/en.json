@@ -19,9 +19,9 @@
     "cta_primary": "Start free now",
     "cta_secondary": "See how it works",
     "social_proof": "No credit card · Cancel anytime",
-    "no_card": "7-day money-back guarantee",
+    "no_card": "7-day guarantee from your first charge",
     "trust_1": "No credit card",
-    "trust_2": "7-day guarantee",
+    "trust_2": "Guarantee after first charge",
     "trust_3": "Cancel anytime"
   },
   "problem": {
@@ -98,29 +98,6 @@
         "number": "03",
         "title": "Call and log what happened",
         "description": "Dial straight from the brief. When you hang up you pick the outcome and the app chains the next step, so no lead is left half-done."
-      }
-    ]
-  },
-  "testimonials": {
-    "title": "Businesses and freelancers already scaling their prospecting",
-    "items": [
-      {
-        "quote": "In less than a week I had 80 qualified digital marketing leads in Madrid. I had never found so many verified contacts so quickly.",
-        "name": "Carlos M.",
-        "role": "Digital Marketing Consultant",
-        "location": "Madrid"
-      },
-      {
-        "quote": "The emails the AI generates read like you wrote them yourself. My reply rate has improved significantly since I started using OpenSells.",
-        "name": "Laura P.",
-        "role": "Freelance SEO",
-        "location": "Barcelona"
-      },
-      {
-        "quote": "For our agency, OpenSells replaced 3 different tools. We find leads, generate emails and track everything from one place.",
-        "name": "David R.",
-        "role": "Agency Director",
-        "location": "Valencia"
       }
     ]
   },
@@ -202,7 +179,7 @@
       },
       {
         "q": "Can I cancel anytime?",
-        "a": "Yes, no lock-in and no penalties. Cancel from your dashboard in 30 seconds and you won't be charged the following month. And if you cancel within the first 7 days we refund you in full, no questions asked."
+        "a": "Yes, no lock-in and no penalties. Cancel from your dashboard in 30 seconds and you won't be charged the following month. The first month is free and no card is required, so there is nothing to refund there; and if you cancel within 7 days of your first charge, we refund that payment in full, no questions asked."
       },
       {
         "q": "Does it work for any industry?",
@@ -220,31 +197,31 @@
     "cta": "View all posts",
     "posts": [
       {
-        "slug": "b2b-lead-generation-guide",
-        "title": "B2B Lead Generation: The Complete Guide for 2025",
-        "excerpt": "Best channels, tools and strategies to build a predictable B2B pipeline without a big budget.",
-        "date": "2025-04-14",
+        "slug": "como-conseguir-clientes-b2b",
+        "title": "How to get B2B clients: the definitive 2026 guide",
+        "excerpt": "Channels, strategies and tools that actually work in 2026 for freelancers and agencies selling in Spain.",
+        "date": "2026-06-02",
         "readTime": "10 min"
       },
       {
-        "slug": "hunter-io-alternatives",
-        "title": "Best Hunter.io Alternatives in 2025 for B2B Email Finding",
-        "excerpt": "Honest comparison of the best Hunter.io alternatives with pricing and accuracy for each market.",
-        "date": "2025-04-16",
+        "slug": "alternativas-hunter-io-apollo",
+        "title": "Best Hunter.io and Apollo.io alternatives for Spain and LATAM 2026",
+        "excerpt": "An honest comparison for the Spanish and Latin American market: pricing, real coverage and which one to pick.",
+        "date": "2026-06-02",
         "readTime": "7 min"
       },
       {
-        "slug": "best-cold-email-software-2025",
-        "title": "Best Cold Email Software in 2025: Honest Comparison",
-        "excerpt": "Side-by-side comparison of the top cold email tools. Which one to choose based on your use case.",
-        "date": "2025-04-18",
+        "slug": "herramientas-prospeccion-comercial-espana",
+        "title": "The 7 best sales prospecting tools in Spain 2026",
+        "excerpt": "An up-to-date comparison with real pricing, local coverage and who each one is for.",
+        "date": "2026-06-02",
         "readTime": "8 min"
       }
     ]
   },
   "finalcta": {
     "title": "The easiest decision you'll make this week",
-    "subtitle": "Start free now. No card. If you don't see the value in 7 days, we refund you — no questions asked.",
+    "subtitle": "Start free now, no card. And once you start paying, you have 7 days to ask for a refund — no questions asked.",
     "value_title": "What you get today:",
     "values": [
       "Companies in your industry and city, with direct phone numbers",
@@ -253,7 +230,7 @@
       "AI-personalised emails when you'd rather write",
       "Unlimited CSV export of your data"
     ],
-    "guarantee": "7-day no-questions guarantee",
+    "guarantee": "7-day guarantee from your first charge",
     "cta": "Get my first companies free",
     "sub": "No card · No commitment · Cancel anytime"
   },

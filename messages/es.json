@@ -19,9 +19,9 @@
     "cta_primary": "Empieza gratis ahora",
     "cta_secondary": "Ver cómo funciona",
     "social_proof": "Sin tarjeta de crédito · Cancela cuando quieras",
-    "no_card": "Garantía de 7 días o te devolvemos el dinero",
+    "no_card": "Garantía de 7 días desde el primer cobro",
     "trust_1": "Sin tarjeta de crédito",
-    "trust_2": "Garantía 7 días",
+    "trust_2": "Garantía tras el primer cobro",
     "trust_3": "Cancela cuando quieras"
   },
   "problem": {
@@ -101,29 +101,6 @@
       }
     ]
   },
-  "testimonials": {
-    "title": "Lo que dicen los que ya lo usan",
-    "items": [
-      {
-        "quote": "Busqué 'agencias de marketing en Sevilla' y en 4 minutos tenía 60 contactos con email verificado. Antes eso me costaba una tarde entera en LinkedIn. La primera semana cerré una reunión.",
-        "name": "Carlos M.",
-        "role": "Consultor de Marketing Digital",
-        "location": "Sevilla"
-      },
-      {
-        "quote": "Lo que más me sorprendió fue el email que genera la IA. No parece de una herramienta — parece que lo has escrito tú después de investigar al cliente. Mi tasa de respuesta pasó del 2% al 11%.",
-        "name": "Laura P.",
-        "role": "Freelance SEO",
-        "location": "Barcelona"
-      },
-      {
-        "quote": "Teníamos Hunter.io, Apollo y otro CRM. Con OpenSells tiramos los tres. Más barato, en español, y los leads del mercado español son mucho mejores. En un mes conseguimos 4 clientes nuevos.",
-        "name": "David R.",
-        "role": "Director de Agencia Digital",
-        "location": "Valencia"
-      }
-    ]
-  },
   "pricing": {
     "title": "Precios que se pagan solos con un cliente",
     "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan.",
@@ -175,7 +152,7 @@
   },
   "finalcta": {
     "title": "La decisión más fácil que vas a tomar esta semana",
-    "subtitle": "Empieza gratis ahora. Sin tarjeta. Si en 7 días no ves el valor, te devolvemos el dinero sin preguntas.",
+    "subtitle": "Empieza gratis ahora, sin tarjeta. Y cuando empieces a pagar, tienes 7 días para pedir la devolución sin dar explicaciones.",
     "value_title": "Lo que obtienes hoy:",
     "values": [
       "Empresas de tu sector y tu ciudad, con teléfono directo",
@@ -184,7 +161,7 @@
       "Emails personalizados con IA cuando prefieras escribir",
       "Exportación CSV ilimitada de tus datos"
     ],
-    "guarantee": "Garantía de 7 días sin preguntas",
+    "guarantee": "7 días de garantía desde el primer cobro",
     "cta": "Quiero mis primeras empresas gratis",
     "sub": "Sin tarjeta · Sin compromisos · Cancela cuando quieras"
   },
@@ -217,7 +194,7 @@
       },
       {
         "q": "¿Puedo cancelar en cualquier momento?",
-        "a": "Sí, sin permanencia ni penalizaciones. Cancelas desde tu panel en 30 segundos y no se te cobra el siguiente mes. Además, si cancelas en los primeros 7 días te devolvemos el importe completo sin preguntas."
+        "a": "Sí, sin permanencia ni penalizaciones. Cancelas desde tu panel en 30 segundos y no se te cobra el siguiente mes. El primer mes es gratis y no se te pide tarjeta, así que no hay nada que devolver ahí; y si cancelas dentro de los 7 días siguientes a tu primer cobro, te devolvemos ese importe completo sin preguntas."
       },
       {
         "q": "¿Funciona para cualquier sector?",
@@ -236,23 +213,23 @@
     "posts": [
       {
         "slug": "como-conseguir-clientes-b2b",
-        "title": "Cómo conseguir clientes B2B: guía definitiva 2025",
-        "excerpt": "Los 6 canales más efectivos para conseguir clientes B2B en 2025, con estrategias concretas para cada uno.",
-        "date": "2025-04-22",
+        "title": "Cómo conseguir clientes B2B: guía definitiva 2026",
+        "excerpt": "Canales, estrategias y herramientas que funcionan en 2026 para conseguir clientes B2B como freelancer o agencia en España.",
+        "date": "2026-06-02",
         "readTime": "10 min"
       },
       {
         "slug": "alternativas-hunter-io-apollo",
-        "title": "Mejores alternativas a Hunter.io y Apollo.io en español",
-        "excerpt": "Comparativa honesta para el mercado español y latinoamericano. Cuál elegir según tu caso de uso.",
-        "date": "2025-04-18",
+        "title": "Mejores alternativas a Hunter.io y Apollo.io para España y LATAM 2026",
+        "excerpt": "Comparativa honesta para el mercado español y latinoamericano: precios, cobertura real y cuál elegir según tu caso.",
+        "date": "2026-06-02",
         "readTime": "7 min"
       },
       {
         "slug": "herramientas-prospeccion-comercial-espana",
-        "title": "Las 7 mejores herramientas de prospección comercial en España",
-        "excerpt": "Comparativa con precios, ventajas y casos de uso reales para el mercado español en 2025.",
-        "date": "2025-04-16",
+        "title": "Las 7 mejores herramientas de prospección comercial en España 2026",
+        "excerpt": "Comparativa actualizada con precios reales, cobertura local y para quién es cada una.",
+        "date": "2026-06-02",
         "readTime": "8 min"
       }
     ]

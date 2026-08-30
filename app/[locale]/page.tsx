@@ -5,7 +5,6 @@ import Hero from '@/components/Hero';
 import Problem from '@/components/Problem';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import BlogPreview from '@/components/BlogPreview';
@@ -68,9 +67,14 @@ export default async function HomePage({ params }: Props) {
         ? 'Primer mes gratis, sin tarjeta. Después 39 €/mes.'
         : 'First month free, no card required. Then €39/month.',
     },
+    // Esto es lo que leen Google y los buscadores con IA para resumir qué es
+    // OpenSells, así que va primero lo que de verdad lo distingue. Describía el
+    // producto de antes del pivote al teléfono: encabezaba con "cold email
+    // automatizado" y no mencionaba la ficha de llamada, que es justamente lo
+    // único que nadie más vende self-serve en español.
     featureList: locale === 'es'
-      ? 'Generación de leads B2B, Cold email automatizado, Enriquecimiento de contactos, Integración Gmail, Seguimientos automáticos'
-      : 'B2B lead generation, Automated cold email, Contact enrichment, Gmail integration, Automatic follow-ups',
+      ? 'Búsqueda de empresas por sector y ciudad, Teléfono directo de cada empresa, Ficha de llamada preparada con IA, Seguimiento del resultado de cada llamada, Borradores de email con IA, Exportación CSV ilimitada'
+      : 'Company search by industry and city, Direct phone number for each company, AI-prepared call brief, Call outcome tracking, AI email drafts, Unlimited CSV export',
     publisher: {
       '@type': 'Organization',
       name: 'OpenSells',
@@ -94,7 +98,6 @@ export default async function HomePage({ params }: Props) {
         <Problem />
         <Features />
         <HowItWorks />
-        <Testimonials />
         <Pricing />
         <FAQ />
         <FinalCTA />
