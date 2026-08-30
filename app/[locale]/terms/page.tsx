@@ -53,8 +53,9 @@ export default async function TermsPage({ params }: Props) {
                 <h2>3. Planes y pagos</h2>
                 <ul>
                   <li><strong>Mes de prueba:</strong> al registrarte obtienes un mes gratis del plan Profesional. No se pide tarjeta ni se cobra nada durante ese mes.</li>
-                  <li><strong>Plan Profesional:</strong> 29 €/mes una vez terminado el mes de prueba.</li>
-                  <li><strong>Plan Agencia:</strong> 69 €/mes.</li>
+                  <li><strong>Plan Profesional:</strong> 39 €/mes una vez terminado el mes de prueba.</li>
+                  <li><strong>Plan Agencia:</strong> 89 €/mes.</li>
+                  <li><strong>Bolsas de leads:</strong> ampliaciones de pago único que se suman a tu cuenta y no caducan. Cada bolsa incluye sus leads, sus fichas de llamada y sus borradores, y solo se consume cuando has agotado los de tu plan del mes.</li>
                 </ul>
                 <p>Si al terminar el mes de prueba no has añadido un método de pago, la suscripción se cancela automáticamente y <strong>tu cuenta pasa a modo solo lectura</strong>: conservas el acceso a tus leads, nichos y tareas y puedes seguir consultándolos, pero no podrás buscar nuevos leads ni generar fichas de llamada o emails hasta que contrates un plan.</p>
                 <p>Los pagos se procesan mediante Stripe. Las suscripciones se renuevan automáticamente cada mes. Si un cobro falla, mantendrás el acceso mientras se reintenta el pago durante los días siguientes. Puedes cancelar en cualquier momento desde tu panel de cuenta — el acceso se mantiene hasta el final del periodo facturado.</p>
@@ -100,8 +101,9 @@ export default async function TermsPage({ params }: Props) {
                 <h2>3. Plans and Payments</h2>
                 <ul>
                   <li><strong>Free trial month:</strong> when you sign up you get one free month of the Professional plan. No card is requested and nothing is charged during that month.</li>
-                  <li><strong>Professional Plan:</strong> €29/month once the trial month ends.</li>
-                  <li><strong>Agency Plan:</strong> €69/month.</li>
+                  <li><strong>Professional Plan:</strong> €39/month once the trial month ends.</li>
+                  <li><strong>Agency Plan:</strong> €89/month.</li>
+                  <li><strong>Lead packs:</strong> one-off top-ups added to your account that never expire. Each pack includes its leads, its call briefs and its email drafts, and is only used once you have run out of your plan's monthly allowance.</li>
                 </ul>
                 <p>If you have not added a payment method by the end of the trial month, the subscription is cancelled automatically and <strong>your account switches to read-only mode</strong>: you keep access to your leads, niches and tasks and can still view them, but you will not be able to search for new leads or generate call briefs or emails until you subscribe to a plan.</p>
                 <p>Payments are processed via Stripe. Subscriptions renew automatically each month. If a payment fails, you keep access while the charge is retried over the following days. You may cancel at any time from your account dashboard — access continues until the end of the billed period.</p>

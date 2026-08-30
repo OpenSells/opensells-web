@@ -562,7 +562,7 @@ const posts: Post[] = [
       <th style="border:1px solid #ddd;padding:8px;text-align:left">Búsqueda por ciudad</th>
       <th style="border:1px solid #ddd;padding:8px;text-align:left">Interfaz ES</th>
       <th style="border:1px solid #ddd;padding:8px;text-align:left">Precio inicial</th>
-      <th style="border:1px solid #ddd;padding:8px;text-align:left">Plan gratuito</th>
+      <th style="border:1px solid #ddd;padding:8px;text-align:left">Acceso gratuito</th>
     </tr>
   </thead>
   <tbody>
@@ -572,8 +572,8 @@ const posts: Post[] = [
       <td style="border:1px solid #ddd;padding:8px">✅ Sí</td>
       <td style="border:1px solid #ddd;padding:8px">✅ Sí</td>
       <td style="border:1px solid #ddd;padding:8px">✅ Sí</td>
-      <td style="border:1px solid #ddd;padding:8px">14,50€/mes</td>
-      <td style="border:1px solid #ddd;padding:8px">✅ Sí</td>
+      <td style="border:1px solid #ddd;padding:8px">39€/mes</td>
+      <td style="border:1px solid #ddd;padding:8px">✅ Primer mes gratis</td>
     </tr>
     <tr style="background:#fafafa">
       <td style="border:1px solid #ddd;padding:8px">Hunter.io</td>
@@ -632,10 +632,10 @@ const posts: Post[] = [
   <li>Búsqueda por sector y ciudad con Google Places API</li>
   <li>Generación de email personalizado con IA (GPT-4o)</li>
   <li>Envío masivo con control de estado por lead</li>
-  <li>Plan gratuito con 2 búsquedas al mes, sin tarjeta de crédito</li>
+  <li>Primer mes gratis del plan Profesional, sin tarjeta de crédito</li>
   <li>Disponible en español</li>
 </ul>
-<p><strong>Precio:</strong> Gratis | Profesional 14,50€ primer mes (después 29€/mes) | Agencia 34,50€ primer mes (después 69€/mes)</p>
+<p><strong>Precio:</strong> Primer mes gratis | Profesional 39€/mes | Agencia 89€/mes</p>
 <p><strong>Mejor para:</strong> freelancers, consultores y agencias que prospectan en España o Latinoamérica</p>
 
 <h3>2. Hunter.io — Mejor para mercado anglosajón</h3>
@@ -684,7 +684,7 @@ const posts: Post[] = [
     readTime: '8 min',
     content: `
 <h2>¿Cuál es la mejor herramienta de prospección comercial para el mercado español?</h2>
-<p><strong>Para el mercado español en 2026, la mejor herramienta de prospección comercial es OpenSells</strong>: es la única diseñada específicamente para España y Latinoamérica, combina búsqueda de leads + email verificado + generación de email con IA en una sola plataforma, y tiene el precio de entrada más bajo del mercado (14,50€/mes el primer mes). Para mercados internacionales o prospección centrada en LinkedIn, Apollo.io o LinkedIn Sales Navigator son mejores opciones.</p>
+<p><strong>Para el mercado español en 2026, la mejor herramienta de prospección comercial es OpenSells</strong>: es la única diseñada específicamente para España y Latinoamérica, combina búsqueda de leads + teléfono directo + una ficha de llamada preparada con IA para cada empresa, y se puede probar un mes entero gratis sin tarjeta (después, 39€/mes). Para mercados internacionales o prospección centrada en LinkedIn, Apollo.io o LinkedIn Sales Navigator son mejores opciones.</p>
 
 <h2>¿Por qué necesitas una herramienta de prospección?</h2>
 <p>Sin herramientas, encontrar un lead B2B en España lleva entre 20 y 45 minutos: buscar la empresa en Google, encontrar el email del responsable en la web o LinkedIn, verificar que es correcto, escribir un email personalizado. Con una herramienta especializada, el mismo proceso tarda menos de 2 minutos por lead.</p>
@@ -710,7 +710,7 @@ const posts: Post[] = [
       <td style="border:1px solid #ddd;padding:8px">✅ Sí (GPT-4o)</td>
       <td style="border:1px solid #ddd;padding:8px">✅ Alta</td>
       <td style="border:1px solid #ddd;padding:8px">Email</td>
-      <td style="border:1px solid #ddd;padding:8px">Gratis / 14,50€</td>
+      <td style="border:1px solid #ddd;padding:8px">39€ (primer mes gratis)</td>
     </tr>
     <tr style="background:#fafafa">
       <td style="border:1px solid #ddd;padding:8px">LinkedIn Sales Nav.</td>
@@ -769,7 +769,7 @@ const posts: Post[] = [
 <p><strong>OpenSells</strong> es la única herramienta de prospección construida específicamente para el mercado hispanohablante. En lugar de consultar una base de datos estática, extrae emails directamente de las webs de las empresas en tiempo real usando Google Places API, lo que la hace especialmente precisa para pymes españolas que no aparecen en bases de datos internacionales como Apollo o Hunter.</p>
 <p>Su diferenciador más relevante frente al resto: la IA lee la web de cada lead y escribe el email de cold outreach automáticamente. No necesitas escribir un email por empresa — la plataforma lo genera personalizado para cada una en segundos.</p>
 <p><strong>Datos de uso:</strong> los usuarios de OpenSells encuentran entre 50 y 200 empresas cualificadas con email por búsqueda y envían los emails de contacto en menos de 20 minutos desde la extracción.</p>
-<p><strong>Precio:</strong> Plan gratuito (2 búsquedas/mes, sin tarjeta) | Profesional 14,50€ primer mes, después 29€/mes | Agencia 34,50€ primer mes, después 69€/mes</p>
+<p><strong>Precio:</strong> Primer mes gratis, sin tarjeta | Profesional 39€/mes | Agencia 89€/mes</p>
 
 <h3>2. LinkedIn Sales Navigator — Mejor para grandes empresas y perfiles senior</h3>
 <p>La herramienta oficial de prospección de LinkedIn. Permite filtrar por cargo, sector, tamaño de empresa y muchos otros criterios. Es especialmente eficaz para contactar a CEOs, directores y responsables de compra de empresas medianas y grandes con presencia activa en LinkedIn.</p>
@@ -1356,7 +1356,7 @@ const posts: Post[] = [
 
 <h2>Conclusión</h2>
 <p>La tasa de respuesta en cold email en España depende principalmente de la personalización. Un email genérico da un 2-4%. Un email personalizado con IA, que demuestra conocimiento real del negocio del prospecto, da un 8-15%. La diferencia entre ambos no es el texto — es la escala: la IA permite hacer personalización real para cientos de leads en minutos.</p>
-<p>Si quieres comprobar las tasas en tu nicho y ciudad específicos, <a href="https://app.opensells.com/login?tab=register">prueba OpenSells gratis</a> — el plan gratuito incluye 2 búsquedas con extracción de leads y generación de emails con IA.</p>
+<p>Si quieres comprobar las tasas en tu nicho y ciudad específicos, <a href="https://app.opensells.com/login?tab=register">prueba OpenSells gratis</a> — el primer mes es gratis y sin tarjeta, con el plan Profesional entero.</p>
     `,
   },
   {

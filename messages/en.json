@@ -127,9 +127,6 @@
   "pricing": {
     "title": "Simple, transparent pricing",
     "subtitle": "Try it free for a full month, no card. Scale when you need it.",
-    "toggle_monthly": "Monthly",
-    "toggle_yearly": "Yearly",
-    "save_badge": "Save 20%",
     "popular": "Most popular",
     "cta_paid": "Get started",
     "per_month": "/mo",
@@ -138,15 +135,14 @@
       {
         "key": "profesional",
         "name": "Professional",
-        "price_monthly": "29",
-        "price_yearly": "23",
+        "price_monthly": "39",
         "description": "For freelancers and growing consultants",
         "features": [
-          "500 leads per month",
+          "600 leads per month",
           "Unlimited searches",
-          "500 AI call briefs",
-          "100 AI emails per month",
-          "300 active tasks",
+          "600 AI call briefs",
+          "1,800 AI email drafts per month",
+          "Unlimited tasks",
           "Unlimited CSV export",
           "30 AI messages per day",
           "Priority support"
@@ -156,24 +152,23 @@
       {
         "key": "agencia",
         "name": "Agency",
-        "price_monthly": "69",
-        "price_yearly": "55",
+        "price_monthly": "89",
         "description": "For agencies and sales teams",
         "features": [
-          "1,000 leads per month",
+          "1,500 leads per month",
           "Unlimited searches",
           "1,500 AI call briefs",
-          "300 AI emails per month",
-          "1,000 active tasks",
+          "4,500 AI email drafts per month",
+          "Unlimited tasks",
           "Unlimited CSV export",
-          "100 AI messages per day",
+          "50 AI messages per day",
           "Top queue priority",
           "Priority support"
         ],
         "cta": "Start — First month free"
       }
     ],
-    "discount_note": "🎉 First month free, no card required. Then €29/mo.",
+    "discount_note": "🎉 First month free, no card required. Then €39/mo.",
     "first_month_free": "First month free"
   },
   "faq": {

@@ -62,11 +62,11 @@ export default async function HomePage({ params }: Props) {
     description: tMeta('description'),
     offers: {
       '@type': 'Offer',
-      price: 29,
+      price: 39,
       priceCurrency: 'EUR',
       description: locale === 'es'
-        ? 'Primer mes gratis, sin tarjeta. Después 29 €/mes.'
-        : 'First month free, no card required. Then €29/month.',
+        ? 'Primer mes gratis, sin tarjeta. Después 39 €/mes.'
+        : 'First month free, no card required. Then €39/month.',
     },
     featureList: locale === 'es'
       ? 'Generación de leads B2B, Cold email automatizado, Enriquecimiento de contactos, Integración Gmail, Seguimientos automáticos'
