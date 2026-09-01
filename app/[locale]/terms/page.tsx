@@ -45,7 +45,7 @@ export default async function TermsPage({ params }: Props) {
                 <p>Al registrarte y usar OpenSells («el Servicio»), aceptas estos Términos de Servicio. Si no estás de acuerdo, no uses el Servicio.</p>
 
                 <h2>1. Descripción del Servicio</h2>
-                <p>OpenSells es una plataforma SaaS de prospección B2B que permite a freelancers y agencias encontrar leads verificados, generar borradores de email con IA y gestionar su pipeline de ventas.</p>
+                <p>OpenSells es una plataforma SaaS de prospección B2B que permite a freelancers y agencias encontrar empresas con sus datos de contacto públicos, preparar sus llamadas y borradores de email con IA, y gestionar su pipeline de ventas. Los datos de contacto proceden de fuentes públicas (fichas de Google y la propia web de cada empresa); no realizamos verificación técnica de buzón.</p>
 
                 <h2>2. Registro y cuenta</h2>
                 <p>Debes tener al menos 18 años para crear una cuenta. Eres responsable de mantener la confidencialidad de tu contraseña y de toda la actividad que ocurra en tu cuenta. Notifícanos inmediatamente ante cualquier uso no autorizado.</p>
@@ -93,7 +93,7 @@ export default async function TermsPage({ params }: Props) {
                 <p>By registering and using OpenSells ("the Service"), you agree to these Terms of Service. If you disagree, please do not use the Service.</p>
 
                 <h2>1. Service Description</h2>
-                <p>OpenSells is a B2B prospecting SaaS platform that allows freelancers and agencies to find verified leads, generate AI-powered email drafts and manage their sales pipeline.</p>
+                <p>OpenSells is a B2B prospecting SaaS platform that allows freelancers and agencies to find companies along with their public contact details, prepare their calls and email drafts with AI, and manage their sales pipeline. Contact details come from public sources (Google listings and each company&apos;s own website); we do not perform technical mailbox verification.</p>
 
                 <h2>2. Registration and Account</h2>
                 <p>You must be at least 18 years old to create an account. You are responsible for maintaining the confidentiality of your password and all activity that occurs under your account. Notify us immediately of any unauthorized use.</p>

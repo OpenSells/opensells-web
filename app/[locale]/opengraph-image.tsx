@@ -75,9 +75,9 @@ export default function Image() {
             letterSpacing: '-1px',
           }}
         >
-          Genera leads B2B con IA
+          Empresas a las que llamar,
           <br />
-          en segundos
+          con la llamada preparada
         </div>
 
         {/* Subtitle */}
@@ -90,7 +90,7 @@ export default function Image() {
             lineHeight: 1.4,
           }}
         >
-          Encuentra empresas, obtén emails verificados y genera emails personalizados automáticamente.
+          Leads B2B con su teléfono y una ficha de llamada hecha por IA. Empieza gratis, sin tarjeta.
         </div>
 
         {/* URL */}

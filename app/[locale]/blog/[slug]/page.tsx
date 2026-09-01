@@ -137,8 +137,8 @@ export default async function BlogPostPage({ params }: Props) {
             </p>
             <p className="text-slate-500 mb-6 text-sm">
               {locale === 'es'
-                ? 'Prueba OpenSells gratis y consigue leads verificados en menos de 5 minutos. Sin tarjeta de crédito.'
-                : 'Try OpenSells free and get verified leads in under 5 minutes. No credit card required.'}
+                ? 'Prueba OpenSells gratis y consigue tus primeros leads con teléfono en menos de 5 minutos. Sin tarjeta de crédito.'
+                : 'Try OpenSells free and get your first leads with a direct phone number in under 5 minutes. No credit card required.'}
             </p>
             <Link
               href={`${appUrl}/register`}

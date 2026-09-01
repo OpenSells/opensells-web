@@ -58,8 +58,8 @@ const posts: Post[] = [
 </ol>
 
 <h2>Herramientas recomendadas para cold email B2B en España</h2>
-<p>Para hacer cold email de forma profesional necesitas tres cosas: una base de datos verificada, una herramienta de envío y un sistema de seguimiento.</p>
-<p><strong>OpenSells</strong> te da las tres en un solo lugar: encuentra empresas con emails verificados en cualquier sector y ciudad española, genera emails personalizados con IA basándose en la web del lead, y gestiona los seguimientos de forma automática. Es especialmente potente para freelancers y agencias que quieren escalar su prospección sin contratar un equipo de ventas.</p>
+<p>Para hacer cold email de forma profesional necesitas tres cosas: una base de datos de contactos fiable, una herramienta de envío y un sistema de seguimiento.</p>
+<p><strong>OpenSells</strong> te da las tres en un solo lugar: encuentra empresas con su teléfono y el email que ellas mismas publican, en cualquier sector y ciudad española, genera emails personalizados con IA basándose en la web del lead, y gestiona los seguimientos de forma automática. Es especialmente potente para freelancers y agencias que quieren escalar su prospección sin contratar un equipo de ventas.</p>
 <p>El resultado típico de nuestros usuarios: entre 50 y 200 leads cualificados por semana, con tasas de respuesta del 8-15% cuando el email está bien personalizado.</p>
 
 <h2>Métricas que debes seguir</h2>
@@ -72,7 +72,7 @@ const posts: Post[] = [
 
 <h2>Conclusión</h2>
 <p>El cold email B2B en España es una de las formas más eficientes de conseguir clientes cuando se hace bien: con buena segmentación, personalización real y seguimiento sistemático. La tecnología actual, especialmente la IA, hace que lo que antes requería horas de trabajo manual pueda hacerse en minutos.</p>
-<p>Si quieres empezar hoy mismo, <a href="https://app.opensells.com/login?tab=register">prueba OpenSells gratis</a> y consigue tus primeros leads verificados en menos de 5 minutos.</p>
+<p>Si quieres empezar hoy mismo, <a href="https://app.opensells.com/login?tab=register">prueba OpenSells gratis</a> y consigue tus primeros leads con teléfono en menos de 5 minutos.</p>
     `,
   },
   {
@@ -135,7 +135,7 @@ const posts: Post[] = [
 
 <h2>Conclusión: la prospección sistemática es el mayor diferenciador</h2>
 <p>Los freelancers que generan ingresos predecibles no tienen más talento, tienen mejores sistemas. Si dedicas 1-2 horas al día a prospección activa usando las herramientas adecuadas, puedes pasar de esperar clientes a elegirlos.</p>
-<p><a href="https://app.opensells.com/login?tab=register">Prueba OpenSells gratis</a> y consigue tu primera lista de leads B2B verificados en menos de 5 minutos. Sin tarjeta de crédito.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Prueba OpenSells gratis</a> y consigue tu primera lista de leads B2B con teléfono en menos de 5 minutos. Sin tarjeta de crédito.</p>
     `,
   },
   {
@@ -254,8 +254,8 @@ const posts: Post[] = [
 </ol>
 
 <h2>The right tools for B2B cold email</h2>
-<p>To do cold email professionally you need three things: a verified lead database, a sending tool, and a tracking system.</p>
-<p><strong>OpenSells</strong> gives you all three in one place: find companies with verified emails in any industry and city, generate AI-personalized emails based on the lead's website, and manage follow-ups automatically. Typical results: 50-200 qualified leads per week, with 8-15% reply rates when emails are properly personalized.</p>
+<p>To do cold email professionally you need three things: a reliable lead database, a sending tool, and a tracking system.</p>
+<p><strong>OpenSells</strong> gives you all three in one place: find companies with their phone number and the email they publish themselves, in any industry and city, generate AI-personalized emails based on the lead's website, and manage follow-ups automatically. Typical results: 50-200 qualified leads per week, with 8-15% reply rates when emails are properly personalized.</p>
 
 <h2>Key metrics to track</h2>
 <ul>
@@ -265,7 +265,7 @@ const posts: Post[] = [
 </ul>
 
 <h2>Conclusion</h2>
-<p>B2B cold email is one of the most efficient ways to acquire clients when done right: with good segmentation, real personalization, and systematic follow-up. If you want to start today, <a href="https://app.opensells.com/login?tab=register">try OpenSells free</a> and get your first verified leads in under 5 minutes.</p>
+<p>B2B cold email is one of the most efficient ways to acquire clients when done right: with good segmentation, real personalization, and systematic follow-up. If you want to start today, <a href="https://app.opensells.com/login?tab=register">try OpenSells free</a> and get your first leads with a direct phone number in under 5 minutes.</p>
     `,
   },
   {
@@ -309,7 +309,7 @@ const posts: Post[] = [
 
 <h2>Conclusion: systematic prospecting is the biggest differentiator</h2>
 <p>Freelancers who generate predictable revenue don't have more talent — they have better systems. If you dedicate 1-2 hours per day to active prospecting using the right tools, you can go from waiting for clients to choosing them.</p>
-<p><a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> and get your first verified B2B lead list in under 5 minutes. No credit card required.</p>
+<p><a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> and get your first B2B lead list with phone numbers in under 5 minutes. No credit card required.</p>
     `,
   },
   {
@@ -399,7 +399,7 @@ const posts: Post[] = [
 <p>La clave del cold email que convierte en 2025 es la personalización basada en datos reales del negocio del prospecto. Herramientas como <strong>OpenSells</strong> leen la web de cada empresa y generan un email único para cada lead, lo que eleva las tasas de respuesta del 1-2% (email genérico) al 8-15% (email personalizado con IA).</p>
 <p>Para conseguir clientes B2B con cold email necesitas tres cosas:</p>
 <ul>
-  <li><strong>Base de datos verificada</strong>: emails que lleguen, no que reboten</li>
+  <li><strong>Una base de datos fiable</strong>: contactos reales y actualizados, no listas compradas</li>
   <li><strong>Personalización real</strong>: que el email demuestre que conoces su negocio</li>
   <li><strong>Seguimiento sistemático</strong>: al menos 3-4 emails por secuencia</li>
 </ul>
@@ -453,7 +453,7 @@ const posts: Post[] = [
 <p><strong>OpenSells</strong> es la herramienta más completa para freelancers y agencias que quieren escalar su prospección B2B en España y Latinoamérica. Con una sola plataforma puedes:</p>
 <ul>
   <li>Buscar empresas por sector, ciudad y palabras clave</li>
-  <li>Obtener emails verificados directamente de las webs de las empresas</li>
+  <li>Obtener su teléfono y el email que la propia empresa publica en su web</li>
   <li>Generar emails personalizados con IA en segundos</li>
   <li>Gestionar seguimientos automáticos</li>
   <li>Exportar leads a tu CRM</li>
@@ -462,7 +462,7 @@ const posts: Post[] = [
 
 <h2>Conclusión: la consistencia es la clave</h2>
 <p>Conseguir clientes B2B no es un evento, es un proceso. Los mejores resultados vienen de prospectar de forma constante, incluso cuando tienes trabajo. El pipeline de ventas tarda semanas en madurar, por eso quien para la prospección cuando tiene proyectos luego sufre los meses de sequía.</p>
-<p>Dedica al menos 1 hora al día a prospección activa y verás resultados en pocas semanas. <a href="https://app.opensells.com/login?tab=register">Empieza gratis con OpenSells</a> y consigue tus primeros leads B2B verificados hoy mismo.</p>
+<p>Dedica al menos 1 hora al día a prospección activa y verás resultados en pocas semanas. <a href="https://app.opensells.com/login?tab=register">Empieza gratis con OpenSells</a> y consigue tus primeros leads B2B con teléfono hoy mismo.</p>
     `,
   },
   {
@@ -509,7 +509,7 @@ const posts: Post[] = [
 <h2>Cómo funciona el cold email B2B paso a paso</h2>
 <ol>
   <li><strong>Identificas a tu cliente ideal</strong>: sector, tamaño de empresa, cargo del decisor, ciudad</li>
-  <li><strong>Construyes una lista de prospectos</strong>: empresas que encajan con tu perfil, con sus emails verificados</li>
+  <li><strong>Construyes una lista de prospectos</strong>: empresas que encajan con tu perfil, con sus datos de contacto públicos</li>
   <li><strong>Escribes el email</strong>: personalizado para cada empresa, corto y con una propuesta de valor clara</li>
   <li><strong>Envías y haces seguimiento</strong>: si no responden, mandas 2-3 follow-ups espaciados en el tiempo</li>
   <li><strong>Gestionas las respuestas</strong>: algunos dicen no, algunos piden más info, algunos quieren reunirse</li>
@@ -872,14 +872,14 @@ const posts: Post[] = [
 </ul>
 <p>The more specific your ICP, the higher your reply rates. "Marketing agencies in Barcelona with 5-20 employees" will convert much better than "any company that might need marketing."</p>
 
-<h2>Step 2: Build a verified lead list</h2>
+<h2>Step 2: Build a solid lead list</h2>
 <p>Your email list is the foundation of your outreach. A bad list wastes all your effort. You need:</p>
 <ul>
   <li><strong>Verified emails</strong> — not guesses. Bounce rates above 5% hurt your domain reputation.</li>
   <li><strong>Decision-maker contacts</strong> — not generic info@ addresses</li>
   <li><strong>Relevant companies</strong> — actually fit your ICP</li>
 </ul>
-<p>Tools like <strong>OpenSells</strong> find companies by industry and city, then extract and verify emails directly from company websites. This approach gives much higher accuracy than database-style tools, especially outside the US market.</p>
+<p>Tools like <strong>OpenSells</strong> find companies by industry and city, then extract the phone number and the email each company publishes on its own website. Because it is read from the company site rather than a static database, it tends to be fresher than database-style tools, especially outside the US market.</p>
 
 <h2>Step 3: Write your cold email</h2>
 <p>The anatomy of a high-converting cold email:</p>
@@ -936,7 +936,7 @@ const posts: Post[] = [
 
 <h2>Conclusion</h2>
 <p>Cold email outreach in 2026 is the most cost-effective B2B acquisition channel for freelancers and small agencies. The combination of AI personalization and systematic follow-up makes it possible to generate consistent pipeline without a sales team or advertising budget.</p>
-<p>Ready to start? <a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> — find verified B2B leads and send AI-personalized cold emails in under 10 minutes.</p>
+<p>Ready to start? <a href="https://app.opensells.com/login?tab=register">Try OpenSells free</a> — find B2B leads with direct phone numbers and send AI-personalized cold emails in under 10 minutes.</p>
     `,
   },
   {
@@ -1197,7 +1197,7 @@ const posts: Post[] = [
 <ol>
   <li><strong>Define your ICP:</strong> be specific about who your best customers are and what they have in common</li>
   <li><strong>Choose your primary channel:</strong> start with one outbound channel and execute it well before adding more</li>
-  <li><strong>Build your lead list:</strong> use tools like OpenSells to find verified contacts that match your ICP</li>
+  <li><strong>Build your lead list:</strong> use tools like OpenSells to find contacts that match your ICP</li>
   <li><strong>Write and test your messaging:</strong> test different value propositions, subject lines and CTAs</li>
   <li><strong>Set up follow-up sequences:</strong> most conversions happen after 2-4 touchpoints</li>
   <li><strong>Track and optimize:</strong> measure open rates, reply rates, meetings and closed deals per campaign</li>
