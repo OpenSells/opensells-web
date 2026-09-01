@@ -100,8 +100,11 @@ export default async function HomePage({ params }: Props) {
         <HowItWorks />
         <Pricing />
         <FAQ />
-        <FinalCTA />
+        {/* El blog va ANTES del cierre: estaba después, así que justo tras
+            pedirle la venta se le ofrecía una puerta para irse a leer. Lo
+            último que ve ahora es la llamada a la acción. */}
         <BlogPreview locale={locale} />
+        <FinalCTA />
       </main>
       <Footer locale={locale} />
     </>
