@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import Script from 'next/script';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
@@ -85,6 +86,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={`${inter.variable} ${inter.className} h-full antialiased scroll-smooth`}>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
+        <Script id="oaiq-pixel" strategy="beforeInteractive">
+          {`!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"3taQBBxRK3YTxL7gw2bHo6"});`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
