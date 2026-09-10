@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "OpenSells | Companies to call, with the call already prepared",
-    "description": "Type the industry and the city. OpenSells finds the companies, gives you their phone number and the AI prepares what to say on every call. Start free.",
+    "description": "Type the industry and the city. OpenSells finds companies, gathers their public data — including a phone number when available — and AI prepares what to say on each call. Start free.",
     "ogTitle": "OpenSells — Find companies and call them knowing what to say",
-    "ogDescription": "B2B leads with phone numbers and an AI-written call brief. Start free, no card required."
+    "ogDescription": "B2B prospecting with public contact data and an AI-written call brief. Start free, no card required."
   },
   "nav": {
     "features": "Features",
@@ -15,7 +15,7 @@
   "hero": {
     "badge": "🔥 First month free — no card required",
     "headline": "Companies to call, with the conversation already prepared",
-    "subheadline": "Type the industry and the city. OpenSells finds the companies, gives you their phone number and the AI prepares what to say on every call. You just dial.",
+    "subheadline": "Type the industry and the city. OpenSells finds companies, gathers their public data — including a phone number when available — and AI prepares what to say on each call. You just dial.",
     "cta_primary": "Start free now",
     "cta_secondary": "See how it works",
     "social_proof": "No credit card · Cancel anytime",
@@ -26,22 +26,22 @@
   },
   "problem": {
     "title": "How many clients are you losing because your messages reach no one?",
-    "subtitle": "Cold email is saturated. The phone still works — but only if you know who you are calling and what to say.",
+    "subtitle": "Cold email competes in increasingly crowded inboxes. The phone remains a direct alternative — and works better when you know who you are calling and what to say.",
     "items": [
       {
         "icon": "📭",
-        "title": "Cold emails don't get opened anymore",
-        "text": "You send fifty, you get zero replies. Between spam filters, crowded inboxes and messages that smell like a template, cold email keeps hitting a lower ceiling."
+        "title": "Cold email competes for attention",
+        "text": "Between spam filters, crowded inboxes and messages that sound like templates, getting a reply by email can be difficult."
       },
       {
         "icon": "📞",
-        "title": "People do answer the phone — but it's daunting",
-        "text": "They pick up, and you have no idea what they do, where to start or how to handle a \"not interested\". That's how people quit calling after the third try."
+        "title": "Calling is easier when you are prepared",
+        "text": "When someone picks up, you need to know what the company does, how to start and how to respond to a \"not interested\". Preparation means you do not improvise from scratch."
       },
       {
         "icon": "⏱️",
         "title": "Finding companies by hand eats your week",
-        "text": "Google, each company's website, copying the phone number into a spreadsheet. Hours of mechanical work before you've spoken to a single person."
+        "text": "Google, each company's website, copying data into a spreadsheet. Hours of mechanical work before you've spoken to a single person."
       }
     ]
   },
@@ -52,52 +52,52 @@
       {
         "icon": "🔎",
         "title": "Real companies in your industry and city",
-        "description": "Type \"dental clinics in Valencia\" and get the list in minutes: name, website, phone and address. Companies that exist, not purchased lists."
+        "description": "Type \"dental clinics in Valencia\" and get the name, website, phone number when available and address. Companies that exist, not purchased lists."
       },
       {
         "icon": "📞",
-        "title": "Direct phone numbers, which is what people use",
-        "description": "Almost every company publishes a phone number, far fewer publish a useful email. That's why the phone is the primary channel: you reach the decision maker without going through the trash folder."
+        "title": "Public business phone numbers when available",
+        "description": "Many local businesses publish a phone number even when they do not publish a useful sales email. OpenSells brings that public contact data into the same prospecting workflow."
       },
       {
         "icon": "🧠",
         "title": "The AI prepares the call for you",
-        "description": "Before you dial you get the brief: what they do, why calling them makes sense, the exact opening line, three questions and what to answer if they say no."
+        "description": "Before you dial you get the brief: what they do, why calling them may make sense, a suggested opening line, three questions and responses to common objections."
       },
       {
         "icon": "✅",
-        "title": "You hang up and the next step is already scheduled",
-        "description": "Log how the call went in one click and the app suggests the follow-up: call back tomorrow, check in three days. Nothing goes cold because you forgot."
+        "title": "Keep follow-up organised",
+        "description": "After contacting a lead, you can update its status, save notes and create tasks for the next step. Your follow-up stays in the same place."
       },
       {
         "icon": "✍️",
         "title": "AI emails when you'd rather write",
-        "description": "For leads with an email address, the AI drafts a personalised message after reading their site. It opens in your own Gmail and you send it from your account."
+        "description": "For leads with an email address, AI drafts a personalised message after reading their site. Review it and send it from OpenSells through your connected Gmail account."
       },
       {
         "icon": "🛡️",
-        "title": "Your data is always yours",
-        "description": "Export every lead to CSV whenever you want and take it to your CRM. No restrictions, no hostages."
+        "title": "Your data is yours",
+        "description": "On a paid plan, export your leads to CSV whenever you want and take them to your CRM. During the free trial, CSV export is limited to 50 leads per month."
       }
     ]
   },
   "how": {
-    "title": "From zero to your first call in under 5 minutes",
+    "title": "From zero to your first call in a few minutes",
     "steps": [
       {
         "number": "01",
         "title": "Type your industry and city",
-        "description": "\"Car repair shops in Valencia\", \"HR consultancies in Madrid\". OpenSells finds the companies with their phone number and website."
+        "description": "\"Car repair shops in Valencia\", \"HR consultancies in Madrid\". OpenSells finds companies with their public data, including a phone number when available."
       },
       {
         "number": "02",
         "title": "Open the call brief",
-        "description": "The AI reads their site and lays out what they do, why to call them, how to open the conversation and how to answer the most likely objections."
+        "description": "AI reads their site and lays out what they do, why calling them may make sense, how to open the conversation and how to respond to likely objections."
       },
       {
         "number": "03",
-        "title": "Call and log what happened",
-        "description": "Dial straight from the brief. When you hang up you pick the outcome and the app chains the next step, so no lead is left half-done."
+        "title": "Call and update the lead",
+        "description": "Contact the company from the brief and, when you finish, update the status, add a note or create the relevant task to keep follow-up organised."
       }
     ]
   },
@@ -107,7 +107,7 @@
     "popular": "Most popular",
     "cta_paid": "Get started",
     "per_month": "/mo",
-    "no_card": "No credit card required · Cancel anytime",
+    "no_card": "First month free with no card · During the trial, CSV export is limited to 50 leads per month · Cancel anytime",
     "packs_title": "Run out mid-month?",
     "packs_note": "Top up with a one-off pack: 100 leads for €9 or 300 for €25. One-time payment, never expires, and each pack brings its own call briefs and email drafts. It is only used once you have run out of your plan's.",
     "plans": [
@@ -122,7 +122,7 @@
           "600 AI call briefs",
           "1,800 AI email drafts per month",
           "Unlimited tasks",
-          "Unlimited CSV export",
+          "Unlimited CSV export on the paid plan",
           "30 AI messages per day",
           "Priority support"
         ],
@@ -139,7 +139,7 @@
           "1,500 AI call briefs",
           "4,500 AI email drafts per month",
           "Unlimited tasks",
-          "Unlimited CSV export",
+          "Unlimited CSV export on the paid plan",
           "50 AI messages per day",
           "Top queue priority",
           "Priority support"
@@ -155,39 +155,39 @@
     "items": [
       {
         "q": "How long until I see results?",
-        "a": "Your first list is ready in under 5 minutes and you can start calling the same day. Unlike email, a call tells you straight away whether there's interest: you don't wait days for a reply that rarely comes."
+        "a": "Your first list can be ready in a few minutes and you can start prospecting the same day. A phone call gives you immediate feedback on whether there is interest; email replies may take longer or never arrive."
       },
       {
         "q": "Why phone and not email?",
-        "a": "Two reasons. Coverage: almost every company publishes a phone number and far fewer a usable contact email. And in Spain the law is much clearer about B2B phone calls than about cold email. We still include AI emails, but the phone is the channel we recommend."
+        "a": "Phone numbers often have better coverage among local businesses than useful sales email addresses and let you start a conversation directly. We still include AI email, but recommend using whichever channel best fits each case."
       },
       {
         "q": "Are the lead emails verified?",
-        "a": "We don't run technical mailbox verification (SMTP or MX). We extract the emails companies publish on their own websites, so they are real, public addresses, but they may be outdated or generic inboxes. We'd rather be straight with you: if you need delivery guarantees, the phone is the reliable route."
+        "a": "We don't run technical mailbox verification (SMTP or MX). We extract email addresses that companies publish on their own websites, so they are public addresses, but they may be outdated or generic inboxes."
       },
       {
         "q": "Is cold calling businesses legal in Spain?",
-        "a": "Business-to-business calling has a much clearer legal footing than cold email. Spain's LSSI requires prior consent or an existing contractual relationship for commercial email, even B2B — something many tools gloss over. That said, this isn't legal advice: check your specific case, and always respect opt-out lists and any request not to be called again."
+        "a": "The rules that apply depend on the type of contact, purpose and specific circumstances. OpenSells works with public business data, but how that data is used for prospecting remains the user's responsibility. This is not legal advice: review your specific case and always respect requests not to be contacted again."
       },
       {
         "q": "What if I don't know what to say on the phone?",
-        "a": "That's what the call brief is for. Before you dial you have what the company does, why calling them makes sense, the exact opening line, three questions to find out whether they're a fit and prepared answers to the usual objections."
+        "a": "That's what the call brief is for. Before you dial you have what the company does, why calling them may make sense, a suggested opener, questions to see whether they are a fit and prepared responses to common objections."
       },
       {
         "q": "How is this different from Hunter.io or Apollo?",
-        "a": "Hunter and Apollo are contact databases built for the English-speaking market and for email. OpenSells is built for Spain, in Spanish, and doesn't stop at handing you data: it prepares the conversation. The value isn't the list, it's knowing what to say when they pick up."
+        "a": "Hunter and Apollo are broader data and prospecting platforms. OpenSells aims to be simpler and focused on one workflow: find businesses by industry and city, gather their public data, prepare the conversation and organise follow-up in one place."
       },
       {
         "q": "Can I cancel anytime?",
-        "a": "Yes, no lock-in and no penalties. Cancel from your dashboard in 30 seconds and you won't be charged the following month. The first month is free and no card is required, so there is nothing to refund there; and if you cancel within 7 days of your first charge, we refund that payment in full, no questions asked."
+        "a": "Yes, with no lock-in or penalties. Cancel from your dashboard and you will not be charged for the next billing period. The first month is free and no card is required; if you cancel within 7 days of your first charge, you can request a refund of that payment."
       },
       {
         "q": "Does it work for any industry?",
-        "a": "It works especially well when selling to businesses with premises and a visible phone number: repair shops, clinics, consultancies, accountants, hospitality, training, real estate. If your client is a company you can call, OpenSells is for you."
+        "a": "It works especially well when selling to businesses with a public presence and visible contact details: repair shops, clinics, consultancies, accountants, hospitality, training or real estate, among others."
       },
       {
         "q": "What happens to my data if I cancel?",
-        "a": "Your leads are yours. Export everything to CSV before cancelling. We keep your history for 30 days in case you change your mind."
+        "a": "Your leads are yours. On a paid plan you can export them to CSV without a limit before cancelling. During the free trial, export is limited to 50 leads per month. We keep your history for 30 days in case you change your mind."
       }
     ]
   },
@@ -199,21 +199,21 @@
       {
         "slug": "como-conseguir-clientes-b2b",
         "title": "How to get B2B clients: the definitive 2026 guide",
-        "excerpt": "Channels, strategies and tools that actually work in 2026 for freelancers and agencies selling in Spain.",
+        "excerpt": "Channels, strategies and tools that work in 2026 for freelancers and agencies selling in Spain.",
         "date": "2026-06-02",
         "readTime": "10 min"
       },
       {
         "slug": "alternativas-hunter-io-apollo",
         "title": "Best Hunter.io and Apollo.io alternatives for Spain and LATAM 2026",
-        "excerpt": "An honest comparison for the Spanish and Latin American market: pricing, real coverage and which one to pick.",
+        "excerpt": "A comparison for the Spanish and Latin American market: pricing, coverage and which one to pick for your use case.",
         "date": "2026-06-02",
         "readTime": "7 min"
       },
       {
         "slug": "herramientas-prospeccion-comercial-espana",
         "title": "The 7 best sales prospecting tools in Spain 2026",
-        "excerpt": "An up-to-date comparison with real pricing, local coverage and who each one is for.",
+        "excerpt": "An up-to-date comparison with pricing, local coverage and who each one is for.",
         "date": "2026-06-02",
         "readTime": "8 min"
       }
@@ -224,11 +224,11 @@
     "subtitle": "Start free now, no card. And once you start paying, you have 7 days to ask for a refund — no questions asked.",
     "value_title": "What you get today:",
     "values": [
-      "Companies in your industry and city, with direct phone numbers",
+      "Companies in your industry and city, with their public contact data",
       "An AI-written call brief for each one",
-      "Automatic follow-up after every call",
-      "AI-personalised emails when you'd rather write",
-      "Unlimited CSV export of your data"
+      "Statuses, notes and tasks to organise follow-up",
+      "AI-personalised emails you can send from OpenSells through your connected Gmail",
+      "Unlimited CSV export on paid plans"
     ],
     "guarantee": "7-day guarantee from your first charge",
     "cta": "Get my first companies free",
