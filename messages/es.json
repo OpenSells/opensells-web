@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "OpenSells | Empresas a las que llamar, con la llamada preparada",
-    "description": "Escribe el sector y la ciudad. OpenSells encuentra las empresas, te da su teléfono y la IA te prepara qué decir en cada llamada. Empieza gratis.",
+    "description": "Escribe el sector y la ciudad. OpenSells encuentra empresas, reúne sus datos públicos —incluido el teléfono cuando está disponible— y la IA te prepara qué decir en cada llamada. Empieza gratis.",
     "ogTitle": "OpenSells — Encuentra empresas y llámalas sabiendo qué decir",
-    "ogDescription": "Leads B2B con teléfono y una ficha de llamada hecha por IA. Empieza gratis, sin tarjeta."
+    "ogDescription": "Prospección B2B con datos públicos de contacto y una ficha de llamada hecha por IA. Empieza gratis, sin tarjeta."
   },
   "nav": {
     "features": "Funcionalidades",
@@ -15,7 +15,7 @@
   "hero": {
     "badge": "🔥 Primer mes gratis — sin tarjeta",
     "headline": "Empresas a las que llamar, con la conversación ya preparada",
-    "subheadline": "Escribe el sector y la ciudad. OpenSells encuentra las empresas, te da su teléfono y la IA te prepara qué decir en cada llamada. Tú solo marcas.",
+    "subheadline": "Escribe el sector y la ciudad. OpenSells encuentra empresas, reúne sus datos públicos —incluido el teléfono cuando está disponible— y la IA te prepara qué decir en cada llamada. Tú solo marcas.",
     "cta_primary": "Empieza gratis ahora",
     "cta_secondary": "Ver cómo funciona",
     "social_proof": "Sin tarjeta de crédito · Cancela cuando quieras",
@@ -26,22 +26,22 @@
   },
   "problem": {
     "title": "¿Cuántos clientes pierdes porque tus mensajes no llegan a nadie?",
-    "subtitle": "El correo frío se ha saturado. El teléfono sigue funcionando — pero solo si sabes a quién llamas y qué decirle.",
+    "subtitle": "El correo frío compite en bandejas cada vez más saturadas. El teléfono sigue siendo una alternativa directa — pero funciona mejor si sabes a quién llamas y qué decirle.",
     "items": [
       {
         "icon": "📭",
-        "title": "Los emails fríos ya no se abren",
-        "text": "Mandas cincuenta, contestan cero. Entre filtros de spam, bandejas saturadas y mensajes que huelen a plantilla, el correo frío tiene el techo cada vez más bajo."
+        "title": "El correo frío compite por atención",
+        "text": "Entre filtros de spam, bandejas saturadas y mensajes que suenan a plantilla, conseguir una respuesta por email puede ser difícil."
       },
       {
         "icon": "📞",
-        "title": "Al teléfono sí contestan, pero da vértigo",
-        "text": "Descuelgan, y tú no sabes a qué se dedican, por dónde entrar ni qué responder a un \"no me interesa\". Así cualquiera deja de llamar a la tercera."
+        "title": "Llamar es más fácil si vas preparado",
+        "text": "Cuando descuelgan necesitas saber a qué se dedican, por dónde entrar y qué responder a un \"no me interesa\". La preparación evita improvisar desde cero."
       },
       {
         "icon": "⏱️",
         "title": "Buscar empresas a mano se come tu semana",
-        "text": "Google, la web de cada una, apuntar el teléfono en una hoja. Horas de trabajo mecánico antes de haber hablado con una sola persona."
+        "text": "Google, la web de cada una, apuntar datos en una hoja. Horas de trabajo mecánico antes de haber hablado con una sola persona."
       }
     ]
   },
@@ -52,42 +52,42 @@
       {
         "icon": "🔎",
         "title": "Empresas reales de tu sector y tu ciudad",
-        "description": "Escribe \"clínicas dentales en Valencia\" y tienes el listado en minutos: nombre, web, teléfono y dirección. Empresas que existen, no listas compradas."
+        "description": "Escribe \"clínicas dentales en Valencia\" y obtén nombre, web, teléfono cuando está disponible y dirección. Empresas que existen, no listas compradas."
       },
       {
         "icon": "📞",
-        "title": "Teléfono directo, que es lo que se usa",
-        "description": "Casi todas las empresas publican su teléfono, muchas menos un email útil. Por eso el teléfono es el canal principal: llegas a quien decide sin pasar por la papelera."
+        "title": "Teléfono público cuando está disponible",
+        "description": "Muchos negocios publican un teléfono aunque no tengan un email comercial útil. OpenSells reúne ese dato público dentro del mismo flujo de prospección para que puedas iniciar la conversación."
       },
       {
         "icon": "🧠",
         "title": "La IA te prepara la llamada",
-        "description": "Antes de marcar tienes la ficha: a qué se dedican, por qué llamarles, la frase con la que empezar, tres preguntas y qué responder si te dicen que no."
+        "description": "Antes de marcar tienes la ficha: a qué se dedican, por qué llamarles, la frase con la que empezar, tres preguntas y qué responder ante las objeciones más habituales."
       },
       {
         "icon": "✅",
-        "title": "Cuelgas y el siguiente paso queda apuntado",
-        "description": "Marcas cómo fue la llamada en un clic y la app te propone la tarea que toca: volver a llamar mañana, hacer seguimiento en tres días. Nada se enfría por olvido."
+        "title": "Dejas el seguimiento organizado",
+        "description": "Después de contactar puedes actualizar el estado del lead, guardar notas y crear tareas para recordar el siguiente paso. Así mantienes el seguimiento en el mismo sitio."
       },
       {
         "icon": "✍️",
         "title": "Email con IA cuando prefieras escribir",
-        "description": "Para los leads con email, la IA redacta un mensaje personalizado leyendo su web. Se abre en tu propio Gmail y lo envías tú, desde tu cuenta."
+        "description": "Para los leads con email, la IA redacta un mensaje personalizado leyendo su web. Lo revisas y puedes enviarlo desde OpenSells a través de tu propia cuenta de Gmail conectada."
       },
       {
         "icon": "🛡️",
-        "title": "Tus datos son tuyos, siempre",
-        "description": "Exporta todos tus leads a CSV cuando quieras y llévalos a tu CRM. Sin restricciones, sin rehenes."
+        "title": "Tus datos son tuyos",
+        "description": "Con un plan de pago puedes exportar tus leads a CSV cuando quieras y llevártelos a tu CRM. Durante el mes de prueba la exportación está limitada a 50 leads al mes."
       }
     ]
   },
   "how": {
-    "title": "De cero a tu primera llamada en menos de 5 minutos",
+    "title": "De cero a tu primera llamada en pocos minutos",
     "steps": [
       {
         "number": "01",
         "title": "Escribe tu sector y tu ciudad",
-        "description": "\"Talleres mecánicos en Valencia\", \"Consultoras de RRHH en Madrid\". OpenSells encuentra las empresas con su teléfono y su web."
+        "description": "\"Talleres mecánicos en Valencia\", \"Consultoras de RRHH en Madrid\". OpenSells encuentra empresas con sus datos públicos, incluido el teléfono cuando está disponible."
       },
       {
         "number": "02",
@@ -96,8 +96,8 @@
       },
       {
         "number": "03",
-        "title": "Llama y apunta qué pasó",
-        "description": "Marcas desde la propia ficha. Al colgar eliges el resultado y la app encadena sola el siguiente paso, para que ningún lead se quede a medias."
+        "title": "Llama y actualiza el lead",
+        "description": "Contacta desde la ficha y, al terminar, actualiza el estado, añade una nota o crea la tarea que corresponda para mantener el seguimiento organizado."
       }
     ]
   },
@@ -107,7 +107,7 @@
     "popular": "Más popular",
     "cta_paid": "Empezar ahora",
     "per_month": "/mes",
-    "no_card": "Sin tarjeta de crédito · Cancela cuando quieras",
+    "no_card": "Primer mes gratis sin tarjeta · Durante la prueba, exportación CSV limitada a 50 leads al mes · Cancela cuando quieras",
     "discount_note": "🎉 Primer mes gratis, sin tarjeta. Después, 39 €/mes.",
     "packs_title": "¿Se te queda corto un mes?",
     "packs_note": "Amplía con una bolsa suelta: 100 leads por 9 € o 300 por 25 €. Pago único, no caducan, y cada bolsa trae sus fichas de llamada y sus borradores. Solo se gasta cuando has agotado los de tu plan.",
@@ -123,7 +123,7 @@
           "600 fichas de llamada con IA",
           "1.800 borradores de email con IA",
           "Tareas ilimitadas",
-          "Exportación CSV ilimitada",
+          "Exportación CSV ilimitada con el plan de pago",
           "30 mensajes de IA al día",
           "Soporte prioritario"
         ],
@@ -140,7 +140,7 @@
           "1.500 fichas de llamada con IA",
           "4.500 borradores de email con IA",
           "Tareas ilimitadas",
-          "Exportación CSV ilimitada",
+          "Exportación CSV ilimitada con el plan de pago",
           "50 mensajes de IA al día",
           "Prioridad máxima en cola",
           "Soporte prioritario"
@@ -155,11 +155,11 @@
     "subtitle": "Empieza gratis ahora, sin tarjeta. Y cuando empieces a pagar, tienes 7 días para pedir la devolución sin dar explicaciones.",
     "value_title": "Lo que obtienes hoy:",
     "values": [
-      "Empresas de tu sector y tu ciudad, con teléfono directo",
+      "Empresas de tu sector y tu ciudad, con sus datos públicos de contacto",
       "Una ficha de llamada hecha por IA para cada una",
-      "Seguimiento automático del siguiente paso tras cada llamada",
-      "Emails personalizados con IA cuando prefieras escribir",
-      "Exportación CSV ilimitada de tus datos"
+      "Estados, notas y tareas para organizar el seguimiento",
+      "Emails personalizados con IA que puedes enviar desde OpenSells con tu Gmail conectado",
+      "Exportación CSV ilimitada en los planes de pago"
     ],
     "guarantee": "7 días de garantía desde el primer cobro",
     "cta": "Quiero mis primeras empresas gratis",
@@ -170,39 +170,39 @@
     "items": [
       {
         "q": "¿Cuánto tiempo tarda en verse resultados?",
-        "a": "Tu primer listado está en menos de 5 minutos, y puedes empezar a llamar ese mismo día. A diferencia del email, en una llamada sabes al momento si hay interés o no: no esperas días a una respuesta que casi nunca llega."
+        "a": "Tu primer listado puede estar listo en pocos minutos y puedes empezar a prospectar ese mismo día. Con una llamada obtienes feedback inmediato sobre si hay interés; por email, la respuesta puede tardar o no llegar."
       },
       {
         "q": "¿Por qué teléfono y no email?",
-        "a": "Por dos motivos. Primero, cobertura: casi todas las empresas publican un teléfono, y bastantes menos un email de contacto útil. Y segundo, en España la ley es mucho más clara con la llamada comercial B2B que con el correo frío. Seguimos incluyendo emails con IA, pero el teléfono es el canal que recomendamos."
+        "a": "El teléfono suele tener mejor cobertura entre negocios locales que un email comercial útil y permite iniciar una conversación de forma directa. Seguimos incluyendo emails con IA, pero recomendamos priorizar el canal que mejor encaje en cada caso."
       },
       {
         "q": "¿Los emails de los leads están verificados?",
-        "a": "No hacemos verificación técnica de buzón (SMTP o MX). Extraemos los emails que las propias empresas publican en su web, así que son direcciones reales y públicas, pero pueden estar desactualizadas o ser buzones genéricos. Preferimos decírtelo claro: si necesitas garantía de entrega, el teléfono es la vía fiable."
+        "a": "No hacemos verificación técnica de buzón (SMTP o MX). Extraemos los emails que las propias empresas publican en su web, así que son direcciones públicas, pero pueden estar desactualizadas o ser buzones genéricos."
       },
       {
         "q": "¿Es legal llamar en frío a empresas en España?",
-        "a": "La llamada comercial entre empresas tiene un encaje legal mucho más claro que el correo frío. La LSSI exige consentimiento previo o una relación contractual anterior para las comunicaciones comerciales por email, incluso en B2B — un punto que muchas herramientas pasan por alto. Aun así, esto no es asesoramiento legal: consulta tu caso concreto, y respeta siempre la Lista Robinson y cualquier petición de no volver a llamar."
+        "a": "La normativa aplicable depende del tipo de contacto, la finalidad y el caso concreto. OpenSells trabaja con datos empresariales públicos, pero usar esos datos para prospección sigue siendo responsabilidad del usuario. Esto no es asesoramiento legal: revisa tu caso y respeta siempre cualquier petición de no volver a contactar."
       },
       {
         "q": "¿Y si no sé qué decir por teléfono?",
-        "a": "Para eso está la ficha de llamada. Antes de marcar tienes delante a qué se dedica la empresa, por qué tiene sentido llamarles, la frase exacta con la que abrir, tres preguntas para descubrir si encajan y respuestas preparadas para las objeciones más habituales."
+        "a": "Para eso está la ficha de llamada. Antes de marcar tienes delante a qué se dedica la empresa, por qué puede tener sentido llamarles, una apertura sugerida, preguntas para descubrir si encajan y respuestas preparadas para objeciones habituales."
       },
       {
         "q": "¿Qué diferencia hay con Hunter.io o Apollo?",
-        "a": "Hunter y Apollo son bases de datos de contactos pensadas para el mercado anglófono y para el email. OpenSells está optimizado para España, en español, y no se queda en darte el dato: te prepara la conversación. El valor no está en el listado, está en saber qué decir cuando descuelgan."
+        "a": "Hunter y Apollo son plataformas más amplias de datos y prospección. OpenSells busca ser más simple y centrarse en un flujo concreto: encontrar negocios por sector y ciudad, reunir sus datos públicos y ayudarte a preparar la conversación y organizar el seguimiento desde un mismo sitio."
       },
       {
         "q": "¿Puedo cancelar en cualquier momento?",
-        "a": "Sí, sin permanencia ni penalizaciones. Cancelas desde tu panel en 30 segundos y no se te cobra el siguiente mes. El primer mes es gratis y no se te pide tarjeta, así que no hay nada que devolver ahí; y si cancelas dentro de los 7 días siguientes a tu primer cobro, te devolvemos ese importe completo sin preguntas."
+        "a": "Sí, sin permanencia ni penalizaciones. Cancelas desde tu panel y no se te cobra el siguiente período. El primer mes es gratis y no se te pide tarjeta; si cancelas dentro de los 7 días siguientes a tu primer cobro, puedes solicitar la devolución de ese importe."
       },
       {
         "q": "¿Funciona para cualquier sector?",
-        "a": "Funciona especialmente bien vendiendo a negocios con local y teléfono visible: talleres, clínicas, consultoras, asesorías, hostelería, formación, inmobiliarias. Si tu cliente es una empresa a la que se puede llamar, OpenSells es para ti."
+        "a": "Funciona especialmente bien cuando vendes a negocios con presencia pública y datos de contacto visibles: talleres, clínicas, consultoras, asesorías, hostelería, formación o inmobiliarias, entre otros."
       },
       {
         "q": "¿Qué pasa con mis datos si cancelo?",
-        "a": "Tus leads son tuyos. Exporta todo en CSV antes de cancelar. Mantenemos tu historial durante 30 días por si cambias de opinión."
+        "a": "Tus leads son tuyos. Con un plan de pago puedes exportarlos a CSV sin límite antes de cancelar. Durante el mes de prueba la exportación está limitada a 50 leads al mes. Mantenemos tu historial durante 30 días por si cambias de opinión."
       }
     ]
   },
@@ -221,14 +221,14 @@
       {
         "slug": "alternativas-hunter-io-apollo",
         "title": "Mejores alternativas a Hunter.io y Apollo.io para España y LATAM 2026",
-        "excerpt": "Comparativa honesta para el mercado español y latinoamericano: precios, cobertura real y cuál elegir según tu caso.",
+        "excerpt": "Comparativa para el mercado español y latinoamericano: precios, cobertura y cuál elegir según tu caso.",
         "date": "2026-06-02",
         "readTime": "7 min"
       },
       {
         "slug": "herramientas-prospeccion-comercial-espana",
         "title": "Las 7 mejores herramientas de prospección comercial en España 2026",
-        "excerpt": "Comparativa actualizada con precios reales, cobertura local y para quién es cada una.",
+        "excerpt": "Comparativa actualizada con precios, cobertura local y para quién es cada una.",
         "date": "2026-06-02",
         "readTime": "8 min"
       }
