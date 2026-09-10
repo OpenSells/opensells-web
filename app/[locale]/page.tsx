@@ -67,14 +67,9 @@ export default async function HomePage({ params }: Props) {
         ? 'Primer mes gratis, sin tarjeta. Después 39 €/mes.'
         : 'First month free, no card required. Then €39/month.',
     },
-    // Esto es lo que leen Google y los buscadores con IA para resumir qué es
-    // OpenSells, así que va primero lo que de verdad lo distingue. Describía el
-    // producto de antes del pivote al teléfono: encabezaba con "cold email
-    // automatizado" y no mencionaba la ficha de llamada, que es justamente lo
-    // único que nadie más vende self-serve en español.
     featureList: locale === 'es'
-      ? 'Búsqueda de empresas por sector y ciudad, Teléfono directo de cada empresa, Ficha de llamada preparada con IA, Seguimiento del resultado de cada llamada, Borradores de email con IA, Exportación CSV ilimitada'
-      : 'Company search by industry and city, Direct phone number for each company, AI-prepared call brief, Call outcome tracking, AI email drafts, Unlimited CSV export',
+      ? 'Búsqueda de empresas por sector y ciudad, Datos públicos de contacto incluido teléfono cuando está disponible, Ficha de llamada preparada con IA, Estados notas y tareas de seguimiento, Borradores de email con IA, Envío desde OpenSells mediante Gmail conectado, Exportación CSV en planes de pago'
+      : 'Company search by industry and city, Public contact data including phone when available, AI-prepared call brief, Lead statuses notes and follow-up tasks, AI email drafts, Sending from OpenSells through connected Gmail, CSV export on paid plans',
     publisher: {
       '@type': 'Organization',
       name: 'OpenSells',
