@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "OpenSells | Companies to call, with the call already prepared",
-    "description": "Type the industry and the city. OpenSells finds companies, gathers their public data — including a phone number when available — and AI prepares what to say on each call. Start free.",
+    "title": "OpenSells | Companies to call. And what to say.",
+    "description": "Enter an industry and a city. OpenSells finds companies, spots opportunities and tells you why to call and how to start the conversation.",
     "ogTitle": "OpenSells — Find companies and call them knowing what to say",
     "ogDescription": "B2B prospecting with public contact data and an AI-written call brief. Start free, no card required."
   },
@@ -14,8 +14,8 @@
   },
   "hero": {
     "badge": "🔥 First month free — no card required",
-    "headline": "Companies to call, with the conversation already prepared",
-    "subheadline": "Type the industry and the city. OpenSells finds companies, gathers their public data — including a phone number when available — and AI prepares what to say on each call. You just dial.",
+    "headline": "Companies to call. And what to say.",
+    "subheadline": "Enter an industry and a city. OpenSells finds companies, spots opportunities and tells you why to call and how to start the conversation.",
     "cta_primary": "Start free now",
     "cta_secondary": "See how it works",
     "social_proof": "No credit card · Cancel anytime",
