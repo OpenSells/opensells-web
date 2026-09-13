@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "OpenSells | Empresas a las que llamar, con la llamada preparada",
-    "description": "Escribe el sector y la ciudad. OpenSells encuentra empresas, reúne sus datos públicos —incluido el teléfono cuando está disponible— y la IA te prepara qué decir en cada llamada. Empieza gratis.",
+    "title": "OpenSells | Empresas a las que llamar. Y qué decirles.",
+    "description": "Escribe un sector y una ciudad. OpenSells encuentra empresas, detecta oportunidades y te dice por qué llamar y cómo empezar la conversación.",
     "ogTitle": "OpenSells — Encuentra empresas y llámalas sabiendo qué decir",
     "ogDescription": "Prospección B2B con datos públicos de contacto y una ficha de llamada hecha por IA. Empieza gratis, sin tarjeta."
   },
@@ -14,8 +14,8 @@
   },
   "hero": {
     "badge": "🔥 Primer mes gratis — sin tarjeta",
-    "headline": "Empresas a las que llamar, con la conversación ya preparada",
-    "subheadline": "Escribe el sector y la ciudad. OpenSells encuentra empresas, reúne sus datos públicos —incluido el teléfono cuando está disponible— y la IA te prepara qué decir en cada llamada. Tú solo marcas.",
+    "headline": "Empresas a las que llamar. Y qué decirles.",
+    "subheadline": "Escribe un sector y una ciudad. OpenSells encuentra empresas, detecta oportunidades y te dice por qué llamar y cómo empezar la conversación.",
     "cta_primary": "Empieza gratis ahora",
     "cta_secondary": "Ver cómo funciona",
     "social_proof": "Sin tarjeta de crédito · Cancela cuando quieras",
