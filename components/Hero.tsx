@@ -87,6 +87,13 @@ export default function Hero({ locale }: { locale: string }) {
           {t('subheadline')}
         </p>
 
+        {/* Facturacion VERI*FACTU incluida: va pegada al subtitulo porque es
+            el gancho nuevo (obligatorio en 2027) y no cuesta nada extra. */}
+        <p className="mt-4 inline-flex max-w-2xl items-start gap-2 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-left text-sm font-medium text-emerald-800">
+          <span aria-hidden="true">🧾</span>
+          <span>{t('verifactu')}</span>
+        </p>
+
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
             href={`${appUrl}/login?tab=register`}

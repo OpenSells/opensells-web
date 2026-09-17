@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "OpenSells | Empresas a las que llamar. Y qué decirles.",
-    "description": "Escribe un sector y una ciudad. OpenSells encuentra empresas, detecta oportunidades y te dice por qué llamar y cómo empezar la conversación.",
+    "description": "Escribe un sector y una ciudad. OpenSells encuentra empresas, te prepara la llamada con IA y, cuando cierres, te deja facturar con VERI*FACTU incluido gratis.",
     "ogTitle": "OpenSells — Encuentra empresas y llámalas sabiendo qué decir",
-    "ogDescription": "Prospección B2B con datos públicos de contacto y una ficha de llamada hecha por IA. Empieza gratis, sin tarjeta."
+    "ogDescription": "Prospección B2B con datos públicos de contacto, ficha de llamada hecha por IA y facturación VERI*FACTU incluida. Empieza gratis, sin tarjeta."
   },
   "nav": {
     "features": "Funcionalidades",
@@ -22,7 +22,8 @@
     "no_card": "Garantía de 7 días desde el primer cobro",
     "trust_1": "Sin tarjeta de crédito",
     "trust_2": "Garantía tras el primer cobro",
-    "trust_3": "Cancela cuando quieras"
+    "trust_3": "Cancela cuando quieras",
+    "verifactu": "Nuevo: presupuestos y facturación con VERI*FACTU incluidos gratis en todos los planes. Obligatorio en 2027; aquí ya lo tienes."
   },
   "problem": {
     "title": "¿Cuántos clientes pierdes porque tus mensajes no llegan a nadie?",
@@ -75,9 +76,9 @@
         "description": "Para los leads con email, la IA redacta un mensaje personalizado leyendo su web. Lo revisas y puedes enviarlo desde OpenSells a través de tu propia cuenta de Gmail conectada."
       },
       {
-        "icon": "🛡️",
-        "title": "Tus datos son tuyos",
-        "description": "Con un plan de pago puedes exportar tus leads a CSV cuando quieras y llevártelos a tu CRM. Durante el mes de prueba la exportación está limitada a 50 leads al mes."
+        "icon": "🧾",
+        "title": "Cierra y factura, con VERI*FACTU incluido",
+        "description": "Cuando un lead se convierte en cliente, le haces el presupuesto y la factura desde OpenSells. Numeración correlativa, PDF con tu logo y envío automático a Hacienda con tu certificado. Sin coste extra: el sistema VERI*FACTU será obligatorio en 2027 y aquí ya lo tienes."
       }
     ]
   },
@@ -103,7 +104,7 @@
   },
   "pricing": {
     "title": "Precios que se pagan solos con un cliente",
-    "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan.",
+    "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan, y la facturación VERI*FACTU va incluida.",
     "popular": "Más popular",
     "cta_paid": "Empezar ahora",
     "per_month": "/mes",
@@ -121,6 +122,7 @@
           "600 leads al mes",
           "Búsquedas ilimitadas",
           "600 fichas de llamada con IA",
+          "Presupuestos y facturas con VERI*FACTU incluidos",
           "1.800 borradores de email con IA",
           "Tareas ilimitadas",
           "Exportación CSV ilimitada con el plan de pago",
@@ -138,6 +140,7 @@
           "1.500 leads al mes",
           "Búsquedas ilimitadas",
           "1.500 fichas de llamada con IA",
+          "Presupuestos y facturas con VERI*FACTU incluidos",
           "4.500 borradores de email con IA",
           "Tareas ilimitadas",
           "Exportación CSV ilimitada con el plan de pago",
@@ -158,6 +161,7 @@
       "Empresas de tu sector y tu ciudad, con sus datos públicos de contacto",
       "Una ficha de llamada hecha por IA para cada una",
       "Estados, notas y tareas para organizar el seguimiento",
+      "Presupuestos y facturas VERI*FACTU para los clientes que cierres, sin coste extra",
       "Emails personalizados con IA que puedes enviar desde OpenSells con tu Gmail conectado",
       "Exportación CSV ilimitada en los planes de pago"
     ],
@@ -191,6 +195,10 @@
       {
         "q": "¿Qué diferencia hay con Hunter.io o Apollo?",
         "a": "Hunter y Apollo son plataformas más amplias de datos y prospección. OpenSells busca ser más simple y centrarse en un flujo concreto: encontrar negocios por sector y ciudad, reunir sus datos públicos y ayudarte a preparar la conversación y organizar el seguimiento desde un mismo sitio."
+      },
+      {
+        "q": "¿Qué es VERI*FACTU y qué incluye OpenSells?",
+        "a": "VERI*FACTU es el sistema con el que Hacienda exige que se emitan las facturas a partir de 2027 (1 de enero para sociedades, 1 de julio para autónomos): cada factura genera un registro encadenado que se envía a la AEAT y lleva un código QR. OpenSells lo incluye sin coste en todos los planes, también durante el mes gratis: subes tu certificado electrónico una vez y cada factura que emites se comunica sola a la AEAT. Además puedes hacer presupuestos, convertirlos en factura, enviarlos por email y exportar todo para tu gestoría."
       },
       {
         "q": "¿Puedo cancelar en cualquier momento?",
@@ -235,7 +243,7 @@
     ]
   },
   "footer": {
-    "tagline": "Encuentra empresas, llámalas con la conversación preparada.",
+    "tagline": "Encuentra empresas, llámalas con la conversación preparada y factúrales con VERI*FACTU.",
     "product": "Producto",
     "company": "Empresa",
     "resources": "Recursos",
