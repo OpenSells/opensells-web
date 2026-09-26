@@ -64,7 +64,7 @@ export default async function HomePage({ params }: Props) {
       price: 39,
       priceCurrency: 'EUR',
       description: locale === 'es'
-        ? 'Primer mes gratis, sin tarjeta. Después 39 €/mes.'
+        ? 'Primer mes gratis, sin tarjeta. Después 39 €/mes (29 $ en Latinoamérica).'
         : 'First month free, no card required. Then €39/month.',
     },
     featureList: locale === 'es'

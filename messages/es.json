@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "OpenSells | Empresas a las que llamar. Y qué decirles.",
-    "description": "Escribe un sector y una ciudad. OpenSells encuentra empresas, te prepara la llamada con IA y, cuando cierres, te deja facturar con VERI*FACTU incluido gratis.",
+    "description": "Escribe un sector y una ciudad. OpenSells encuentra empresas, te prepara la llamada con IA y, si estás en España, te deja facturar con VERI*FACTU incluido gratis.",
     "ogTitle": "OpenSells — Encuentra empresas y llámalas sabiendo qué decir",
-    "ogDescription": "Prospección B2B con datos públicos de contacto, ficha de llamada hecha por IA y facturación VERI*FACTU incluida. Empieza gratis, sin tarjeta."
+    "ogDescription": "Prospección B2B con datos públicos de contacto, ficha de llamada hecha por IA y, en España, facturación VERI*FACTU incluida. Empieza gratis, sin tarjeta."
   },
   "nav": {
     "features": "Funcionalidades",
@@ -23,7 +23,7 @@
     "trust_1": "Sin tarjeta de crédito",
     "trust_2": "Garantía tras el primer cobro",
     "trust_3": "Cancela cuando quieras",
-    "verifactu": "Incluye VERI*FACTU gratis"
+    "verifactu": "Incluye VERI*FACTU gratis (España)"
   },
   "problem": {
     "title": "¿Cuántos clientes pierdes porque tus mensajes no llegan a nadie?",
@@ -53,7 +53,7 @@
       {
         "icon": "🔎",
         "title": "Empresas reales de tu sector y tu ciudad",
-        "description": "Escribe \"clínicas dentales en Valencia\" y obtén nombre, web, teléfono cuando está disponible y dirección. Empresas que existen, no listas compradas."
+        "description": "Escribe \"clínicas dentales en Bogotá\" y obtén nombre, web, teléfono cuando está disponible y dirección. Empresas que existen, no listas compradas."
       },
       {
         "icon": "📞",
@@ -77,7 +77,7 @@
       },
       {
         "icon": "🧾",
-        "title": "Cierra y factura, con VERI*FACTU incluido",
+        "title": "Cierra y factura, con VERI*FACTU incluido (España)",
         "description": "Cuando un lead se convierte en cliente, le haces el presupuesto y la factura desde OpenSells. Numeración correlativa, PDF con tu logo y envío automático a Hacienda con tu certificado. Sin coste extra: el sistema VERI*FACTU será obligatorio en 2027 y aquí ya lo tienes."
       }
     ]
@@ -88,7 +88,7 @@
       {
         "number": "01",
         "title": "Escribe tu sector y tu ciudad",
-        "description": "\"Talleres mecánicos en Valencia\", \"Consultoras de RRHH en Madrid\". OpenSells encuentra empresas con sus datos públicos, incluido el teléfono cuando está disponible."
+        "description": "\"Talleres mecánicos en Monterrey\", \"Consultoras de RRHH en Madrid\". OpenSells encuentra empresas con sus datos públicos, incluido el teléfono cuando está disponible."
       },
       {
         "number": "02",
@@ -104,25 +104,26 @@
   },
   "pricing": {
     "title": "Precios que se pagan solos con un cliente",
-    "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan, y la facturación VERI*FACTU va incluida.",
+    "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan, y en España la facturación VERI*FACTU va incluida.",
     "popular": "Más popular",
     "cta_paid": "Empezar ahora",
     "per_month": "/mes",
     "no_card": "Primer mes gratis sin tarjeta · Durante la prueba, exportación CSV limitada a 50 leads al mes · Cancela cuando quieras",
-    "discount_note": "🎉 Primer mes gratis, sin tarjeta. Después, 39 €/mes.",
+    "discount_note": "🎉 Primer mes gratis, sin tarjeta. Después, 39 €/mes (29 $ en Latinoamérica).",
     "packs_title": "¿Se te queda corto un mes?",
-    "packs_note": "Amplía con una bolsa suelta: 100 leads por 9 € o 300 por 25 €. Pago único, no caducan, y cada bolsa trae sus fichas de llamada y sus borradores. Solo se gasta cuando has agotado los de tu plan.",
+    "packs_note": "Amplía con una bolsa suelta: 100 leads por 9 € o 300 por 25 € (7 $ y 19 $ en Latinoamérica). Pago único, no caducan, y cada bolsa trae sus fichas de llamada y sus borradores. Solo se gasta cuando has agotado los de tu plan.",
     "plans": [
       {
         "key": "profesional",
         "name": "Profesional",
         "price_monthly": "39",
+        "price_latam": "29",
         "description": "Para freelancers que quieren crecer",
         "features": [
           "600 leads al mes",
           "Búsquedas ilimitadas",
           "600 fichas de llamada con IA",
-          "Presupuestos y facturas con VERI*FACTU incluidos",
+          "Presupuestos y facturas con VERI*FACTU incluidos (España)",
           "1.800 borradores de email con IA",
           "Tareas ilimitadas",
           "Exportación CSV ilimitada con el plan de pago",
@@ -135,12 +136,13 @@
         "key": "agencia",
         "name": "Agencia",
         "price_monthly": "89",
+        "price_latam": "69",
         "description": "Para agencias y equipos de ventas",
         "features": [
           "1.500 leads al mes",
           "Búsquedas ilimitadas",
           "1.500 fichas de llamada con IA",
-          "Presupuestos y facturas con VERI*FACTU incluidos",
+          "Presupuestos y facturas con VERI*FACTU incluidos (España)",
           "4.500 borradores de email con IA",
           "Tareas ilimitadas",
           "Exportación CSV ilimitada con el plan de pago",
@@ -151,7 +153,8 @@
         "cta": "Empezar — Primer mes gratis"
       }
     ],
-    "first_month_free": "Primer mes gratis"
+    "first_month_free": "Primer mes gratis",
+    "latam_price": "{price} $/mes en Latinoamérica"
   },
   "finalcta": {
     "title": "La decisión más fácil que vas a tomar esta semana",
@@ -185,8 +188,8 @@
         "a": "No hacemos verificación técnica de buzón (SMTP o MX). Extraemos los emails que las propias empresas publican en su web, así que son direcciones públicas, pero pueden estar desactualizadas o ser buzones genéricos."
       },
       {
-        "q": "¿Es legal llamar en frío a empresas en España?",
-        "a": "La normativa aplicable depende del tipo de contacto, la finalidad y el caso concreto. OpenSells trabaja con datos empresariales públicos, pero usar esos datos para prospección sigue siendo responsabilidad del usuario. Esto no es asesoramiento legal: revisa tu caso y respeta siempre cualquier petición de no volver a contactar."
+        "q": "¿Es legal llamar en frío a empresas?",
+        "a": "La normativa aplicable depende del país, del tipo de contacto, de la finalidad y del caso concreto: cada país hispanohablante tiene sus propias reglas. OpenSells trabaja con datos empresariales públicos, pero usar esos datos para prospección sigue siendo responsabilidad del usuario. Esto no es asesoramiento legal: revisa tu caso y respeta siempre cualquier petición de no volver a contactar."
       },
       {
         "q": "¿Y si no sé qué decir por teléfono?",

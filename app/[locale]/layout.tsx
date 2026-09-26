@@ -68,7 +68,8 @@ export default async function LocaleLayout({ children, params }: Props) {
     name: 'OpenSells',
     url: base,
     description: 'Plataforma SaaS de prospección B2B. Encuentra empresas por sector y ciudad, con su teléfono y una ficha de llamada preparada por IA.',
-    inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
+    // Español a secas, no de España: la web es para todo el público hispano.
+    inLanguage: locale === 'es' ? 'es' : 'en-US',
     potentialAction: {
       '@type': 'SearchAction',
       target: { '@type': 'EntryPoint', urlTemplate: `${base}/blog?q={search_term_string}` },

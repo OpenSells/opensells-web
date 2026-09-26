@@ -23,7 +23,7 @@
     "trust_1": "No credit card",
     "trust_2": "Guarantee after first charge",
     "trust_3": "Cancel anytime",
-    "verifactu": "VERI*FACTU included free"
+    "verifactu": "VERI*FACTU included free (Spain)"
   },
   "problem": {
     "title": "How many clients are you losing because your messages reach no one?",
@@ -77,7 +77,7 @@
       },
       {
         "icon": "🧾",
-        "title": "Close and invoice, VERI*FACTU included",
+        "title": "Close and invoice, VERI*FACTU included (Spain)",
         "description": "When a lead becomes a customer, you create the quote and the invoice in OpenSells. Sequential numbering, PDF with your logo and automatic submission to the Spanish tax agency with your certificate. No extra cost: VERI*FACTU becomes mandatory in Spain in 2027 and you already have it."
       }
     ]
@@ -121,7 +121,7 @@
           "600 leads per month",
           "Unlimited searches",
           "600 AI call briefs",
-          "Quotes and invoices with VERI*FACTU included",
+          "Quotes and invoices with VERI*FACTU included (Spain)",
           "1,800 AI email drafts per month",
           "Unlimited tasks",
           "Unlimited CSV export on the paid plan",
@@ -139,7 +139,7 @@
           "1,500 leads per month",
           "Unlimited searches",
           "1,500 AI call briefs",
-          "Quotes and invoices with VERI*FACTU included",
+          "Quotes and invoices with VERI*FACTU included (Spain)",
           "4,500 AI email drafts per month",
           "Unlimited tasks",
           "Unlimited CSV export on the paid plan",

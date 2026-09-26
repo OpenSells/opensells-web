@@ -7,6 +7,8 @@ type Plan = {
   key: string;
   name: string;
   price_monthly: string;
+  /** Precio en dólares para Latinoamérica. Solo en la versión en español. */
+  price_latam?: string;
   description: string;
   features: string[];
   cta: string;
@@ -54,6 +56,11 @@ export default function Pricing() {
                         {t('per_month')}
                       </span>
                     </div>
+                    {plan.price_latam && (
+                      <p className={`text-xs ${isPopular ? 'text-brand-100' : 'text-slate-500'}`}>
+                        {t('latam_price', { price: plan.price_latam })}
+                      </p>
+                    )}
                     <p className={`text-xs font-semibold ${isPopular ? 'text-brand-100' : 'text-brand-600'}`}>
                       {t('first_month_free')}
                     </p>
