@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { pageAlternates } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -9,14 +10,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isEs = locale === 'es';
   return {
-    title: isEs ? 'Política de Privacidad | OpenSells' : 'Privacy Policy | OpenSells',
+    title: isEs ? 'Política de Privacidad' : 'Privacy Policy',
     description: isEs
       ? 'Cómo OpenSells recoge, usa y protege tus datos personales.'
       : 'How OpenSells collects, uses and protects your personal data.',
-    alternates: {
-      canonical: isEs ? 'https://opensells.com/privacy' : 'https://opensells.com/en/privacy',
-    },
-    robots: { index: false },
+    alternates: pageAlternates(locale, '/privacy'),
+    robots: { index: false, follow: true },
   };
 }
 

@@ -1,9 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/navigation';
+import { usePathname } from '@/i18n/navigation';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { LOGIN_URL, REGISTER_URL, localePath } from '@/lib/site';
 
 const LABELS: Record<string, string> = { es: 'ES', en: 'EN' };
 
@@ -30,55 +31,76 @@ function FlagEN() {
 
 const FLAG_COMPONENTS: Record<string, () => React.ReactElement> = { es: FlagES, en: FlagEN };
 
-export default function Navbar({ locale }: { locale: string }) {
+type NavbarProps = {
+  locale: string;
+  /* Ruta de esta misma página en el otro idioma. Si no se pasa, se asume que
+   * la página existe con la misma ruta en los dos. Los artículos del blog la
+   * pasan siempre: la mayoría no tienen traducción, y cambiar de idioma
+   * mandaba a una URL /en/blog/... que no existe. */
+  alternateHref?: string;
+};
+
+export default function Navbar({ locale, alternateHref }: NavbarProps) {
   const t = useTranslations('nav');
   const pathname = usePathname();
-  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const appUrl = 'https://app.opensells.com';
   const otherLocale = locale === 'es' ? 'en' : 'es';
+  const switchHref = alternateHref ?? localePath(otherLocale, pathname);
+
+  /* Enlaces a páginas, no a anclas: «#pricing» se resolvía sobre la URL en la
+   * que estuvieras, y desde un artículo no llevaba a ninguna parte. */
+  const links = [
+    { href: localePath(locale, '/how-it-works'), label: t('features') },
+    { href: localePath(locale, '/ai-call-brief'), label: t('callBrief') },
+    { href: localePath(locale, '/for-agencies'), label: t('agencies') },
+    { href: localePath(locale, '/pricing'), label: t('pricing') },
+    { href: localePath(locale, '/blog'), label: t('blog') },
+  ];
+
+  const switcher = (className: string) => (
+    <a href={switchHref} hrefLang={otherLocale} lang={otherLocale} className={className} aria-label={t('switchLanguage')}>
+      {FLAG_COMPONENTS[otherLocale]?.()}
+      <span className="uppercase">{LABELS[otherLocale]}</span>
+    </a>
+  );
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href={locale === 'en' ? '/en' : '/'} className="flex items-center gap-2">
+          <Link href={localePath(locale, '/')} className="flex items-center gap-2">
             <span className="text-xl font-bold text-slate-900">Open<span className="text-brand-500">Sells</span></span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
-            <a href="#features" className="hover:text-slate-900 transition">{t('features')}</a>
-            <a href="#pricing" className="hover:text-slate-900 transition">{t('pricing')}</a>
-            <a href="#blog" className="hover:text-slate-900 transition">{t('blog')}</a>
+          <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+            {links.map(({ href, label }) => (
+              <Link key={href} href={href} className="hover:text-slate-900 transition">{label}</Link>
+            ))}
           </nav>
 
           <div className="flex items-center gap-3">
-            <button
-              onClick={() => router.replace(pathname, { locale: otherLocale })}
-              className="hidden sm:flex h-8 items-center gap-1.5 rounded-md border border-slate-200 px-2.5 text-xs font-semibold text-slate-500 hover:bg-slate-50 transition"
-            >
-              {FLAG_COMPONENTS[otherLocale]?.()}
-              <span className="uppercase">{LABELS[otherLocale]}</span>
-            </button>
-            <Link
-              href={`${appUrl}/login`}
+            {switcher('hidden sm:flex h-8 items-center gap-1.5 rounded-md border border-slate-200 px-2.5 text-xs font-semibold text-slate-500 hover:bg-slate-50 transition')}
+            <a
+              href={LOGIN_URL}
               className="hidden sm:inline-flex h-9 items-center rounded-xl border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
             >
               {t('login')}
-            </Link>
-            <Link
-              href={`${appUrl}/login?tab=register`}
+            </a>
+            <a
+              href={REGISTER_URL}
               className="inline-flex h-9 items-center rounded-xl bg-brand-500 px-4 text-sm font-semibold text-white shadow-sm hover:bg-brand-600 transition"
             >
               {t('cta')}
-            </Link>
+            </a>
             <button
-              className="md:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100"
+              className="lg:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100"
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Menu"
+              aria-label={t('menu')}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
             >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 {menuOpen
                   ? <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   : <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />}
@@ -88,30 +110,20 @@ export default function Navbar({ locale }: { locale: string }) {
         </div>
 
         {menuOpen && (
-          <div className="md:hidden border-t border-slate-100 py-3 space-y-1">
-            {[
-              { href: '#features', label: t('features') },
-              { href: '#pricing', label: t('pricing') },
-              { href: '#blog', label: t('blog') },
-            ].map(({ href, label }) => (
-              <a
+          <div id="mobile-menu" className="lg:hidden border-t border-slate-100 py-3 space-y-1">
+            {links.map(({ href, label }) => (
+              <Link
                 key={href}
                 href={href}
                 onClick={() => setMenuOpen(false)}
                 className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-brand-600 rounded-lg"
               >
                 {label}
-              </a>
+              </Link>
             ))}
             <div className="pt-2 flex items-center gap-3 px-2">
-              <button
-                onClick={() => router.replace(pathname, { locale: otherLocale })}
-                className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 border border-slate-200 rounded-md px-2 py-1"
-              >
-                {FLAG_COMPONENTS[otherLocale]?.()}
-                <span className="uppercase">{LABELS[otherLocale]}</span>
-              </button>
-              <Link href={`${appUrl}/login`} className="inline-flex h-9 items-center rounded-xl border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition">{t('login')}</Link>
+              {switcher('flex items-center gap-1.5 text-xs font-semibold text-slate-500 border border-slate-200 rounded-md px-2 py-1')}
+              <a href={LOGIN_URL} className="inline-flex h-9 items-center rounded-xl border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition">{t('login')}</a>
             </div>
           </div>
         )}

@@ -4,7 +4,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { getPostBySlug, getPostsByLocale } from '@/lib/blog';
+import { getPostBySlug, getPostsByLocale, type Post } from '@/lib/blog';
+import { ORG_ID, REGISTER_URL, WEBSITE_ID, absoluteUrl, localePath, pageAlternates } from '@/lib/site';
+import { breadcrumbSchema } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -15,25 +17,41 @@ export async function generateStaticParams() {
   );
 }
 
+/* hreflang solo cuando el artículo tiene una traducción de verdad (`translation`
+ * en lib/blog.ts). Los que no la tienen declaran solo su canonical. */
+function postAlternates(post: Post) {
+  const path = `/blog/${post.slug}`;
+  if (!post.translation) return pageAlternates(post.locale, path, 'none');
+  const other = post.locale === 'es' ? 'en' : 'es';
+  return pageAlternates(post.locale, path, { [other]: `/blog/${post.translation}` });
+}
+
+/** URL del mismo artículo en el otro idioma, o el blog del otro idioma. */
+function otherLocaleHref(post: Post) {
+  const other = post.locale === 'es' ? 'en' : 'es';
+  return localePath(other, post.translation ? `/blog/${post.translation}` : '/blog');
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const post = getPostBySlug(slug, locale);
   if (!post) return {};
-  const base = 'https://opensells.com';
-  const canonical = locale === 'es' ? `${base}/blog/${slug}` : `${base}/en/blog/${slug}`;
+  const alternates = postAlternates(post);
 
   return {
-    title: `${post.title} | OpenSells Blog`,
+    // La plantilla del layout añade «| OpenSells». Antes salía «… | OpenSells Blog | OpenSells».
+    title: post.title,
     description: post.description,
-    alternates: {
-      canonical,
-    },
+    alternates,
     openGraph: {
       title: post.title,
       description: post.description,
-      url: canonical,
+      url: alternates.canonical,
+      siteName: 'OpenSells',
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.updated,
     },
   };
 }
@@ -44,69 +62,68 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug, locale);
   if (!post) notFound();
 
-  const prefix = locale === 'en' ? '/en' : '';
-  const appUrl = 'https://app.opensells.com';
+  const isEs = locale === 'es';
+  const postPath = `/blog/${slug}`;
+  const postUrl = absoluteUrl(locale, postPath);
+  const dateFmt = (d: string) =>
+    new Date(d).toLocaleDateString(isEs ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
-  const base = 'https://opensells.com';
-  const postUrl = locale === 'es' ? `${base}/blog/${slug}` : `${base}/en/blog/${slug}`;
-  const ogImageUrl = locale === 'es'
-    ? `${base}/blog/${slug}/opengraph-image`
-    : `${base}/en/blog/${slug}/opengraph-image`;
-
-  const articleSchema = {
+  const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.description,
-    url: postUrl,
-    image: ogImageUrl,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: { '@type': 'Organization', name: 'OpenSells', url: base },
-    publisher: {
-      '@type': 'Organization',
-      name: 'OpenSells',
-      url: base,
-      logo: { '@type': 'ImageObject', url: `${base}/favicon.svg` },
-    },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
-  };
-
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: locale === 'es' ? base : `${base}/en` },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: locale === 'es' ? `${base}/blog` : `${base}/en/blog` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: postUrl },
+    '@graph': [
+      {
+        '@type': 'Article',
+        '@id': `${postUrl}#article`,
+        headline: post.title,
+        description: post.description,
+        url: postUrl,
+        image: `${postUrl}/opengraph-image`,
+        inLanguage: locale,
+        datePublished: post.date,
+        dateModified: post.updated,
+        author: { '@id': ORG_ID },
+        publisher: { '@id': ORG_ID },
+        isPartOf: { '@id': WEBSITE_ID },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+      },
+      breadcrumbSchema(locale, [
+        [isEs ? 'Inicio' : 'Home', '/'],
+        ['Blog', '/blog'],
+        [post.title, postPath],
+      ]),
     ],
   };
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Navbar locale={locale} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <Navbar locale={locale} alternateHref={otherLocaleHref(post)} />
       <main className="min-h-screen bg-white">
         <article className="mx-auto max-w-2xl px-4 sm:px-6 py-16 sm:py-20">
-          {/* Back link */}
-          <Link
-            href={`${prefix}/blog`}
-            className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-700 transition-colors mb-10"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            {locale === 'es' ? 'Volver al blog' : 'Back to blog'}
-          </Link>
+          <nav aria-label={isEs ? 'Migas de pan' : 'Breadcrumb'} className="mb-10 text-sm text-slate-400">
+            <ol className="flex flex-wrap items-center gap-1.5">
+              <li><Link href={localePath(locale, '/')} className="hover:text-slate-700">{isEs ? 'Inicio' : 'Home'}</Link></li>
+              <li aria-hidden="true">/</li>
+              <li><Link href={localePath(locale, '/blog')} className="hover:text-slate-700">Blog</Link></li>
+            </ol>
+          </nav>
 
-          {/* Meta */}
-          <div className="flex items-center gap-2 text-xs text-slate-400 mb-4">
-            <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-            </time>
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
+            <span>
+              {isEs ? 'Publicado el ' : 'Published '}
+              <time dateTime={post.date}>{dateFmt(post.date)}</time>
+            </span>
+            {post.updated !== post.date && (
+              <>
+                <span>·</span>
+                <span>
+                  {isEs ? 'Actualizado el ' : 'Updated '}
+                  <time dateTime={post.updated}>{dateFmt(post.updated)}</time>
+                </span>
+              </>
+            )}
             <span>·</span>
-            <span>{post.readTime} {locale === 'es' ? 'de lectura' : 'read'}</span>
+            <span>{post.readTime} {isEs ? 'de lectura' : 'read'}</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-6">
@@ -117,7 +134,6 @@ export default async function BlogPostPage({ params }: Props) {
             {post.description}
           </p>
 
-          {/* Content */}
           <div
             className="prose prose-slate prose-lg max-w-none
               prose-headings:font-bold prose-headings:text-slate-900
@@ -126,26 +142,36 @@ export default async function BlogPostPage({ params }: Props) {
               prose-p:text-slate-600 prose-p:leading-relaxed
               prose-li:text-slate-600
               prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline
-              prose-strong:text-slate-800"
+              prose-strong:text-slate-800
+              prose-table:block prose-table:overflow-x-auto"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
-          {/* CTA */}
+          <p className="mt-10 text-sm text-slate-400">
+            {isEs
+              ? 'Publicado por OpenSells. Si ves un dato desactualizado o incorrecto, escríbenos desde '
+              : 'Published by OpenSells. If you spot outdated or wrong information, tell us via '}
+            <Link href={localePath(locale, '/contact')} className="text-brand-600 hover:underline">
+              {isEs ? 'contacto' : 'our contact page'}
+            </Link>.
+          </p>
+
           <div className="mt-14 rounded-2xl bg-brand-50 border border-brand-100 p-8 text-center">
             <p className="text-lg font-bold text-slate-900 mb-2">
-              {locale === 'es' ? '¿Listo para conseguir tus primeros leads?' : 'Ready to get your first leads?'}
+              {isEs ? '¿Quieres probarlo con tu sector y tu ciudad?' : 'Want to try it with your industry and city?'}
             </p>
             <p className="text-slate-500 mb-6 text-sm">
-              {locale === 'es'
-                ? 'Prueba OpenSells gratis y consigue tus primeros leads con teléfono en menos de 5 minutos. Sin tarjeta de crédito.'
-                : 'Try OpenSells free and get your first leads with a direct phone number in under 5 minutes. No credit card required.'}
+              {isEs
+                ? 'El primer mes del plan Profesional es gratis y no pedimos tarjeta.'
+                : 'The first month of the Professional plan is free and no card is required. The app is in Spanish.'}
             </p>
-            <Link
-              href={`${appUrl}/register`}
+            {/* Antes enlazaba a app.opensells.com/register, que da 404. */}
+            <a
+              href={REGISTER_URL}
               className="inline-flex h-11 items-center rounded-xl bg-brand-500 px-8 text-sm font-bold text-white hover:bg-brand-600 transition-colors"
             >
-              {locale === 'es' ? 'Empieza gratis' : 'Start free'}
-            </Link>
+              {isEs ? 'Empieza gratis' : 'Start free'}
+            </a>
           </div>
         </article>
       </main>

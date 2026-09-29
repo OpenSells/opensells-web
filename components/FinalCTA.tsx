@@ -1,12 +1,9 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { REGISTER_URL } from '@/lib/site';
 
 export default function FinalCTA() {
   const t = useTranslations('finalcta');
   const values = t.raw('values') as string[];
-  const appUrl = 'https://app.opensells.com';
 
   return (
     <section className="py-20 sm:py-28 bg-slate-900">
@@ -35,12 +32,12 @@ export default function FinalCTA() {
           </ul>
         </div>
 
-        <Link
-          href={`${appUrl}/login?tab=register`}
+        <a
+          href={REGISTER_URL}
           className="inline-flex h-14 items-center rounded-xl bg-brand-500 px-10 text-base font-bold text-white shadow-lg hover:bg-brand-600 transition-colors"
         >
           {t('cta')}
-        </Link>
+        </a>
         <p className="mt-4 text-sm text-slate-500">{t('sub')}</p>
       </div>
     </section>

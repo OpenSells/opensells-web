@@ -1,10 +1,13 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { localePath } from '@/lib/site';
 
 export default function Footer({ locale }: { locale: string }) {
   const t = useTranslations('footer');
-  const prefix = locale === 'en' ? '/en' : '';
+  const p = (path: string) => localePath(locale, path);
 
+  /* Rutas de página, no anclas: «#features» y «#pricing» se resolvían sobre la
+   * URL actual y desde el blog o las páginas legales no llevaban a nada. */
   return (
     <footer className="bg-slate-900 text-slate-400 py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -15,28 +18,30 @@ export default function Footer({ locale }: { locale: string }) {
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{t('product')}</h4>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{t('product')}</h2>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="#features" className="hover:text-white transition-colors">{t('links.features')}</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">{t('links.pricing')}</a></li>
-              <li><Link href={`${prefix}/blog`} className="hover:text-white transition-colors">{t('links.blog')}</Link></li>
+              <li><Link href={p('/how-it-works')} className="hover:text-white transition-colors">{t('links.features')}</Link></li>
+              <li><Link href={p('/ai-call-brief')} className="hover:text-white transition-colors">{t('links.callBrief')}</Link></li>
+              <li><Link href={p('/for-agencies')} className="hover:text-white transition-colors">{t('links.agencies')}</Link></li>
+              <li><Link href={p('/pricing')} className="hover:text-white transition-colors">{t('links.pricing')}</Link></li>
+              <li><Link href={p('/blog')} className="hover:text-white transition-colors">{t('links.blog')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{t('company')}</h4>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{t('company')}</h2>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href={`${prefix}/about`} className="hover:text-white transition-colors">{t('links.about')}</Link></li>
-              <li><Link href={`${prefix}/contact`} className="hover:text-white transition-colors">{t('links.contact')}</Link></li>
+              <li><Link href={p('/about')} className="hover:text-white transition-colors">{t('links.about')}</Link></li>
+              <li><Link href={p('/contact')} className="hover:text-white transition-colors">{t('links.contact')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{t('legal')}</h4>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{t('legal')}</h2>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href={`${prefix}/privacy`} className="hover:text-white transition-colors">{t('links.privacy')}</Link></li>
-              <li><Link href={`${prefix}/terms`} className="hover:text-white transition-colors">{t('links.terms')}</Link></li>
-              <li><Link href={`${prefix}/cookies`} className="hover:text-white transition-colors">{t('links.cookies')}</Link></li>
+              <li><Link href={p('/privacy')} className="hover:text-white transition-colors">{t('links.privacy')}</Link></li>
+              <li><Link href={p('/terms')} className="hover:text-white transition-colors">{t('links.terms')}</Link></li>
+              <li><Link href={p('/cookies')} className="hover:text-white transition-colors">{t('links.cookies')}</Link></li>
             </ul>
           </div>
         </div>

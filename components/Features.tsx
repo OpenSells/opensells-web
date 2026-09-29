@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { localePath } from '@/lib/site';
 
-export default function Features() {
+export default function Features({ locale }: { locale: string }) {
   const t = useTranslations('features');
   const items = t.raw('items') as { icon: string; title: string; description: string }[];
 
@@ -21,6 +23,12 @@ export default function Features() {
             </div>
           ))}
         </div>
+
+        <p className="mt-10 text-center text-sm">
+          <Link href={localePath(locale, '/how-it-works')} className="font-semibold text-brand-600 hover:text-brand-700">
+            {t('more')} →
+          </Link>
+        </p>
       </div>
     </section>
   );
