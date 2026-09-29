@@ -75,6 +75,8 @@ No se han creado páginas por ciudad o sector: no aportarían información disti
 
 ## 4. Pendiente del propietario
 
+Respuestas del propietario (29/09/2026): 1 → sí, VERI*FACTU está en producción (el texto se queda). 2 → se hará más adelante. 3 → todavía no. 4 → se queda como en los Términos.
+
 1. **¿Está VERI*FACTU en `produccion` en Render?** Si no, cambiar «remisión a la AEAT» por «preparado para…» en `messages/*.json` y `lib/pages.ts`.
 2. **Píxel de OpenAI Ads sin consentimiento** y política de privacidad que dice lo contrario (#21). Decidir: banner de consentimiento o cargar el píxel solo tras aceptar.
 3. **Aviso legal / identidad del titular** (#23) y si quieres que `/about` diga quién está detrás. No se ha publicado ningún nombre ni NIF.
