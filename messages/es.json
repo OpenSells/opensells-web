@@ -1,29 +1,33 @@
 {
   "meta": {
-    "title": "OpenSells | Empresas a las que llamar. Y qué decirles.",
-    "description": "Escribe un sector y una ciudad. OpenSells encuentra empresas, te prepara la llamada con IA y, si estás en España, te deja facturar con VERI*FACTU incluido gratis.",
+    "title": "OpenSells: prospección B2B y fichas de llamada con IA",
+    "description": "Software de prospección B2B: busca negocios por sector y ciudad, obtén sus datos públicos de contacto y prepara cada llamada con una ficha hecha por IA. Primer mes gratis.",
     "ogTitle": "OpenSells — Encuentra empresas y llámalas sabiendo qué decir",
-    "ogDescription": "Prospección B2B con datos públicos de contacto, ficha de llamada hecha por IA y, en España, facturación VERI*FACTU incluida. Empieza gratis, sin tarjeta."
+    "ogDescription": "Prospección B2B para España y Latinoamérica: negocios por sector y ciudad, datos públicos de contacto y una ficha de llamada preparada con IA. Primer mes gratis, sin tarjeta."
   },
   "nav": {
-    "features": "Funcionalidades",
+    "features": "Cómo funciona",
+    "callBrief": "Ficha de llamada",
+    "agencies": "Para agencias",
     "pricing": "Precios",
     "blog": "Blog",
     "login": "Entrar",
-    "cta": "Empieza gratis"
+    "cta": "Empieza gratis",
+    "menu": "Menú",
+    "switchLanguage": "Ver en inglés"
   },
   "hero": {
     "badge": "🔥 Primer mes gratis — sin tarjeta",
+    "eyebrow": "Software de prospección B2B con IA",
     "headline": "Empresas a las que llamar. Y qué decirles.",
-    "subheadline": "Escribe un sector y una ciudad. OpenSells encuentra empresas, detecta oportunidades y te dice por qué llamar y cómo empezar la conversación.",
+    "subheadline": "Escribe un sector y una ciudad. OpenSells encuentra negocios con sus datos públicos de contacto —el teléfono cuando está publicado— y te prepara una ficha para cada llamada: a qué se dedican, por qué llamarles y cómo empezar la conversación.",
     "cta_primary": "Empieza gratis ahora",
     "cta_secondary": "Ver cómo funciona",
-    "social_proof": "Sin tarjeta de crédito · Cancela cuando quieras",
-    "no_card": "Garantía de 7 días desde el primer cobro",
     "trust_1": "Sin tarjeta de crédito",
-    "trust_2": "Garantía tras el primer cobro",
+    "trust_2": "Garantía de 7 días tras el primer cobro",
     "trust_3": "Cancela cuando quieras",
-    "verifactu": "Incluye VERI*FACTU gratis (España)"
+    "verifactu": "Incluye VERI*FACTU gratis (España)",
+    "example_note": "Ejemplo ilustrativo: la empresa, la persona y los datos son ficticios."
   },
   "problem": {
     "title": "¿Cuántos clientes pierdes porque tus mensajes no llegan a nadie?",
@@ -44,16 +48,20 @@
         "title": "Buscar empresas a mano se come tu semana",
         "text": "Google, la web de cada una, apuntar datos en una hoja. Horas de trabajo mecánico antes de haber hablado con una sola persona."
       }
-    ]
+    ],
+    "cta_title": "¿Quieres verlo con tu sector y tu ciudad?",
+    "cta_text": "Haz una búsqueda y mira qué empresas salen y cómo es su ficha de llamada. El primer mes es gratis y no pedimos tarjeta.",
+    "cta_button": "Empieza gratis — sin tarjeta"
   },
   "features": {
     "title": "Todo lo que necesitas para descolgar el teléfono hoy",
-    "subtitle": "Sin cambiar tus herramientas. Sin curva de aprendizaje. Desde la primera búsqueda.",
+    "subtitle": "Buscar empresas, preparar la llamada, hacer el seguimiento y, si lo prefieres, escribir el email: en el mismo sitio.",
+    "more": "Ver cómo funciona en detalle",
     "items": [
       {
         "icon": "🔎",
         "title": "Empresas reales de tu sector y tu ciudad",
-        "description": "Escribe \"clínicas dentales en Bogotá\" y obtén nombre, web, teléfono cuando está disponible y dirección. Empresas que existen, no listas compradas."
+        "description": "Escribe \"clínicas dentales en Bogotá\" y obtén nombre, web, dirección y teléfono cuando está publicado. Salen de las fichas públicas de Google Maps y de la web de cada empresa, no de listas compradas."
       },
       {
         "icon": "📞",
@@ -63,7 +71,7 @@
       {
         "icon": "🧠",
         "title": "La IA te prepara la llamada",
-        "description": "Antes de marcar tienes la ficha: a qué se dedican, por qué llamarles, la frase con la que empezar, tres preguntas y qué responder ante las objeciones más habituales."
+        "description": "Antes de marcar tienes la ficha: a qué se dedican, señales de su web y su ficha de Google, por qué llamarles, la frase con la que empezar, hasta tres preguntas y qué responder a las objeciones más probables."
       },
       {
         "icon": "✅",
@@ -73,12 +81,12 @@
       {
         "icon": "✍️",
         "title": "Email con IA cuando prefieras escribir",
-        "description": "Para los leads con email, la IA redacta un mensaje personalizado leyendo su web. Lo revisas y puedes enviarlo desde OpenSells a través de tu propia cuenta de Gmail conectada."
+        "description": "Para los leads con email, la IA redacta un borrador personalizado leyendo su web. Lo revisas y puedes enviarlo desde OpenSells a través de tu propia cuenta de Gmail conectada."
       },
       {
         "icon": "🧾",
-        "title": "Cierra y factura, con VERI*FACTU incluido (España)",
-        "description": "Cuando un lead se convierte en cliente, le haces el presupuesto y la factura desde OpenSells. Numeración correlativa, PDF con tu logo y envío automático a Hacienda con tu certificado. Sin coste extra: el sistema VERI*FACTU será obligatorio en 2027 y aquí ya lo tienes."
+        "title": "Solo en España: presupuestos y facturas con VERI*FACTU",
+        "description": "Cuando un lead se convierte en cliente, le haces el presupuesto y la factura desde OpenSells: numeración correlativa, PDF con tu logo y remisión de los registros a la AEAT con tu certificado (modalidad VERI*FACTU). Sin coste extra en ningún plan."
       }
     ]
   },
@@ -98,75 +106,71 @@
       {
         "number": "03",
         "title": "Llama y actualiza el lead",
-        "description": "Contacta desde la ficha y, al terminar, actualiza el estado, añade una nota o crea la tarea que corresponda para mantener el seguimiento organizado."
+        "description": "La llamada la haces tú. Al terminar, actualiza el estado, añade una nota o crea la tarea que corresponda para mantener el seguimiento organizado."
       }
     ]
   },
   "pricing": {
-    "title": "Precios que se pagan solos con un cliente",
-    "subtitle": "Pruébalo un mes entero sin tarjeta. Un cliente nuevo ya cubre el plan, y en España la facturación VERI*FACTU va incluida.",
+    "title": "Precios claros, con el primer mes gratis",
+    "subtitle": "Pruébalo un mes entero con el plan Profesional, sin tarjeta. Después eliges plan o la cuenta se queda en solo lectura.",
     "popular": "Más popular",
-    "cta_paid": "Empezar ahora",
     "per_month": "/mes",
-    "no_card": "Primer mes gratis sin tarjeta · Durante la prueba, exportación CSV limitada a 50 leads al mes · Cancela cuando quieras",
-    "discount_note": "🎉 Primer mes gratis, sin tarjeta. Después, 39 €/mes (29 $ en Latinoamérica).",
+    "no_card": "Primer mes gratis sin tarjeta · Durante la prueba, exportación CSV limitada a {csvRows} leads al mes · Cancela cuando quieras",
+    "currency_note": "Precios en euros con el IVA incluido. Si registras la cuenta desde un país hispanohablante de Latinoamérica, pagas en dólares estadounidenses (USD), sin IVA español; tu banco o Stripe pueden mostrarte el importe convertido a tu moneda local. La moneda se decide por la conexión desde la que te registras, no por el país que elijas para buscar.",
     "packs_title": "¿Se te queda corto un mes?",
-    "packs_note": "Amplía con una bolsa suelta: 100 leads por 9 € o 300 por 25 € (7 $ y 19 $ en Latinoamérica). Pago único, no caducan, y cada bolsa trae sus fichas de llamada y sus borradores. Solo se gasta cuando has agotado los de tu plan.",
+    "packs_note": "Amplía con una bolsa suelta: {pack1Leads} leads por {pack1Eur} ({pack1Usd}) o {pack2Leads} por {pack2Eur} ({pack2Usd}). Pago único, no caducan, y cada bolsa trae sus fichas de llamada y sus borradores. Solo se gasta cuando has agotado los de tu plan.",
+    "details_link": "Ver todas las condiciones: qué cuenta como lead, prueba, cancelación y reembolso",
+    "first_month_free": "Primer mes gratis",
+    "usd_price": "o {price}/mes si pagas en dólares (Latinoamérica)",
     "plans": [
       {
         "key": "profesional",
         "name": "Profesional",
-        "price_monthly": "39",
-        "price_latam": "29",
-        "description": "Para freelancers que quieren crecer",
+        "description": "Para freelancers y consultores",
         "features": [
-          "600 leads al mes",
-          "Búsquedas ilimitadas",
-          "600 fichas de llamada con IA",
-          "Presupuestos y facturas con VERI*FACTU incluidos (España)",
-          "1.800 borradores de email con IA",
-          "Tareas ilimitadas",
-          "Exportación CSV ilimitada con el plan de pago",
-          "30 mensajes de IA al día",
-          "Soporte prioritario"
+          "{leadsMonth} leads al mes",
+          "Búsquedas sin límite (hasta {leadsPerSearch} leads por búsqueda)",
+          "{callBriefsMonth} fichas de llamada con IA al mes",
+          "{emailDraftsMonth} borradores de email con IA al mes",
+          "Estados, notas y tareas sin límite",
+          "Exportación CSV sin límite con el plan de pago",
+          "{aiMessagesDay} mensajes al asistente de IA al día",
+          "Presupuestos y facturas con VERI*FACTU (España)",
+          "Soporte por email"
         ],
         "cta": "Empezar — Primer mes gratis"
       },
       {
         "key": "agencia",
         "name": "Agencia",
-        "price_monthly": "89",
-        "price_latam": "69",
         "description": "Para agencias y equipos de ventas",
         "features": [
-          "1.500 leads al mes",
-          "Búsquedas ilimitadas",
-          "1.500 fichas de llamada con IA",
-          "Presupuestos y facturas con VERI*FACTU incluidos (España)",
-          "4.500 borradores de email con IA",
-          "Tareas ilimitadas",
-          "Exportación CSV ilimitada con el plan de pago",
-          "50 mensajes de IA al día",
-          "Prioridad máxima en cola",
-          "Soporte prioritario"
+          "{leadsMonth} leads al mes",
+          "Búsquedas sin límite (hasta {leadsPerSearch} leads por búsqueda)",
+          "{callBriefsMonth} fichas de llamada con IA al mes",
+          "{emailDraftsMonth} borradores de email con IA al mes",
+          "Estados, notas y tareas sin límite",
+          "Exportación CSV sin límite con el plan de pago",
+          "{aiMessagesDay} mensajes al asistente de IA al día",
+          "Prioridad máxima en la cola de búsquedas",
+          "Presupuestos y facturas con VERI*FACTU (España)",
+          "Soporte por email"
         ],
         "cta": "Empezar — Primer mes gratis"
       }
-    ],
-    "first_month_free": "Primer mes gratis",
-    "latam_price": "{price} $/mes en Latinoamérica"
+    ]
   },
   "finalcta": {
     "title": "La decisión más fácil que vas a tomar esta semana",
-    "subtitle": "Empieza gratis ahora, sin tarjeta. Y cuando empieces a pagar, tienes 7 días para pedir la devolución sin dar explicaciones.",
+    "subtitle": "Empieza gratis ahora, sin tarjeta. Cuando empieces a pagar, tienes 7 días desde el primer cobro para pedir el reembolso según nuestras condiciones.",
     "value_title": "Lo que obtienes hoy:",
     "values": [
       "Empresas de tu sector y tu ciudad, con sus datos públicos de contacto",
       "Una ficha de llamada hecha por IA para cada una",
       "Estados, notas y tareas para organizar el seguimiento",
-      "Presupuestos y facturas VERI*FACTU para los clientes que cierres, sin coste extra",
-      "Emails personalizados con IA que puedes enviar desde OpenSells con tu Gmail conectado",
-      "Exportación CSV ilimitada en los planes de pago"
+      "Borradores de email con IA que puedes enviar desde OpenSells con tu Gmail conectado",
+      "Exportación CSV sin límite en los planes de pago",
+      "En España, presupuestos y facturas VERI*FACTU sin coste extra"
     ],
     "guarantee": "7 días de garantía desde el primer cobro",
     "cta": "Quiero mis primeras empresas gratis",
@@ -176,12 +180,20 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
-        "q": "¿Cuánto tiempo tarda en verse resultados?",
-        "a": "Tu primer listado puede estar listo en pocos minutos y puedes empezar a prospectar ese mismo día. Con una llamada obtienes feedback inmediato sobre si hay interés; por email, la respuesta puede tardar o no llegar."
+        "q": "¿Qué es OpenSells?",
+        "a": "Un software de prospección B2B. Escribes un sector y una ciudad («asesorías en Valencia»), OpenSells encuentra negocios que encajan con sus datos públicos de contacto y te prepara con IA una ficha para cada llamada. Después organizas el seguimiento con estados, notas y tareas, y si lo prefieres, la IA te redacta un borrador de email. La llamada la haces tú: OpenSells no llama por ti."
+      },
+      {
+        "q": "¿De dónde salen los datos de las empresas?",
+        "a": "De fuentes públicas: la ficha del negocio en Google Maps (a través de la API de Google Places) y la propia web de cada empresa. No vendemos ni usamos listas compradas. Los datos pueden estar desactualizados o faltar: no todas las empresas publican teléfono o email."
+      },
+      {
+        "q": "¿En qué países funciona?",
+        "a": "Está pensado para España y los países hispanohablantes de Latinoamérica: eliges tu país en la aplicación, el buscador reconoce el país o la ciudad que escribas y la ficha de llamada se redacta en el español de allí. La aplicación está en español. La cantidad de empresas que encuentres depende del sector, de la ciudad y de lo que cada negocio publica."
       },
       {
         "q": "¿Por qué teléfono y no email?",
-        "a": "El teléfono suele tener mejor cobertura entre negocios locales que un email comercial útil y permite iniciar una conversación de forma directa. Seguimos incluyendo emails con IA, pero recomendamos priorizar el canal que mejor encaje en cada caso."
+        "a": "El teléfono suele tener mejor cobertura entre negocios locales que un email comercial útil y permite iniciar una conversación de forma directa. Seguimos incluyendo borradores de email con IA, pero recomendamos priorizar el canal que mejor encaje en cada caso."
       },
       {
         "q": "¿Los emails de los leads están verificados?",
@@ -189,27 +201,27 @@
       },
       {
         "q": "¿Es legal llamar en frío a empresas?",
-        "a": "La normativa aplicable depende del país, del tipo de contacto, de la finalidad y del caso concreto: cada país hispanohablante tiene sus propias reglas. OpenSells trabaja con datos empresariales públicos, pero usar esos datos para prospección sigue siendo responsabilidad del usuario. Esto no es asesoramiento legal: revisa tu caso y respeta siempre cualquier petición de no volver a contactar."
+        "a": "La normativa aplicable depende del país, del tipo de contacto, de la finalidad y del caso concreto: cada país hispanohablante tiene sus propias reglas. OpenSells trabaja con datos empresariales públicos, pero que un dato sea público no te autoriza por sí solo a contactar con fines comerciales: usar esos datos sigue siendo responsabilidad del usuario. Esto no es asesoramiento legal: revisa tu caso y respeta siempre cualquier petición de no volver a contactar."
       },
       {
         "q": "¿Y si no sé qué decir por teléfono?",
-        "a": "Para eso está la ficha de llamada. Antes de marcar tienes delante a qué se dedica la empresa, por qué puede tener sentido llamarles, una apertura sugerida, preguntas para descubrir si encajan y respuestas preparadas para objeciones habituales."
+        "a": "Para eso está la ficha de llamada. Antes de marcar tienes delante a qué se dedica la empresa, por qué puede tener sentido llamarles, una apertura sugerida, hasta tres preguntas para descubrir si encajan y respuestas preparadas para las objeciones más probables. La redacta una IA a partir de su web y su ficha de Google, así que conviene revisarla antes de llamar."
       },
       {
         "q": "¿Qué diferencia hay con Hunter.io o Apollo?",
-        "a": "Hunter y Apollo son plataformas más amplias de datos y prospección. OpenSells busca ser más simple y centrarse en un flujo concreto: encontrar negocios por sector y ciudad, reunir sus datos públicos y ayudarte a preparar la conversación y organizar el seguimiento desde un mismo sitio."
+        "a": "Hunter y Apollo son plataformas más amplias de datos de contacto, verificación y campañas de email, y también ofrecen redacción con IA. OpenSells se centra en un flujo más concreto: encontrar negocios locales por sector y ciudad, reunir sus datos públicos, preparar la llamada y organizar el seguimiento en un mismo sitio. Tenemos una comparativa con fuentes en el blog."
       },
       {
         "q": "¿Qué es VERI*FACTU y qué incluye OpenSells?",
-        "a": "VERI*FACTU es el sistema con el que Hacienda exige que se emitan las facturas a partir de 2027 (1 de enero para sociedades, 1 de julio para autónomos): cada factura genera un registro encadenado que se envía a la AEAT y lleva un código QR. OpenSells lo incluye sin coste en todos los planes, también durante el mes gratis: subes tu certificado electrónico una vez y cada factura que emites se comunica sola a la AEAT. Además puedes hacer presupuestos, convertirlos en factura, enviarlos por email y exportar todo para tu gestoría."
+        "a": "Solo aplica en España. Los programas con los que se emiten facturas tendrán que cumplir el Reglamento de sistemas informáticos de facturación (Real Decreto 1007/2023) antes del 1 de enero de 2027 si tributas por el Impuesto sobre Sociedades, y antes del 1 de julio de 2027 en el resto de casos. Hay dos modalidades: VERI*FACTU, que remite cada registro a la AEAT, y la que los conserva en el propio sistema. OpenSells usa la modalidad VERI*FACTU y la incluye sin coste en todos los planes, también durante el mes gratis: subes tu certificado electrónico una vez y puedes hacer presupuestos, convertirlos en factura, enviarlos por email y exportarlo todo para tu gestoría. No aplica, por ejemplo, a quien ya lleva el SII ni a quien tributa en el País Vasco o Navarra."
       },
       {
         "q": "¿Puedo cancelar en cualquier momento?",
-        "a": "Sí, sin permanencia ni penalizaciones. Cancelas desde tu panel y no se te cobra el siguiente período. El primer mes es gratis y no se te pide tarjeta; si cancelas dentro de los 7 días siguientes a tu primer cobro, puedes solicitar la devolución de ese importe."
+        "a": "Sí, sin permanencia ni penalizaciones. Cancelas desde tu panel y no se te cobra el siguiente periodo. El primer mes es gratis y no se te pide tarjeta; si al terminar no has elegido plan, la cuenta pasa a solo lectura. En los 7 días siguientes a tu primer cobro puedes solicitar el reembolso según los términos de servicio."
       },
       {
         "q": "¿Funciona para cualquier sector?",
-        "a": "Funciona especialmente bien cuando vendes a negocios con presencia pública y datos de contacto visibles: talleres, clínicas, consultoras, asesorías, hostelería, formación o inmobiliarias, entre otros."
+        "a": "Funciona especialmente bien cuando vendes a negocios con presencia pública y datos de contacto visibles: talleres, clínicas, consultoras, asesorías, hostelería, formación o inmobiliarias, entre otros. Encaja peor si buscas un cargo concreto dentro de grandes empresas: OpenSells trabaja con los datos que publica el negocio, no con perfiles personales."
       },
       {
         "q": "¿Qué pasa con mis datos si cancelo?",
@@ -219,43 +231,22 @@
   },
   "blog_preview": {
     "title": "Recursos para cerrar más clientes",
-    "subtitle": "Guías y estrategias concretas para conseguir clientes B2B y convertirlos.",
+    "subtitle": "Guías y comparativas para prospectar negocios B2B y preparar mejor cada contacto.",
     "cta": "Ver todos los artículos",
-    "posts": [
-      {
-        "slug": "como-conseguir-clientes-b2b",
-        "title": "Cómo conseguir clientes B2B: guía definitiva 2026",
-        "excerpt": "Canales, estrategias y herramientas que funcionan en 2026 para conseguir clientes B2B como freelancer o agencia en España.",
-        "date": "2026-06-02",
-        "readTime": "10 min"
-      },
-      {
-        "slug": "alternativas-hunter-io-apollo",
-        "title": "Mejores alternativas a Hunter.io y Apollo.io para España y LATAM 2026",
-        "excerpt": "Comparativa para el mercado español y latinoamericano: precios, cobertura y cuál elegir según tu caso.",
-        "date": "2026-06-02",
-        "readTime": "7 min"
-      },
-      {
-        "slug": "herramientas-prospeccion-comercial-espana",
-        "title": "Las 7 mejores herramientas de prospección comercial en España 2026",
-        "excerpt": "Comparativa actualizada con precios, cobertura local y para quién es cada una.",
-        "date": "2026-06-02",
-        "readTime": "8 min"
-      }
-    ]
+    "read": "Leer artículo"
   },
   "footer": {
-    "tagline": "Encuentra empresas, llámalas con la conversación preparada y factúrales con VERI*FACTU.",
+    "tagline": "Software de prospección B2B: encuentra negocios por sector y ciudad y llámalos con la conversación preparada.",
     "product": "Producto",
     "company": "Empresa",
-    "resources": "Recursos",
     "legal": "Legal",
     "links": {
-      "features": "Funcionalidades",
+      "features": "Cómo funciona",
+      "callBrief": "Ficha de llamada con IA",
+      "agencies": "Para agencias",
       "pricing": "Precios",
       "blog": "Blog",
-      "about": "Sobre nosotros",
+      "about": "Sobre OpenSells",
       "contact": "Contacto",
       "privacy": "Privacidad",
       "terms": "Términos de uso",

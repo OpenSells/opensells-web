@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { pageAlternates } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -9,14 +10,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isEs = locale === 'es';
   return {
-    title: isEs ? 'Términos de Servicio | OpenSells' : 'Terms of Service | OpenSells',
+    title: isEs ? 'Términos de Servicio' : 'Terms of Service',
     description: isEs
       ? 'Condiciones de uso de la plataforma OpenSells.'
       : 'Terms and conditions for using the OpenSells platform.',
-    alternates: {
-      canonical: isEs ? 'https://opensells.com/terms' : 'https://opensells.com/en/terms',
-    },
-    robots: { index: false },
+    alternates: pageAlternates(locale, '/terms'),
+    robots: { index: false, follow: true },
   };
 }
 

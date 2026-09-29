@@ -1,11 +1,24 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'OpenSells — Genera leads B2B con IA en segundos';
+export const alt = 'OpenSells — Software de prospección B2B con fichas de llamada preparadas con IA';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default function Image() {
+const COPY = {
+  es: {
+    headline: ['Empresas a las que llamar,', 'con la llamada preparada'],
+    sub: 'Software de prospección B2B: negocios por sector y ciudad y una ficha de llamada hecha por IA. Primer mes gratis.',
+  },
+  en: {
+    headline: ['Companies to call,', 'with the call prepared'],
+    sub: 'B2B prospecting software: businesses by industry and city and an AI-written call brief. First month free.',
+  },
+};
+
+export default async function Image({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const c = locale === 'en' ? COPY.en : COPY.es;
   return new ImageResponse(
     (
       <div
@@ -75,9 +88,9 @@ export default function Image() {
             letterSpacing: '-1px',
           }}
         >
-          Empresas a las que llamar,
+          {c.headline[0]}
           <br />
-          con la llamada preparada
+          {c.headline[1]}
         </div>
 
         {/* Subtitle */}
@@ -90,7 +103,7 @@ export default function Image() {
             lineHeight: 1.4,
           }}
         >
-          Leads B2B con su teléfono y una ficha de llamada hecha por IA. Empieza gratis, sin tarjeta.
+          {c.sub}
         </div>
 
         {/* URL */}
@@ -104,7 +117,7 @@ export default function Image() {
             fontWeight: 500,
           }}
         >
-          opensells.com
+          www.opensells.com
         </div>
       </div>
     ),

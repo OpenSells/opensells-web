@@ -1,7 +1,5 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { REGISTER_URL } from '@/lib/site';
 
 /* El ejemplo de ficha del hero.
  *
@@ -19,7 +17,9 @@ const FICHA = {
     empresa: 'Clínica Dental Sant Martí',
     telefono: '93 412 ·· ··',
     telefonoNota: 'Fijo de Barcelona',
-    preguntarPor: 'Pregunta por Marta Ribó',
+    // La app dejó de enseñar «Pregunta por <nombre>» el 2026-09-06 (acertaba
+    // poco) y enseña la razón social: la maqueta enseña lo mismo.
+    razonSocial: 'Razón social: Odontologia Sant Martí, S.L.',
     dedicanLabel: 'A qué se dedican',
     dedican: 'Clínica dental de barrio con tres profesionales. Atienden sobre todo a familias de la zona y llevan quince años abiertos.',
     ganchosLabel: 'Señales detectadas',
@@ -33,7 +33,7 @@ const FICHA = {
     oportunidadLabel: 'Oportunidad',
     oportunidad: 'Ya atraen atención desde TikTok, pero su web y su ficha de Google pueden estar perdiendo parte de ese tráfico.',
     aperturaLabel: 'Cómo abrir',
-    apertura: '«Hola Marta, he visto que estáis trabajando TikTok para atraer pacientes, pero hay un par de puntos en vuestra web que pueden estar haciendo que perdáis parte de ese tráfico…»',
+    apertura: '«Hola, buenos días. He visto que estáis trabajando TikTok para atraer pacientes, pero hay un par de puntos en vuestra web que pueden estar haciendo que perdáis parte de ese tráfico…»',
     pie: 'Preparada con IA antes de que marques',
     botonLlamar: 'Llamar',
   },
@@ -42,7 +42,7 @@ const FICHA = {
     empresa: 'Sant Martí Dental Clinic',
     telefono: '+34 93 412 ·· ··',
     telefonoNota: 'Barcelona landline',
-    preguntarPor: 'Ask for Marta Ribó',
+    razonSocial: 'Registered name: Odontologia Sant Martí, S.L.',
     dedicanLabel: 'What they do',
     dedican: 'A neighbourhood dental clinic with three practitioners. Mostly local families, and they have been open for fifteen years.',
     ganchosLabel: 'Signals detected',
@@ -56,7 +56,7 @@ const FICHA = {
     oportunidadLabel: 'Opportunity',
     oportunidad: 'TikTok is already bringing them attention, but their website and Google listing may be losing part of that traffic.',
     aperturaLabel: 'How to open',
-    apertura: '"Hi Marta, I saw you are using TikTok to attract patients, but there are a couple of things on your website that may be losing some of that traffic…"',
+    apertura: '"Hi, good morning. I saw you are using TikTok to attract patients, but there are a couple of things on your website that may be losing some of that traffic…"',
     pie: 'Prepared by AI before you dial',
     botonLlamar: 'Call',
   },
@@ -64,7 +64,6 @@ const FICHA = {
 
 export default function Hero({ locale }: { locale: string }) {
   const t = useTranslations('hero');
-  const appUrl = 'https://app.opensells.com';
   // `locale` llegaba a este componente y no se usaba: la maqueta salía en
   // español también en /en.
   const f = locale === 'en' ? FICHA.en : FICHA.es;
@@ -79,7 +78,11 @@ export default function Hero({ locale }: { locale: string }) {
           {t('badge')}
         </div>
 
+        {/* El H1 lleva delante qué es el producto. El titular solo («Empresas
+            a las que llamar. Y qué decirles.») no dice a un buscador ni a un
+            asistente que esto es un software de prospección B2B. */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+          <span className="block text-base sm:text-lg font-semibold tracking-normal text-brand-600 mb-3">{t('eyebrow')}</span>
           {t('headline')}
         </h1>
 
@@ -95,12 +98,12 @@ export default function Hero({ locale }: { locale: string }) {
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <Link
-            href={`${appUrl}/login?tab=register`}
+          <a
+            href={REGISTER_URL}
             className="inline-flex h-12 items-center rounded-xl bg-brand-500 px-8 text-base font-semibold text-white shadow-md hover:bg-brand-600 transition-colors"
           >
             {t('cta_primary')}
-          </Link>
+          </a>
           <a
             href="#how"
             className="inline-flex h-12 items-center rounded-xl border border-slate-200 bg-white px-8 text-base font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
@@ -120,6 +123,10 @@ export default function Hero({ locale }: { locale: string }) {
           ))}
         </div>
 
+        {t.has('language_note') && (
+          <p className="mt-4 text-sm text-slate-500">{t('language_note')}</p>
+        )}
+
         {/* Ficha de llamada: es lo que de verdad diferencia al producto, asi que
             es lo que se ensena. Antes habia una tabla de leads con una columna
             de email y estados de embudo de correo ("Respondio"), que contradecia
@@ -137,7 +144,7 @@ export default function Hero({ locale }: { locale: string }) {
             </div>
           </div>
 
-          {/* Cabecera: la empresa, su telefono y por quien preguntar */}
+          {/* Cabecera: la empresa, su telefono y su razon social */}
           <div className="px-5 sm:px-6 py-4 border-b border-slate-100 flex flex-wrap items-start justify-between gap-3">
             <div className="min-w-0">
               <p className="text-lg sm:text-xl font-extrabold text-slate-900 truncate">{f.empresa}</p>
@@ -151,7 +158,7 @@ export default function Hero({ locale }: { locale: string }) {
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 0115 0" />
               </svg>
-              {f.preguntarPor}
+              {f.razonSocial}
             </span>
           </div>
 
@@ -199,6 +206,7 @@ export default function Hero({ locale }: { locale: string }) {
             </span>
           </div>
         </div>
+        <p className="mt-3 text-xs text-slate-400">{t('example_note')}</p>
       </div>
     </section>
   );

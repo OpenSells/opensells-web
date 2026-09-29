@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import Script from 'next/script';
 import { routing } from '@/i18n/routing';
+import { CONTACT_EMAIL, ORG_ID, SITE_URL, WEBSITE_ID } from '@/lib/site';
 import '../globals.css';
 
 /* La web se estaba viendo en Arial: globals.css lo fijaba a mano y no había
@@ -25,24 +26,21 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
-  const base = 'https://opensells.com';
-  const canonical = locale === 'es' ? base : `${base}/en`;
 
+  /* Sin `alternates` aquí: el merge de metadata es superficial y cada página
+   * que no declaraba los suyos heredaba el canonical de la portada (pasaba en
+   * /cookies y en las 404). Cada página declara el suyo con `pageAlternates`. */
   return {
+    metadataBase: new URL(SITE_URL),
     title: { default: 'OpenSells', template: '%s | OpenSells' },
     description: t('description'),
     icons: {
       icon: '/favicon.svg',
       shortcut: '/favicon.svg',
     },
-    alternates: {
-      canonical,
-      languages: { es: base, en: `${base}/en` },
-    },
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
-      url: canonical,
       siteName: 'OpenSells',
       locale: locale === 'es' ? 'es_ES' : 'en_US',
       type: 'website',
@@ -60,28 +58,43 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   if (!routing.locales.includes(locale as 'es' | 'en')) notFound();
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'meta' });
 
-  const base = 'https://opensells.com';
-  const websiteSchema = {
+  /* La organización y el sitio, una vez y con @id fijo, para que el resto de
+   * páginas se refieran a ellos. Se quitaron dos cosas que no eran ciertas:
+   *   - SearchAction hacia /blog?q=: el blog no tiene buscador, esa URL
+   *     enseñaba la lista entera sin filtrar nada.
+   *   - sameAs: app.opensells.com: es la aplicación, no otro perfil de la
+   *     misma organización. sameAs es para perfiles equivalentes verificados
+   *     (LinkedIn, etc.); de momento no hay ninguno que declarar. */
+  const siteSchema = {
     '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'OpenSells',
-    url: base,
-    description: 'Plataforma SaaS de prospección B2B. Encuentra empresas por sector y ciudad, con su teléfono y una ficha de llamada preparada por IA.',
-    // Español a secas, no de España: la web es para todo el público hispano.
-    inLanguage: locale === 'es' ? 'es' : 'en-US',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: `${base}/blog?q={search_term_string}` },
-      'query-input': 'required name=search_term_string',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'OpenSells',
-      url: base,
-      logo: { '@type': 'ImageObject', url: `${base}/favicon.svg` },
-      sameAs: ['https://app.opensells.com'],
-    },
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': ORG_ID,
+        name: 'OpenSells',
+        url: SITE_URL,
+        logo: { '@type': 'ImageObject', url: `${SITE_URL}/favicon.svg` },
+        email: CONTACT_EMAIL,
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer support',
+          email: CONTACT_EMAIL,
+          availableLanguage: ['es'],
+        },
+      },
+      {
+        '@type': 'WebSite',
+        '@id': WEBSITE_ID,
+        name: 'OpenSells',
+        url: SITE_URL,
+        description: t('description'),
+        // Español a secas, no de España: la web es para todo el público hispano.
+        inLanguage: locale === 'es' ? 'es' : 'en',
+        publisher: { '@id': ORG_ID },
+      },
+    ],
   };
 
   return (
@@ -92,7 +105,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         </Script>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

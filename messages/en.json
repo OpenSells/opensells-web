@@ -1,29 +1,34 @@
 {
   "meta": {
-    "title": "OpenSells | Companies to call. And what to say.",
-    "description": "Enter an industry and a city. OpenSells finds companies, prepares the call with AI and, when you close, lets you invoice with VERI*FACTU included for free.",
+    "title": "OpenSells: B2B prospecting and AI call briefs",
+    "description": "B2B prospecting software: find local businesses by industry and city, get their public contact details and prepare every call with an AI-written brief. First month free.",
     "ogTitle": "OpenSells — Find companies and call them knowing what to say",
-    "ogDescription": "B2B prospecting with public contact data, an AI-written call brief and VERI*FACTU invoicing included. Start free, no card required."
+    "ogDescription": "B2B prospecting for Spain and Latin America: businesses by industry and city, public contact details and an AI-prepared call brief. First month free, no card required."
   },
   "nav": {
-    "features": "Features",
+    "features": "How it works",
+    "callBrief": "Call brief",
+    "agencies": "For agencies",
     "pricing": "Pricing",
     "blog": "Blog",
     "login": "Log in",
-    "cta": "Start free"
+    "cta": "Start free",
+    "menu": "Menu",
+    "switchLanguage": "View in Spanish"
   },
   "hero": {
     "badge": "🔥 First month free — no card required",
+    "eyebrow": "AI-assisted B2B prospecting software",
     "headline": "Companies to call. And what to say.",
-    "subheadline": "Enter an industry and a city. OpenSells finds companies, spots opportunities and tells you why to call and how to start the conversation.",
+    "subheadline": "Enter an industry and a city. OpenSells finds businesses with their public contact details — the phone number when it is published — and prepares a brief for each call: what they do, why to call them and how to open the conversation.",
     "cta_primary": "Start free now",
     "cta_secondary": "See how it works",
-    "social_proof": "No credit card · Cancel anytime",
-    "no_card": "7-day guarantee from your first charge",
     "trust_1": "No credit card",
-    "trust_2": "Guarantee after first charge",
+    "trust_2": "7-day guarantee after your first charge",
     "trust_3": "Cancel anytime",
-    "verifactu": "VERI*FACTU included free (Spain)"
+    "verifactu": "VERI*FACTU invoicing included (Spain)",
+    "language_note": "Built for Spain and Spanish-speaking Latin America. The app interface is currently in Spanish.",
+    "example_note": "Illustrative example: the company, the person and the data are fictitious."
   },
   "problem": {
     "title": "How many clients are you losing because your messages reach no one?",
@@ -44,16 +49,20 @@
         "title": "Finding companies by hand eats your week",
         "text": "Google, each company's website, copying data into a spreadsheet. Hours of mechanical work before you've spoken to a single person."
       }
-    ]
+    ],
+    "cta_title": "Want to see it with your industry and city?",
+    "cta_text": "Run a search and see which companies come up and what their call brief looks like. The first month is free and we don't ask for a card.",
+    "cta_button": "Start free — no card"
   },
   "features": {
     "title": "Everything you need to pick up the phone today",
-    "subtitle": "No tool switching. No learning curve. From your very first search.",
+    "subtitle": "Find companies, prepare the call, keep follow-up organised and, if you prefer, draft the email: all in one place.",
+    "more": "See how it works in detail",
     "items": [
       {
         "icon": "🔎",
         "title": "Real companies in your industry and city",
-        "description": "Type \"dental clinics in Valencia\" and get the name, website, phone number when available and address. Companies that exist, not purchased lists."
+        "description": "Type \"dental clinics in Valencia\" and get the name, website, address and phone number when it is published. The data comes from public Google Maps listings and each company's own website, not purchased lists."
       },
       {
         "icon": "📞",
@@ -63,7 +72,7 @@
       {
         "icon": "🧠",
         "title": "The AI prepares the call for you",
-        "description": "Before you dial you get the brief: what they do, why calling them may make sense, a suggested opening line, three questions and responses to common objections."
+        "description": "Before you dial you get the brief: what they do, signals from their website and Google listing, why calling may make sense, a suggested opening line, up to three questions and responses to likely objections."
       },
       {
         "icon": "✅",
@@ -77,8 +86,8 @@
       },
       {
         "icon": "🧾",
-        "title": "Close and invoice, VERI*FACTU included (Spain)",
-        "description": "When a lead becomes a customer, you create the quote and the invoice in OpenSells. Sequential numbering, PDF with your logo and automatic submission to the Spanish tax agency with your certificate. No extra cost: VERI*FACTU becomes mandatory in Spain in 2027 and you already have it."
+        "title": "Spain only: quotes and VERI*FACTU invoices",
+        "description": "When a lead becomes a customer, you create the quote and the invoice in OpenSells: sequential numbering, PDF with your logo and submission of the records to the Spanish tax agency (AEAT) with your certificate, in VERI*FACTU mode. No extra cost on any plan."
       }
     ]
   },
@@ -88,7 +97,7 @@
       {
         "number": "01",
         "title": "Type your industry and city",
-        "description": "\"Car repair shops in Valencia\", \"HR consultancies in Madrid\". OpenSells finds companies with their public data, including a phone number when available."
+        "description": "\"Car repair shops in Monterrey\", \"HR consultancies in Madrid\". OpenSells finds companies with their public data, including a phone number when available."
       },
       {
         "number": "02",
@@ -98,99 +107,122 @@
       {
         "number": "03",
         "title": "Call and update the lead",
-        "description": "Contact the company from the brief and, when you finish, update the status, add a note or create the relevant task to keep follow-up organised."
+        "description": "You make the call yourself. When you finish, update the status, add a note or create the relevant task to keep follow-up organised."
       }
     ]
   },
   "pricing": {
-    "title": "Simple, transparent pricing",
-    "subtitle": "Try it for a full month with no card. One new customer covers the plan, and VERI*FACTU invoicing is included.",
+    "title": "Clear pricing, first month free",
+    "subtitle": "Try the full Professional plan for a month with no card. Then pick a plan, or the account switches to read-only.",
     "popular": "Most popular",
-    "cta_paid": "Get started",
     "per_month": "/mo",
-    "no_card": "First month free with no card · During the trial, CSV export is limited to 50 leads per month · Cancel anytime",
+    "no_card": "First month free with no card · During the trial, CSV export is limited to {csvRows} leads per month · Cancel anytime",
+    "currency_note": "Euro prices include Spanish VAT. If you sign up from a Spanish-speaking Latin American country, you pay in US dollars (USD) without Spanish VAT; your bank or Stripe may show the amount converted to your local currency. The currency is set by the connection you sign up from, not by the country you choose to search in. Everywhere else, prices are in euros.",
     "packs_title": "Run out mid-month?",
-    "packs_note": "Top up with a one-off pack: 100 leads for €9 or 300 for €25. One-time payment, never expires, and each pack brings its own call briefs and email drafts. It is only used once you have run out of your plan's.",
+    "packs_note": "Top up with a one-off pack: {pack1Leads} leads for {pack1Eur} ({pack1Usd}) or {pack2Leads} for {pack2Eur} ({pack2Usd}). One-time payment, never expires, and each pack brings its own call briefs and email drafts. It is only used once you have run out of your plan's.",
+    "details_link": "See all terms: what counts as a lead, trial, cancellation and refunds",
+    "first_month_free": "First month free",
+    "usd_price": "or {price}/mo if you pay in dollars (Latin America)",
     "plans": [
       {
         "key": "profesional",
         "name": "Professional",
-        "price_monthly": "39",
-        "description": "For freelancers and growing consultants",
+        "description": "For freelancers and consultants",
         "features": [
-          "600 leads per month",
-          "Unlimited searches",
-          "600 AI call briefs",
-          "Quotes and invoices with VERI*FACTU included (Spain)",
-          "1,800 AI email drafts per month",
-          "Unlimited tasks",
+          "{leadsMonth} leads per month",
+          "Unlimited searches (up to {leadsPerSearch} leads per search)",
+          "{callBriefsMonth} AI call briefs per month",
+          "{emailDraftsMonth} AI email drafts per month",
+          "Unlimited statuses, notes and tasks",
           "Unlimited CSV export on the paid plan",
-          "30 AI messages per day",
-          "Priority support"
+          "{aiMessagesDay} AI assistant messages per day",
+          "Quotes and VERI*FACTU invoices (Spain)",
+          "Email support"
         ],
         "cta": "Start — First month free"
       },
       {
         "key": "agencia",
         "name": "Agency",
-        "price_monthly": "89",
         "description": "For agencies and sales teams",
         "features": [
-          "1,500 leads per month",
-          "Unlimited searches",
-          "1,500 AI call briefs",
-          "Quotes and invoices with VERI*FACTU included (Spain)",
-          "4,500 AI email drafts per month",
-          "Unlimited tasks",
+          "{leadsMonth} leads per month",
+          "Unlimited searches (up to {leadsPerSearch} leads per search)",
+          "{callBriefsMonth} AI call briefs per month",
+          "{emailDraftsMonth} AI email drafts per month",
+          "Unlimited statuses, notes and tasks",
           "Unlimited CSV export on the paid plan",
-          "50 AI messages per day",
-          "Top queue priority",
-          "Priority support"
+          "{aiMessagesDay} AI assistant messages per day",
+          "Top priority in the search queue",
+          "Quotes and VERI*FACTU invoices (Spain)",
+          "Email support"
         ],
         "cta": "Start — First month free"
       }
+    ]
+  },
+  "finalcta": {
+    "title": "The easiest decision you'll make this week",
+    "subtitle": "Start free now, no card. Once you start paying, you have 7 days from your first charge to request a refund under our terms.",
+    "value_title": "What you get today:",
+    "values": [
+      "Companies in your industry and city, with their public contact data",
+      "An AI-written call brief for each one",
+      "Statuses, notes and tasks to organise follow-up",
+      "AI email drafts you can send from OpenSells through your connected Gmail",
+      "Unlimited CSV export on paid plans",
+      "In Spain, VERI*FACTU quotes and invoices at no extra cost"
     ],
-    "discount_note": "🎉 First month free, no card required. Then €39/mo.",
-    "first_month_free": "First month free"
+    "guarantee": "7-day guarantee from your first charge",
+    "cta": "Get my first companies free",
+    "sub": "No card · No commitment · Cancel anytime"
   },
   "faq": {
     "title": "Frequently asked questions",
     "items": [
       {
-        "q": "How long until I see results?",
-        "a": "Your first list can be ready in a few minutes and you can start prospecting the same day. A phone call gives you immediate feedback on whether there is interest; email replies may take longer or never arrive."
+        "q": "What is OpenSells?",
+        "a": "B2B prospecting software. You type an industry and a city (\"accountants in Valencia\"), OpenSells finds matching businesses with their public contact details and uses AI to prepare a brief for each call. You then organise follow-up with statuses, notes and tasks, and if you prefer, AI drafts an email for you. You make the call yourself: OpenSells does not call on your behalf."
+      },
+      {
+        "q": "Where does the company data come from?",
+        "a": "From public sources: the business's Google Maps listing (through the Google Places API) and each company's own website. We don't sell or use purchased lists. Data may be outdated or missing: not every business publishes a phone number or email."
+      },
+      {
+        "q": "Which countries does it work in? Is the app in English?",
+        "a": "It is built for Spain and Spanish-speaking Latin America: you choose your country in the app, the search recognises the country or city you type, and the call brief is written in the local Spanish. The app interface is currently in Spanish only. How many companies you find depends on the industry, the city and what each business publishes."
       },
       {
         "q": "Why phone and not email?",
-        "a": "Phone numbers often have better coverage among local businesses than useful sales email addresses and let you start a conversation directly. We still include AI email, but recommend using whichever channel best fits each case."
+        "a": "Phone numbers often have better coverage among local businesses than useful sales email addresses and let you start a conversation directly. We still include AI email drafts, but recommend using whichever channel best fits each case."
       },
       {
         "q": "Are the lead emails verified?",
         "a": "We don't run technical mailbox verification (SMTP or MX). We extract email addresses that companies publish on their own websites, so they are public addresses, but they may be outdated or generic inboxes."
       },
       {
-        "q": "Is cold calling businesses legal in Spain?",
-        "a": "The rules that apply depend on the type of contact, purpose and specific circumstances. OpenSells works with public business data, but how that data is used for prospecting remains the user's responsibility. This is not legal advice: review your specific case and always respect requests not to be contacted again."
+        "q": "Is cold calling businesses legal?",
+        "a": "The rules depend on the country, the type of contact, the purpose and the specific circumstances: each Spanish-speaking country has its own. OpenSells works with public business data, but data being public does not on its own authorise you to contact someone for commercial purposes: how that data is used remains the user's responsibility. This is not legal advice: review your specific case and always respect requests not to be contacted again."
       },
       {
         "q": "What if I don't know what to say on the phone?",
-        "a": "That's what the call brief is for. Before you dial you have what the company does, why calling them may make sense, a suggested opener, questions to see whether they are a fit and prepared responses to common objections."
+        "a": "That's what the call brief is for. Before you dial you have what the company does, why calling them may make sense, a suggested opener, up to three questions to see whether they are a fit and prepared responses to likely objections. It is written by AI from their website and Google listing, so review it before you call."
       },
       {
         "q": "How is this different from Hunter.io or Apollo?",
-        "a": "Hunter and Apollo are broader data and prospecting platforms. OpenSells aims to be simpler and focused on one workflow: find businesses by industry and city, gather their public data, prepare the conversation and organise follow-up in one place."
+        "a": "Hunter and Apollo are broader contact-data, verification and email campaign platforms, and both also offer AI writing. OpenSells focuses on a narrower workflow: find local businesses by industry and city, gather their public data, prepare the call and organise follow-up in one place. There is a sourced comparison on the blog (in Spanish)."
       },
       {
         "q": "What is VERI*FACTU and what does OpenSells include?",
-        "a": "VERI*FACTU is the system the Spanish tax agency requires for issuing invoices from 2027 (1 January for companies, 1 July for the self-employed): every invoice produces a chained record that is sent to the AEAT and carries a QR code. OpenSells includes it at no cost on every plan, free month included: upload your electronic certificate once and each invoice you issue is reported to the AEAT automatically. You can also create quotes, turn them into invoices, email them and export everything for your accountant."
+        "a": "It only applies in Spain. Invoicing software must comply with the Spanish invoicing systems regulation (Royal Decree 1007/2023) before 1 January 2027 for corporate income tax payers and before 1 July 2027 for everyone else. There are two modes: VERI*FACTU, which sends each record to the Spanish tax agency (AEAT), and one that keeps the records in the system itself. OpenSells uses VERI*FACTU mode and includes it at no cost on every plan, free month included: upload your electronic certificate once and you can create quotes, turn them into invoices, email them and export everything for your accountant. It does not apply, for example, to businesses already on SII or taxed in the Basque Country or Navarre."
       },
       {
         "q": "Can I cancel anytime?",
-        "a": "Yes, with no lock-in or penalties. Cancel from your dashboard and you will not be charged for the next billing period. The first month is free and no card is required; if you cancel within 7 days of your first charge, you can request a refund of that payment."
+        "a": "Yes, with no lock-in or penalties. Cancel from your dashboard and you will not be charged for the next billing period. The first month is free and no card is required; if you have not chosen a plan when it ends, the account switches to read-only. Within 7 days of your first charge you can request a refund under the terms of service."
       },
       {
         "q": "Does it work for any industry?",
-        "a": "It works especially well when selling to businesses with a public presence and visible contact details: repair shops, clinics, consultancies, accountants, hospitality, training or real estate, among others."
+        "a": "It works especially well when selling to businesses with a public presence and visible contact details: repair shops, clinics, consultancies, accountants, hospitality, training or real estate, among others. It is a poorer fit if you need a specific job title inside large companies: OpenSells works with the data a business publishes, not personal profiles."
       },
       {
         "q": "What happens to my data if I cancel?",
@@ -200,59 +232,22 @@
   },
   "blog_preview": {
     "title": "Resources to prospect better",
-    "subtitle": "Guides and strategies to generate more leads and close more deals.",
+    "subtitle": "Guides and comparisons for prospecting B2B businesses and preparing each contact.",
     "cta": "View all posts",
-    "posts": [
-      {
-        "slug": "como-conseguir-clientes-b2b",
-        "title": "How to get B2B clients: the definitive 2026 guide",
-        "excerpt": "Channels, strategies and tools that work in 2026 for freelancers and agencies selling in Spain.",
-        "date": "2026-06-02",
-        "readTime": "10 min"
-      },
-      {
-        "slug": "alternativas-hunter-io-apollo",
-        "title": "Best Hunter.io and Apollo.io alternatives for Spain and LATAM 2026",
-        "excerpt": "A comparison for the Spanish and Latin American market: pricing, coverage and which one to pick for your use case.",
-        "date": "2026-06-02",
-        "readTime": "7 min"
-      },
-      {
-        "slug": "herramientas-prospeccion-comercial-espana",
-        "title": "The 7 best sales prospecting tools in Spain 2026",
-        "excerpt": "An up-to-date comparison with pricing, local coverage and who each one is for.",
-        "date": "2026-06-02",
-        "readTime": "8 min"
-      }
-    ]
-  },
-  "finalcta": {
-    "title": "The easiest decision you'll make this week",
-    "subtitle": "Start free now, no card. And once you start paying, you have 7 days to ask for a refund — no questions asked.",
-    "value_title": "What you get today:",
-    "values": [
-      "Companies in your industry and city, with their public contact data",
-      "An AI-written call brief for each one",
-      "Statuses, notes and tasks to organise follow-up",
-      "VERI*FACTU quotes and invoices for the customers you close, at no extra cost",
-      "AI-personalised emails you can send from OpenSells through your connected Gmail",
-      "Unlimited CSV export on paid plans"
-    ],
-    "guarantee": "7-day guarantee from your first charge",
-    "cta": "Get my first companies free",
-    "sub": "No card · No commitment · Cancel anytime"
+    "read": "Read article"
   },
   "footer": {
-    "tagline": "Find companies, call them with the conversation ready, and invoice them with VERI*FACTU.",
+    "tagline": "B2B prospecting software: find businesses by industry and city and call them with the conversation ready.",
     "product": "Product",
     "company": "Company",
-    "resources": "Resources",
     "legal": "Legal",
     "links": {
-      "features": "Features",
+      "features": "How it works",
+      "callBrief": "AI call brief",
+      "agencies": "For agencies",
       "pricing": "Pricing",
       "blog": "Blog",
-      "about": "About us",
+      "about": "About OpenSells",
       "contact": "Contact",
       "privacy": "Privacy",
       "terms": "Terms of use",

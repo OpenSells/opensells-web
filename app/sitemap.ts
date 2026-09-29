@@ -1,58 +1,47 @@
 import type { MetadataRoute } from 'next';
-import { getPostsByLocale } from '@/lib/blog';
+import { getPostsByLocale, type Post } from '@/lib/blog';
+import { PAGE_UPDATED, absoluteUrl } from '@/lib/site';
 
-const base = 'https://opensells.com';
+/* Solo URL canónicas e indexables que responden 200:
+ *   - host www (el que sirve producción; el dominio sin www redirige);
+ *   - sin las páginas legales, que llevan noindex;
+ *   - `lastModified` con la fecha real de la última revisión (PAGE_UPDATED y
+ *     `updated` de cada artículo), no `new Date()` en cada build;
+ *   - hreflang recíproco solo entre páginas que son la misma en los dos
+ *     idiomas, con x-default al español. */
+
+function languages(es?: string, en?: string) {
+  if (!es || !en) return undefined;
+  return { languages: { es, en, 'x-default': es } };
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const esPosts = getPostsByLocale('es');
-  const enPosts = getPostsByLocale('en');
+  const staticPaths = Object.keys(PAGE_UPDATED);
 
-  const now = new Date();
+  const pages: MetadataRoute.Sitemap = staticPaths.flatMap((path) =>
+    (['es', 'en'] as const).map((locale) => ({
+      url: absoluteUrl(locale, path),
+      lastModified: PAGE_UPDATED[path],
+      alternates: languages(absoluteUrl('es', path), absoluteUrl('en', path)),
+    })),
+  );
 
-  const esPostEntries: MetadataRoute.Sitemap = esPosts.map((post) => ({
-    url: `${base}/blog/${post.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.6,
-  }));
-
-  const enPostEntries: MetadataRoute.Sitemap = enPosts.map((post) => ({
-    url: `${base}/en/blog/${post.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.5,
-  }));
+  const postEntry = (post: Post) => {
+    const own = absoluteUrl(post.locale, `/blog/${post.slug}`);
+    const other = post.translation
+      ? absoluteUrl(post.locale === 'es' ? 'en' : 'es', `/blog/${post.translation}`)
+      : undefined;
+    const [es, en] = post.locale === 'es' ? [own, other] : [other, own];
+    return {
+      url: own,
+      lastModified: post.updated,
+      alternates: languages(es, en),
+    };
+  };
 
   return [
-    {
-      url: base,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-      alternates: { languages: { es: base, en: `${base}/en` } },
-    },
-    {
-      url: `${base}/en`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-      alternates: { languages: { es: base, en: `${base}/en` } },
-    },
-    {
-      url: `${base}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      alternates: { languages: { es: `${base}/blog`, en: `${base}/en/blog` } },
-    },
-    {
-      url: `${base}/en/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-      alternates: { languages: { es: `${base}/blog`, en: `${base}/en/blog` } },
-    },
-...esPostEntries,
-    ...enPostEntries,
+    ...pages,
+    ...getPostsByLocale('es').map(postEntry),
+    ...getPostsByLocale('en').map(postEntry),
   ];
 }

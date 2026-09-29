@@ -10,25 +10,26 @@ import FAQ from '@/components/FAQ';
 import BlogPreview from '@/components/BlogPreview';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
+import { ORG_ID, SOFTWARE_ID, WEBSITE_ID, absoluteUrl, pageAlternates } from '@/lib/site';
+import { softwareSchema } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
-  const base = 'https://opensells.com';
-  const canonical = locale === 'es' ? base : `${base}/en`;
   return {
-    title: t('title'),
+    // `absolute`: la plantilla «%s | OpenSells» no se aplica a la portada.
+    title: { absolute: t('title') },
     description: t('description'),
-    alternates: {
-      canonical,
-      languages: { es: base, en: `${base}/en` },
-    },
+    alternates: pageAlternates(locale, '/'),
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
-      url: canonical,
+      url: absoluteUrl(locale, '/'),
+      siteName: 'OpenSells',
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      type: 'website',
     },
   };
 }
@@ -40,60 +41,52 @@ export default async function HomePage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'faq' });
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
   const faqItems = t.raw('items') as { q: string; a: string }[];
+  const url = absoluteUrl(locale, '/');
 
-  const faqSchema = {
+  /* Las respuestas del FAQPage son las mismas que se ven en la página (el
+   * acordeón las lleva todas en el HTML inicial). */
+  const schema = {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.q,
-      acceptedAnswer: { '@type': 'Answer', text: item.a },
-    })),
-  };
-
-  const appSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'OpenSells',
-    applicationCategory: 'BusinessApplication',
-    operatingSystem: 'Web',
-    url: 'https://app.opensells.com',
-    description: tMeta('description'),
-    offers: {
-      '@type': 'Offer',
-      price: 39,
-      priceCurrency: 'EUR',
-      description: locale === 'es'
-        ? 'Primer mes gratis, sin tarjeta. Después 39 €/mes (29 $ en Latinoamérica).'
-        : 'First month free, no card required. Then €39/month.',
-    },
-    featureList: locale === 'es'
-      ? 'Búsqueda de empresas por sector y ciudad, Datos públicos de contacto incluido teléfono cuando está disponible, Ficha de llamada preparada con IA, Estados notas y tareas de seguimiento, Borradores de email con IA, Envío desde OpenSells mediante Gmail conectado, Exportación CSV en planes de pago'
-      : 'Company search by industry and city, Public contact data including phone when available, AI-prepared call brief, Lead statuses notes and follow-up tasks, AI email drafts, Sending from OpenSells through connected Gmail, CSV export on paid plans',
-    publisher: {
-      '@type': 'Organization',
-      name: 'OpenSells',
-      url: 'https://opensells.com',
-    },
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': `${url}#webpage`,
+        url,
+        name: tMeta('title'),
+        description: tMeta('description'),
+        inLanguage: locale,
+        isPartOf: { '@id': WEBSITE_ID },
+        about: { '@id': SOFTWARE_ID },
+        publisher: { '@id': ORG_ID },
+      },
+      softwareSchema(locale, tMeta('description')),
+      {
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        url,
+        inLanguage: locale,
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      },
+    ],
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Navbar locale={locale} />
       <main>
         <Hero locale={locale} />
         <Problem />
-        <Features />
+        <Features locale={locale} />
         <HowItWorks />
-        <Pricing />
+        <Pricing locale={locale} />
         <FAQ />
         {/* El blog va ANTES del cierre: estaba después, así que justo tras
             pedirle la venta se le ofrecía una puerta para irse a leer. Lo

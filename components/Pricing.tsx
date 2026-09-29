@@ -1,23 +1,26 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { PLANS, fmt, money, pricingValues, type PlanKey } from '@/lib/pricing';
+import { REGISTER_URL, localePath } from '@/lib/site';
 
-type Plan = {
-  key: string;
+type PlanCopy = {
+  key: PlanKey;
   name: string;
-  price_monthly: string;
-  /** Precio en dólares para Latinoamérica. Solo en la versión en español. */
-  price_latam?: string;
   description: string;
   features: string[];
   cta: string;
 };
 
-export default function Pricing() {
+/** Sustituye {marcadores} por su valor. Los textos de los planes llevan los
+ * números como marcadores para que salgan siempre de `lib/pricing.ts`. */
+export function fill(text: string, values: Record<string, string>): string {
+  return text.replace(/\{(\w+)\}/g, (m, k) => (k in values ? values[k] : m));
+}
+
+export default function Pricing({ locale, showDetailsLink = true }: { locale: string; showDetailsLink?: boolean }) {
   const t = useTranslations('pricing');
-  const plans = t.raw('plans') as Plan[];
-  const appUrl = 'https://app.opensells.com';
+  const copy = t.raw('plans') as PlanCopy[];
+  const values = pricingValues(locale);
 
   return (
     <section id="pricing" className="py-20 sm:py-28 bg-slate-50">
@@ -28,9 +31,16 @@ export default function Pricing() {
         </div>
 
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
-          {plans.map((plan) => {
-            const originalPrice = parseFloat(plan.price_monthly);
+          {copy.map((plan) => {
+            const data = PLANS.find((p) => p.key === plan.key)!;
             const isPopular = plan.key === 'profesional';
+            const planValues: Record<string, string> = {
+              leadsMonth: fmt(data.leadsMonth, locale),
+              leadsPerSearch: fmt(data.leadsPerSearch, locale),
+              callBriefsMonth: fmt(data.callBriefsMonth, locale),
+              emailDraftsMonth: fmt(data.emailDraftsMonth, locale),
+              aiMessagesDay: fmt(data.aiMessagesDay, locale),
+            };
 
             return (
               <div
@@ -50,17 +60,17 @@ export default function Pricing() {
                   <div>
                     <div className="flex items-baseline gap-2 mb-1">
                       <span className={`text-4xl font-extrabold ${isPopular ? 'text-white' : 'text-slate-900'}`}>
-                        €{originalPrice}
+                        {money(data.eur, 'EUR', locale)}
                       </span>
                       <span className={`text-sm ${isPopular ? 'text-brand-100' : 'text-slate-400'}`}>
                         {t('per_month')}
                       </span>
                     </div>
-                    {plan.price_latam && (
-                      <p className={`text-xs ${isPopular ? 'text-brand-100' : 'text-slate-500'}`}>
-                        {t('latam_price', { price: plan.price_latam })}
-                      </p>
-                    )}
+                    {/* «$» a secas era ambiguo (dólar de EE. UU., peso…): se
+                        escribe USD. */}
+                    <p className={`text-xs ${isPopular ? 'text-brand-100' : 'text-slate-500'}`}>
+                      {t('usd_price', { price: money(data.usd, 'USD', locale) })}
+                    </p>
                     <p className={`text-xs font-semibold ${isPopular ? 'text-brand-100' : 'text-brand-600'}`}>
                       {t('first_month_free')}
                     </p>
@@ -70,16 +80,16 @@ export default function Pricing() {
                 <ul className="space-y-2.5 flex-1 mb-8">
                   {plan.features.map((f, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm">
-                      <svg className={`h-4 w-4 flex-shrink-0 mt-0.5 ${isPopular ? 'text-white' : 'text-brand-500'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <svg className={`h-4 w-4 flex-shrink-0 mt-0.5 ${isPopular ? 'text-white' : 'text-brand-500'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
-                      <span className={isPopular ? 'text-brand-50' : 'text-slate-600'}>{f}</span>
+                      <span className={isPopular ? 'text-brand-50' : 'text-slate-600'}>{fill(f, planValues)}</span>
                     </li>
                   ))}
                 </ul>
 
-                <Link
-                  href={`${appUrl}/login?tab=register&plan=${plan.key}`}
+                <a
+                  href={`${REGISTER_URL}&plan=${plan.key}`}
                   className={`block text-center rounded-xl py-3 text-sm font-bold transition-colors ${
                     isPopular
                       ? 'bg-white text-brand-600 hover:bg-brand-50'
@@ -87,7 +97,7 @@ export default function Pricing() {
                   }`}
                 >
                   {plan.cta}
-                </Link>
+                </a>
               </div>
             );
           })}
@@ -95,10 +105,18 @@ export default function Pricing() {
 
         <div className="mx-auto mt-8 max-w-3xl rounded-xl border border-slate-200 bg-white px-5 py-4 text-center">
           <p className="text-sm font-semibold text-slate-900">{t('packs_title')}</p>
-          <p className="mt-1 text-sm text-slate-500">{t('packs_note')}</p>
+          <p className="mt-1 text-sm text-slate-500">{fill(t.raw('packs_note') as string, values)}</p>
         </div>
 
-        <p className="mt-6 text-center text-xs text-slate-400">{t('no_card')}</p>
+        <p className="mx-auto mt-6 max-w-3xl text-center text-xs text-slate-500 leading-relaxed">{t('currency_note')}</p>
+        <p className="mt-3 text-center text-xs text-slate-400">{fill(t.raw('no_card') as string, values)}</p>
+        {showDetailsLink && (
+          <p className="mt-4 text-center text-sm">
+            <Link href={localePath(locale, '/pricing')} className="font-semibold text-brand-600 hover:text-brand-700">
+              {t('details_link')} →
+            </Link>
+          </p>
+        )}
       </div>
     </section>
   );

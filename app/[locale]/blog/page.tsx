@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getPostsByLocale } from '@/lib/blog';
+import { localePath, pageAlternates } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -12,14 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isEs = locale === 'es';
   return {
-    title: isEs ? 'Blog — Recursos para prospectar mejor | OpenSells' : 'Blog — Resources to prospect better | OpenSells',
+    // La plantilla del layout añade «| OpenSells».
+    title: isEs ? 'Blog: prospección B2B, llamadas y email comercial' : 'Blog: B2B prospecting, calls and sales email',
     description: isEs
-      ? 'Guías y estrategias de prospección B2B, cold email y generación de leads para freelancers y agencias.'
-      : 'B2B prospecting guides, cold email strategies and lead generation resources for freelancers and agencies.',
-    alternates: {
-      canonical: isEs ? 'https://opensells.com/blog' : 'https://opensells.com/en/blog',
-      languages: { es: 'https://opensells.com/blog', en: 'https://opensells.com/en/blog' },
-    },
+      ? 'Guías y comparativas con fuentes sobre prospección B2B, llamadas a negocios locales y email comercial, para freelancers y agencias.'
+      : 'Guides and sourced comparisons on B2B prospecting, calling local businesses and sales email, for freelancers and agencies.',
+    alternates: pageAlternates(locale, '/blog'),
   };
 }
 
@@ -28,7 +27,7 @@ export default async function BlogPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'blog_preview' });
   const posts = getPostsByLocale(locale);
-  const prefix = locale === 'en' ? '/en' : '';
+  const blogBase = localePath(locale, '/blog');
 
   return (
     <>
@@ -47,12 +46,12 @@ export default async function BlogPage({ params }: Props) {
               {posts.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`${prefix}/blog/${post.slug}`}
+                  href={`${blogBase}/${post.slug}`}
                   className="group block rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm hover:border-brand-200 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center gap-2 text-xs text-slate-400 mb-3">
-                    <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                    <time dateTime={post.updated}>
+                      {new Date(post.updated).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                     </time>
                     <span>·</span>
                     <span>{post.readTime}</span>
@@ -62,7 +61,7 @@ export default async function BlogPage({ params }: Props) {
                   </h2>
                   <p className="text-slate-500 leading-relaxed">{post.description}</p>
                   <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-brand-600">
-                    {locale === 'es' ? 'Leer artículo' : 'Read article'}
+                    {t('read')}
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>

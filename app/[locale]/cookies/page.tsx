@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { pageAlternates } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -9,11 +10,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isEs = locale === 'es';
   return {
-    title: isEs ? 'Política de Cookies | OpenSells' : 'Cookie Policy | OpenSells',
+    title: isEs ? 'Política de Cookies' : 'Cookie Policy',
     description: isEs
       ? 'Política de cookies de OpenSells: cookies necesarias para el funcionamiento de la plataforma y el píxel de OpenAI Ads para medir conversiones.'
       : "OpenSells cookie policy: cookies necessary for the platform to function and the OpenAI Ads pixel used to measure conversions.",
-    robots: { index: false },
+    alternates: pageAlternates(locale, '/cookies'),
+    robots: { index: false, follow: true },
   };
 }
 

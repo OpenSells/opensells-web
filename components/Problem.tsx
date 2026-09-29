@@ -1,10 +1,9 @@
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { REGISTER_URL } from '@/lib/site';
 
 export default function Problem() {
   const t = useTranslations('problem');
   const items = t.raw('items') as { icon: string; title: string; text: string }[];
-  const appUrl = 'https://app.opensells.com';
 
   return (
     <section className="bg-slate-900 py-20 sm:py-24">
@@ -22,16 +21,19 @@ export default function Problem() {
           ))}
         </div>
 
-        {/* Mid-page CTA */}
+        {/* CTA a mitad de página. Estaba escrito en español dentro del
+            componente, así que salía en español también en /en, y prometía
+            «en 5 minutos lo que tú tardas 15 horas», una cifra sin medición
+            detrás. */}
         <div className="mt-14 rounded-2xl bg-brand-600/20 border border-brand-500/30 p-8">
-          <p className="text-white font-bold text-xl mb-2">¿Y si hubiera una forma más rápida?</p>
-          <p className="text-slate-400 text-sm mb-6">OpenSells hace en 5 minutos lo que tú tardas 15 horas. Pruébalo gratis hoy.</p>
-          <Link
-            href={`${appUrl}/login?tab=register`}
+          <p className="text-white font-bold text-xl mb-2">{t('cta_title')}</p>
+          <p className="text-slate-400 text-sm mb-6">{t('cta_text')}</p>
+          <a
+            href={REGISTER_URL}
             className="inline-flex h-11 items-center rounded-xl bg-brand-500 px-8 text-sm font-bold text-white hover:bg-brand-400 transition-colors"
           >
-            Empieza gratis — sin tarjeta
-          </Link>
+            {t('cta_button')}
+          </a>
         </div>
       </div>
     </section>
